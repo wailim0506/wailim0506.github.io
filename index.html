@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Expenses Record</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<p>Expenses Record App</p>
+		</header>
+        <style>
+            body {
+	            background-color: rgb(235, 255, 247);
+            }
+
+            .warning{
+	            position: absolute;
+	            bottom: 475px;
+	            left: 65px;
+	            color: red;
+	            font-weight: bold;
+            }
+
+            header p{
+	            margin-top: -0px;
+	            text-align: center;
+	            font-size: 27px;
+	            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            #inputExpenseArea{
+	            margin-top: -20px;
+	            padding: 30px;
+	
+	            height: auto;
+	            background-color: antiquewhite;
+	            border-radius: 8px;
+            }
+
+            #amount,#what,select{
+	            margin-left: 2%;
+	            width: 80%;
+	            height: 30px;
+	            border-radius: 15px;
+	            margin-top: 10px;
+	
+            }       
+
+            #currency,#cMenu{
+	            display: inline-block;
+            }
+
+            #currency{
+	            margin-left: 2%;
+            }
+
+            #cMenu{
+	            width: 60%;
+            }
+
+            #add,.edit,.delete{
+	
+	            height: 30px;
+	            background-color: rgb(113, 206, 206);
+	            border-radius: 15px;
+	            cursor: pointer;
+	            width: 100px;
+            }
+
+            #add:hover{
+	            background-color: rgb(99, 180, 160);
+            }
+
+            #add{
+	            position: relative;
+	            bottom: 47px;
+	            left: 40px;
+            }
+
+            #summary{   
+	
+	            padding: 2px;
+	            height: 232px;
+	            background-color: rgb(208, 235, 233);
+	            overflow: auto;
+	            border-radius: 0px 0px 8px 8px;
+	
+            }
+
+            #record{
+	            margin-top: 10px;
+	            padding: 2px;
+	            height: 40px;
+	            background-color: rgb(208, 235, 233);
+	            border-radius: 8px 8px 0px 0px;
+	
+	
+            }
+
+            h4{
+	            text-align: center;
+	            margin-top: 10px;
+	            position: relative;
+            }
+
+            #reset{
+	            background-color: rgb(208, 235, 233);
+	            border: none;
+	            position: absolute;
+	            right: 40px;
+	            top: 280px;
+	            color: rgb(202, 202, 202);
+	            cursor: pointer;
+            }
+
+            ul{
+	            list-style: none;
+	
+            }
+
+            .edit{
+	            margin-left: 5%;
+	            background-color: orange;
+	
+            }
+
+            .edit:hover{
+	            background-color: rgb(196, 128, 3);
+            }
+
+            .delete{
+	            background-color: rgb(241, 34, 34);
+	
+            }
+
+            .delete:hover{
+	            background-color: rgb(177, 0, 0);
+            }
+
+
+
+            li{ 
+	            border-radius: 8px;
+	            height: auto;
+	            background-color: rgb(247, 247, 226);
+	            margin-top: 4px;
+	            width: 95%;
+	
+            }
+
+            .detail,.amount{
+	            display: inline-block;
+            }
+
+
+
+            .amount p{
+	            display: inline-block;
+            }
+
+            .amount{
+	            display: inline-block;
+	            margin-left: 40%;
+            }
+
+            .detail{
+	            margin-left: 10px;
+            }
+            #total{
+	            padding: 2px;
+	            background-color: rgb(211, 221, 220);
+	            height: 40px;
+	            border-radius: 8px;
+	            margin-top: 2px;
+            }
+
+            #abc{
+	            margin-left: 9%;
+            }
+
+            #total p{
+	            margin-top: 9px;
+	            display: inline-block;
+            }
+
+            #totalAmount{
+	            margin-left: 54.5%;
+            }
+
+            .test{
+	            display: inline-block;
+	            width: 30%;
+
+            }
+
+            #cMenu{
+	            width: 70%;
+            }
+
+
+
+
+            @media screen and (max-width:480px){
+	
+
+	            #amount,#what{
+		            width: 90%;
+	            }
+
+	            #add{
+		            margin-top: 2px;
+		            position: relative;
+		            margin-left: -31px;
+		            width: 92%;
+		            bottom: 0px;
+	            }
+
+	            .delete,.edit{
+		            display: block;
+		            width: 90%;
+
+	            }
+
+	            .delete{
+		            margin-left: 5%;
+		            margin-top: 5px;
+	            }
+	
+	            li{
+		            margin-left: -12px;
+		            height: 130px;
+	            }
+
+	            #totalAmount{
+	                margin-left: 47.5%;
+	
+	
+	            }
+	
+	            #summary{
+		            height: 325px;
+	            }
+
+	            .amount{
+	
+                	right:15%;
+	            }
+
+	            #reset{
+	            background-color: rgb(208, 235, 233);
+	            border: none;
+	            position: absolute;
+	            right: 40px;
+	            top: 300px;
+	            color: rgb(202, 202, 202);
+                }
+
+	
+	
+            }
+
+            @media screen and (min-width:481px) and (max-width:780px){
+	            #add{
+		            display: block;
+		            margin-top: 45px;
+		            margin-left: -4%;
+		            width: 82%;
+	            }
+	            #inputExpenseArea{
+		            height: 165px;
+	            }
+
+	            #cMenu{
+		            width: 67%;
+	            }
+
+                #reset{
+	            background-color: rgb(208, 235, 233);
+	            border: none;
+	            position: absolute;
+	            right: 40px;
+	            top: 300px;
+	            color: rgb(202, 202, 202);
+                }
+
+                .delete,.edit{
+                    width: 30%;
+                    margin-left: 12%;
+                }
+
+            }
+        </style>
+		<section>
+			<div id="inputExpenseArea">
+				
+				<input id="amount" placeholder="How much you spend?">
+				<input id="what" placeholder="What did it spend on?">
+				<br>
+				<p id="currency">Currency: </p>
+				<select id="cMenu">
+					<option>Select</option>
+					<option>USD(US$)</option>
+					<option>GBP(£)</option>
+					<option>EUR(€)</option>
+					<option>JPY(¥)</option>
+					<option>AUD(A$)</option>
+					<option>CAD(C$)</option>
+					<option>HKD(HK$)</option>
+					<option>NZD(NZ$)</option>
+					<option>KRW(₩)</option>
+					<option>SGD(S$)</option>
+					<option>THB(฿)</option>
+					<option>INR(₹)</option>
+					<option>SEK(kr)</option>
+					<option>NOK(kr)</option>
+					<option>MXN($)</option>
+					<option>RUB(₽)</option>
+					<option>ZAR(R)</option>
+					<option>TRY(₺)</option>
+					<option>BRL(R$)</option>
+					<option>TWD(NT$)</option>
+					<option>DKK(kr)</option>
+					<option>PLN(zł)</option>
+					<option>IDR(Rp)</option>
+					<option>HUF(Ft)</option>
+					<option>CZK(Kč)</option>
+					<option>ILS(₪)</option>
+					<option>CLP(CLP$)</option>
+					<option>PHP(₱)</option>
+					<option>AED(د.إ)</option>
+					<option>COP(COL$)</option>
+					<option>SAR(﷼)</option>
+					<option>MYR(RM)</option>
+					<option>RON(L)</option>
+					<option>CNY(¥)</option>
+
+				</select>
+				<button id="add">Add</button>
+			</div>
+
+			
+			<div id="record">
+				<h4>Record</h4>
+				<button id="reset">Reset</button>
+			</div>
+			<div id="summary">
+				<ul>
+				</ul>
+			</div>
+			<div id="total">
+				<p id="abc">Total: </p>
+				<p id="totalAmount"></p>
+				
+			</div>
+
+
+		</section>
+
+
+		<script>
+$(document).ready(function(){
+	//alert("This is my first project after completeing the Responsive Web Design course:)")
+	var r = ["USD(US$)","GBP(£)","EUR(€)","JPY(¥)","AUD(A$)","CAD(C$)","HKD(HK$)","NZD(NZ$)","KRW(₩)","SGD(S$)","THB(฿)","INR(₹)","SEK(kr)","NOK(kr)","MXN($)","RUB(₽)","ZAR(R)","TRY(₺)","BRL(R$)","TWD(NT$)","DKK(kr)","PLN(zł)","IDR(Rp)","HUF(Ft)","CZK(Kč)","ILS(₪)","CLP(CLP$)","PHP(₱)","AED(د.إ)","COP(COL$)","SAR(﷼)","MYR(RM)","RON(L)","CNY(¥)"]
+	var v = ["US$","£","€","¥","A$","C$","HK$","NZ$","₩","S$","฿","₹","kr","kr","$","₽","R","₺","R$","NT$","kr","zł","Rp","Ft","Kč","₪","CLP$","₱","د.إ","COL$","﷼","RM","L","¥"]
+	var total = 0
+	var numberOfInput = 0
+	var cn
+	var gn
+	var noe = 0
+
+	$("#add").click(function(){
+		var k = $("#cMenu").val()
+		var x = $("#amount").val()
+		var y = $("#what").val()
+		var t = parseInt(x)
+		if (isNaN(x) || x=="" || k=="Select"){
+			if (isNaN(x) || x==""){
+				alert("Please Enter A Valid Number!")
+			}else{
+				alert("Please Select A Currency!")
+			}
+		}else{
+			var li = $("<li></li>").text("")
+			var p0 = $("<div class='test'></div>")
+			var p1 = $("<p class='detail'></p>").text(y)
+			var p1_1 = p0.append(p1)
+			for (let i = 0;i<r.length;i++){
+				if(k==r[i]){
+					if (numberOfInput == 0){
+						var ds = v[i]
+						cn = v[i]
+						gn = r[i]
+						var p2 = $("<p></p>").text(ds)
+					}else{
+						var ds = v[i]
+						var p2 = $("<p></p>").text(ds)
+					}  
+				}
+			}
+
+			if (ds==cn){
+				var p3 = $("<p class='actualAmount'></p>").text(t)
+				var p4 = $("<div class='amount'></div>")
+				var p5 = p4.append(p2)
+				var p6 = p4.append(p3)
+				var buttonEdit = $("<button class='edit'></button>").text("Edit")
+				var buttonDelete = $("<button class='delete'></button>").text("Delete")
+				li.append(p0)
+				li.append(p4)
+				li.append(buttonEdit)
+				li.append(buttonDelete)
+				li.css({"display":"none"})
+				$("ul").append(li)
+				$("li").fadeIn(500)
+				$("#amount").val("")
+				$("#what").val("")
+				total = total + t
+				$("#totalAmount").text(ds+total)
+				numberOfInput = numberOfInput + 1
+				noe = noe + 1
+				
+				$(".edit").off().click(function(){
+					var editAmount=$(this).prev().children(".actualAmount").text()
+					$("#amount").val(editAmount)
+					var editDetail=$(this).prev().prev().text()
+					$("#what").val(editDetail)
+					$("#cMenu").val(gn)
+					var del = $(this).prev().children(".actualAmount").text()
+					total = total - del
+					$("#totalAmount").text(ds+total)
+					$(this).parent().remove()
+					noe = noe - 1
+					if (noe == 0){
+						$("ul").empty()
+						$("#totalAmount").text("")
+						$("#cMenu").val("Select")
+						$("#amount").val("")
+						$("#what").val("")
+						numberOfInput = 0
+						total = 0
+					}
+				})
+
+				$(".delete").off().click(function(){
+					var del = $(this).prev().prev().children(".actualAmount").text()
+					total = total - del
+					$("#totalAmount").text(ds+total)
+					$(this).parent().remove()
+					noe = noe - 1
+					if (noe == 0){
+						$("ul").empty()
+						$("#totalAmount").text("")
+						$("#cMenu").val("Select")
+						$("#amount").val("")
+						$("#what").val("")
+						numberOfInput = 0
+						total = 0
+					}
+				})
+			}else{
+				alert("Sorry, We Can't Support Two Currencies at The Same Time. Please Use " + gn + " Or Restart.")
+				$("#cMenu").val("Select")
+
+			}
+			
+		}
+	})
+	
+	
+
+	$("#reset").click(function(){
+		$("ul").empty()
+		$("#totalAmount").text("")
+		$("#cMenu").val("Select")
+		$("#amount").val("")
+		$("#what").val("")
+		numberOfInput = 0
+		total = 0
+	})
+	
+
+	
+
+})
+
+        </script>
+	
+	</body>
+</html>
