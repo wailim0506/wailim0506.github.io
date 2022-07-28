@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(174, 250, 167);
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#box{
+    width: 40%;
+    height: 450px;
+    border: 1px solid black;
+    margin-left: 31%;
+    margin-top: 40px;
+    border-radius: 15px 15px 0px 0px;
+    background-color: rgb(212, 250, 209);
+    overflow: auto;
+}
+
+input{
+    width: 60%;
+    margin-top: 10px;
+    margin-left: 10%;
+    height: 30px;
+}
+
+#add{
+    height: 35px;
+    width: 20%;
+    cursor: pointer;
+}
+
+li{
+    width: 90% ;
+    height: 20px;
+    border: none;
+    margin-top: 10px;
+}
+
+.listItem,.del{
+    display: inline-block;
+}
+
+.listItem{
+    width: 87%;
+}
+
+.del{
+    background-color: orange;
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    cursor: pointer;
+}
+
+.del:hover{
+    background-color: rgb(223, 145, 2);
+}
+
+#clear{
+    width: 40%;
+    height: 40px;
+    border: 1px solid black;
+    margin-left: 31%;
+    margin-top: -30px;
+    border-radius: 0px 0px 15px 15px;
+    background-color: red;
+    border-top: 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#clear:hover{
+    background-color: rgb(218, 6, 6);
+}
+
+#clear p{
+    font-size: 30px;
+}
+
+@media screen and (max-width:680px) {
+    #box{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #clear{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .listItem{
+        width: 80%;
+        
+    }
+}
