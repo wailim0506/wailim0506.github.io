@@ -1,0 +1,142 @@
+body{
+    text-align: center;
+}
+
+img{
+    
+    width: 50px;
+    height: 50px;
+    margin-top: 28px;
+}
+
+#sign{
+    font-size: 25px;
+}
+
+#inputField{
+    width: 21%;
+    height: 200px;
+    border: 1px solid rgb(206, 215, 216);
+    text-align: left;
+    margin-left: 40%;
+    background-color: rgb(241, 246, 247);
+    border-radius: 8px;
+}
+
+#inputField a{
+    text-decoration: none;
+    margin-left: 31%;
+    font-size: 5px;
+    
+}
+
+#inputField p{
+    display: inline-block;
+    margin-left: 5%;
+    font-size: 15px;
+}
+
+input{
+    display: block;
+    margin-left: 5%;
+    margin-top: -10px;
+    width: 87%;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid rgb(162, 179, 184) ;
+}
+
+#sibtn{
+    margin-left: 5%;
+    height: 30px;
+    width: 89%;
+    background-color: rgb(6, 163, 6);
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: 1px solid rgb(206, 215, 216);
+    cursor: pointer;
+}
+
+#sibtn:hover{
+    background-color:rgb(3, 124, 3) ;
+}
+
+#createField{
+    width: 21%;
+    height: 50px;
+    border: 1px solid rgb(206, 215, 216);
+    text-align: left;
+    margin-left: 40%;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 2px;
+    
+}
+
+#createField p, #createField a{
+    display: inline-block;
+    font-size: 15px;
+}
+
+#createField a{
+    text-decoration: none;
+}
+
+#createField a:hover{
+    text-decoration: underline;
+}
+
+li a{
+    text-decoration: none;
+    
+}
+
+ul{
+    list-style: none;
+    margin-top: 100px;
+    margin-left: -20px;
+}
+
+li{
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 5px;
+}
+
+@media screen and (max-width:680px){
+    
+
+    #inputField{
+        width: 65%;
+        margin-left: 18%;
+    }
+
+    #createField{
+        width: 65%;
+        margin-left: 18%;
+    }
+
+    ul{
+        margin-left: -40px;
+    }
+
+    
+}
+
+@media screen and (min-width:681px) and (max-width:1350px){
+    #inputField{
+        width: 35%;
+        margin-left: 33%;
+    }
+
+    #createField{
+        width: 35%;
+        margin-left: 33%;
+    }
+    ul{
+        margin-left: -40px;
+    }
+}
