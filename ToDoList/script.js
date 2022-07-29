@@ -29,7 +29,7 @@ $(document).ready(function(){
 
     $("#clear").click(function(){
         var clear = confirm("Are you sure you want to clear it?"
-        if (clear == True){
+        if (clear == true){
             $("ol").empty()
         }
         else{
