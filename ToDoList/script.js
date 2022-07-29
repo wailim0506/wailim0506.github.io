@@ -28,6 +28,13 @@ $(document).ready(function(){
 
 
     $("#clear").click(function(){
-        $("ol").empty()
+        var clear = confirm("Are you sure you want to clear it?"
+        if (clear == True){
+            $("ol").empty()
+        }
+        else{
+            pass
+        }
+        
     })
 })
