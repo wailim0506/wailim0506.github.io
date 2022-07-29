@@ -28,7 +28,7 @@ $(document).ready(function(){
 
 
     $("#clear").click(function(){
-        var clear = confirm("Are you sure you want to clear it?"
+        var clear = confirm("Are you sure you want to clear it?")
         if (clear == true){
             $("ol").empty()
         }
