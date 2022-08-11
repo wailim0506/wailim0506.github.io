@@ -122,3 +122,13 @@ a{
     height: 300px;
     }
 }
+
+@media screen and (max-width:992px){
+    #lwfImg{
+        order:2;
+    }
+
+    #lwfWord{
+        order:1;
+    }
+}
