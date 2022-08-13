@@ -202,3 +202,49 @@
         </footer>
         
     </body>
+    <script>
+        $(document).ready(function(){
+	//$("body").fadeIn(500)
+	$("#disneyland").css("display","none")
+	$("#lwf").css("display","none")
+	$("#templeStreet").css("display","none")
+	$(window).scroll(function(){
+		var x = $(window).scrollTop()
+		if (x>=506){
+			$("#disneyland").fadeIn(1000)
+		}
+		if (x>=988){
+			$("#lwf").fadeIn(1000)
+		}
+		if (x>=1405){
+			$("#templeStreet").fadeIn(1000)
+		}
+		if (x>=1796){
+			$("#footer").fadeIn(1000)
+		}
+		
+		
+		if (x<=506){
+			$("#disneyland").fadeOut(500)
+		}
+		if (x<=988){
+			$("#lwf").fadeOut(500)
+		}
+		if (x<=1405){
+			$("#templeStreet").fadeOut(500)
+		}
+		if (x<=1796){
+			$("#footer").fadeOut(500)
+		}
+		
+		//console.log(x)
+		
+	})
+})
+
+//use scroll() to excute function when user scroll the page
+//use scrollTop() to check the position of the page in px
+//disneyland 506px
+//lwf 988px
+    </script>
+</html>
