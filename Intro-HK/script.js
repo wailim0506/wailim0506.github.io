@@ -13,16 +13,16 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 		var x = $(window).scrollTop()
         if (screenWidth>=1200){
-            if (x>=356){
+            if (x>=306){
 			    $("#disneyland").fadeIn(1000)
                 $(".one").fadeIn(1000)
                 $("#footer").fadeIn(1000)
 		    }
-		    if (x>=878){
+		    if (x>=828){
 			    $("#lwf").fadeIn(1000)
                 $(".two").fadeIn(1000)
 		    }
-		    if (x>=1245){
+		    if (x>=1195){
 			    $("#templeStreet").fadeIn(1000)
                 $(".three").fadeIn(1000)
 		    }
