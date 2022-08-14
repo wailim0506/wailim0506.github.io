@@ -46,16 +46,16 @@ $(document).ready(function(){
 		    
         }
         else{
-            if (x>=990){
+            if (x>=950){
 			    $("#disneyland").fadeIn(1000)
                 $(".one").fadeIn(1000)
                 $("#footer").fadeIn(1000)
 		    }
-		    if (x>=1625){
+		    if (x>=1555){
 			    $("#lwf").fadeIn(1000)
                 $(".two").fadeIn(1000)
 		    }
-		    if (x>=2365){
+		    if (x>=2315){
 			    $("#templeStreet").fadeIn(1000)
                 $(".three").fadeIn(1000)
 		    }
