@@ -14,50 +14,50 @@ $(document).ready(function(){
 		var x = $(window).scrollTop()
         if (screenWidth>=1200){
             if (x>=200){
-			    $("#disneyland").fadeIn(1000)
-                $(".one").fadeIn(1000)
-                $("#footer").fadeIn(1000)
+			    $("#disneyland").fadeIn(1500)
+                $(".one").fadeIn(1500)
+                $("#footer").fadeIn(1500)
 		    }
 		    if (x>=728){
-			    $("#lwf").fadeIn(1000)
-                $(".two").fadeIn(1000)
+			    $("#lwf").fadeIn(1500)
+                $(".two").fadeIn(1500)
 		    }
 		    if (x>=1095){
-			    $("#templeStreet").fadeIn(1000)
-                $(".three").fadeIn(1000)
+			    $("#templeStreet").fadeIn(1500)
+                $(".three").fadeIn(1500)
 		    }
 		    
         }
 
         else if (screenWidth>=992){
             if (x>=486){
-			    $("#disneyland").fadeIn(1000)
-                $(".one").fadeIn(1000)
-                $("#footer").fadeIn(1000)
+			    $("#disneyland").fadeIn(1500)
+                $(".one").fadeIn(1500)
+                $("#footer").fadeIn(1500)
 		    }
 		    if (x>=988){
-			    $("#lwf").fadeIn(1000)
-                $(".two").fadeIn(1000)
+			    $("#lwf").fadeIn(1500)
+                $(".two").fadeIn(1500)
 		    }
 		    if (x>=1405){
-			    $("#templeStreet").fadeIn(1000)
-                $(".three").fadeIn(1000)
+			    $("#templeStreet").fadeIn(1500)
+                $(".three").fadeIn(1500)
 		    }
 		    
         }
         else{
-            if (x>=850){
-			    $("#disneyland").fadeIn(1000)
-                $(".one").fadeIn(1000)
-                $("#footer").fadeIn(1000)
+            if (x>=750){
+			    $("#disneyland").fadeIn(1500)
+                $(".one").fadeIn(1500)
+                $("#footer").fadeIn(1500)
 		    }
-		    if (x>=1455){
-			    $("#lwf").fadeIn(1000)
-                $(".two").fadeIn(1000)
+		    if (x>=1355){
+			    $("#lwf").fadeIn(1500)
+                $(".two").fadeIn(1500)
 		    }
-		    if (x>=2215){
-			    $("#templeStreet").fadeIn(1000)
-                $(".three").fadeIn(1000)
+		    if (x>=2115){
+			    $("#templeStreet").fadeIn(1500)
+                $(".three").fadeIn(1500)
 		    }
 		    
         }
