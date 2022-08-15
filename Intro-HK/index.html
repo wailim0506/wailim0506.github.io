@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Hong Kong Place to Visit</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap 5 CDN -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Jquery -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- StyleSheet-->
+        <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<!-- Create Nav Bar-->
+		<nav class="navbar bg-dark navbar-expand-md navbar-dark fixed-top">
+			<div class="container-fluid">
+				<a href="#" class="navbar-brand">Hong Kong</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav me-auto">
+						<li class="nav-item">
+							<a href="#" class="nav-link active">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Image</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link disabled">Other</a>
+						</li>
+					</ul>
+					<form class="d-flex" id="form">
+						<input type="text" class="me-2 form-control" placeholder="Search">
+						<button class="btn btn-outline-success">Search</button>
+					</form>
+				</div>   
+			</div>
+		</nav>
+		<!-- Create Nav Bar-->
+
+		<!-- Create Carousel-->
+		<div class="carousel slide bg-dark" data-bs-ride="carousel" id="carousel">
+			<!-- Indicators-->
+			<div class="carousel-indicators">
+				<button data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+				<button data-bs-target="#carousel" data-bs-slide-to="1"></button>
+				<button data-bs-target="#carousel" data-bs-slide-to="2"></button>
+				<button data-bs-target="#carousel" data-bs-slide-to="3"></button>
+				<button data-bs-target="#carousel" data-bs-slide-to="4"></button>
+				<button data-bs-target="#carousel" data-bs-slide-to="5"></button>
+				<button data-bs-target="#carousel" data-bs-slide-to="6"></button>
+				<button data-bs-target="#carousel" data-bs-slide-to="7"></button>
+				<button data-bs-target="#carousel" data-bs-slide-to="8"></button>
+				<button data-bs-target="#carousel" data-bs-slide-to="9"></button>
+			</div>
+
+			<!-- Images-->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="https://na.cx/i/5R6RfoU.jpg" alt="" class="mx-auto d-block" id="imgone" style="margin: auto;">
+					<div class="carousel-caption">
+						<h1>Victoria Harbour</h1>
+					</div>
+				</div>
+				
+				<div class="carousel-item">
+					<img src="https://s4.gifyu.com/images/tst.jpg" alt="" class="d-block mx-auto" id="imgtwo" style="margin: auto;">
+					<div class="carousel-caption">
+						<h1>Tsim Sha Tsui Clock Tower</h1>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="https://na.cx/i/xe0CaYK.jpg" alt="" class="d-block mx-auto" id="imgthree" style="margin: auto;">
+					<div class="carousel-caption">
+						<h1>The Peak</h1>
+					</div> 
+				</div>
+				<div class="carousel-item">
+					<img src="https://na.cx/i/B4B9Mw3.jpg" alt="" class="d-block" id="imgfour" style="margin: auto;">
+					<div class="carousel-caption">
+						<h1>The Peak Tram</h1>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="https://na.cx/i/o1aZpiL.jpg" alt="" class="d-block" id="imgfive" style="margin: auto;">
+					<div class="carousel-caption">
+						<h1>Hong Kong Island</h1>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="https://na.cx/i/PDkVG5p.png" alt="" class="d-block" id="imgsix" style="margin: auto;">
+					<div class="carousel-caption">
+						<h1>Night View from The Peak</h1>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="https://s4.gifyu.com/images/ferry5bfbe77def6541cd.jpg" alt="" class="d-block" id="imgseven" style="margin: auto;">
+					<div class="carousel-caption">
+						<h1>Hong Kong & Kowloon Ferry</h1>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="https://s4.gifyu.com/images/wts-temple.jpg" alt="" class="d-block" id="imgeight" style="margin: auto;">
+					<div class="carousel-caption">
+						<h1>Wong Tai Sin Temple</h1>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="https://s4.gifyu.com/images/buddha-2.jpg" alt="" class="d-block" id="imgnine" style="margin: auto;">
+					<div class="carousel-caption">
+						<h1>Tian Tan Buddha</h1>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="https://s4.gifyu.com/images/lwf.jpg" alt="" class="d-block" id="imgten" style="margin: auto;">
+					<div class="carousel-caption">
+						<h1>Lan Kwai Fong</h1>
+					</div>
+				</div>
+			</div>
+			<!-- Left/Right Control-->
+			<button class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</button>
+			<button class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</button>
+		</div>
+		<!-- Create Carousel-->
+
+		<!-- Three Circle-->
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-lg-4" >
+					<img src="https://na.cx/i/YWBhWtR.jpg" alt="" class="rounded-circle" style="width: 150px; height: 140px; display: block;margin-left: auto;margin-right: auto;">
+					<h2 style="text-align: center;">Street Food</h2>
+					<p style="text-align: center;">Hong Kong’s street food scene is pretty banging if you ask us. From Causeway Bay to Mong Kok, Kwai Fong, Sham Shui Po and beyond, you’re bound to find some tasty snacks on the side of the street. Be it skewered curry fishballs or crispy eggettes in various flavours, these tasty tidbits are also wallet-friendly and you can easily fill up your belly for just a few bucks.</p>
+					<button class="btn btn-secondary vdbtn" style="display: block;margin-left: auto;margin-right: auto;">View details >></button>
+				</div>
+				<div class="col-lg-4 test">
+					<img src="https://na.cx/i/nCcpBx6.jpg" alt="" class="rounded-circle" style="width: 150px; height: 140px; display: block;margin-left: auto;margin-right: auto;">
+					<h2 style="text-align: center;">Shopping</h2>
+					<p style="text-align: center;">If you love to shop, then Hong Kong is your choice. Hong Kong is a shopping paradise for tourists. This Asian metropolis is well-known for its high-rise department stores, magnificent shops and street markets. There is no brand in the world, which would not be presented in Hong Kong. You can buy almost everything - from cheap clothing to state-of-the-art electronic goods.</p>
+					<button class="btn btn-secondary vdbtn" style="display: block;margin-left: auto;margin-right: auto;">View details >></button>
+				</div>
+				<div class="col-lg-4 test" >
+					<img src="https://na.cx/i/StBYF4d.jpg" alt="" class="rounded-circle" style="width: 150px; height: 140px; display: block;margin-left: auto;margin-right: auto;"><!--width: 150px; height: 140px; margin-left: 30%;-->
+					<h2 style="text-align: center;">Night View</h2>
+					<p style="text-align: center;">Hong Kong is a beautifully unique city which must be seen from its many different viewpoints. By day the city shines in the Asian sun with a dramatic backdrop of green soaring mountains. Trekking to the top of Lion Rock will give anyone the best daytime vantage point. By night the city lights up like a metropolis from the future with skyscrapers competing for your attention.</p>
+					<button class="btn btn-secondary btn" style="display: block;margin-left: auto;margin-right: auto;">View details >></button>
+				</div>
+				
+			</div>
+		</div>
+			<!-- Three Circle-->
+			<br id="fadeOneStart">
+			<hr>
+			<!-- Three Place to Visit-->
+		<div class="container mt-1">
+			<div class="row" id="disneyland">
+				<div class="col-lg-7">
+					<h1 class="text-secondary abc">Hong Kong Disneyland</h1>
+					<p style="font-size: 20px; text-align: justify;">Enter a magical kingdom inspired by fairy-tale dreams and explore 7 lands - Adventureland, Grizzly Gulch, Mystic Point, Toy Story Land, Fantasyland, Tomorrowland and Main Street, USA - filled with beauty, excitement and Disney Characters.</p>
+				</div>
+				<div class="col-lg-5">
+					<img src="https://na.cx/i/5Hkq5Cu.jpg" alt="" style="width: 550px; height: 367px;" class="img-fluid">
+				</div>
+			</div>
+			<br id="fadeTwoStart">
+			<hr >
+			<div class="row" style="display: flex;" id="lwf">
+				<div class="col-lg-5" id="lwfImg">
+					<img src="https://na.cx/i/hPM2owg.jpg" alt="" style="width: 550px; height: 367px;" class="img-fluid">
+				</div>
+				<div class="col-lg-7" id="lwfWord">
+					<h1 class="text-secondary abc" >Lan Kwai Fong</h1>
+					<p style="font-size: 20px; text-align: justify;">As Hong Kong's most popular dining area, the lively streets that make up Lan Kwai Fong are packed with crowds checking out Hong Kong's trendiest restaurants. If you are looking for a place to eat in Hong Kong, especially at night, this is the place to come. Dining on the open-air patios lining the sidewalks, and watching the crowds stroll by is a must-do when in Hong Kong.</p>
+				</div>				   
+			</div>
+			<br id="fadeThreeStart">
+			<hr >
+			<div class="row" id="templeStreet">
+				<div class="col-lg-7">					  
+					<h1 class="text-secondary abc" >Temple Street Night Market</h1>
+					<p style="font-size: 20px; text-align: justify;">The Temple Street Night Market is Hong Kong's busiest and liveliest night market, it is noisy and crowded with rows of stalls with all sorts of cheap merchandise, fakes, souvenirs, clothing, electronics, and open air food stalls.</p>
+				</div>
+				<div class="col-lg-5">
+					<img src="https://na.cx/i/VnZWsTH.png" alt="" style="width: 550px; height: 367px;" class="img-fluid">
+				</div>
+			</div>
+			<br >
+			<hr >
+		</div>
+		<!-- Three Place to Visit-->
+
+		<!-- Footer-->
+		<footer class="container" id="footer">
+			<p class="float-right"><a href="#">Back to top</a></p>
+			<p>&copy; Created by Wai Lim &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
