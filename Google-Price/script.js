@@ -1,7 +1,9 @@
 $(document).ready(function(){
+    $("#fadeStart").css("visibility","hidden")
+    $("#IphoneImgContainer").css("display","none")
+
     $("#monthlyButton").toggleClass("monthlyBtn")
 
-    
     $("#monthlyButton").on("click",function(){
         //Change button color
         $("#monthlyButton").toggleClass("monthlyBtn")
@@ -30,5 +32,21 @@ $(document).ready(function(){
         $("#delPriceThree").text("HK$799.00")
         $("#afterPriceThree").text("HK$ 799.00/month after. Save 16% with Annual")
         $(".cardHr").css("margin-top","7px")
+    })
+
+    $(window).scroll(function(){
+        var x = $("#fadeStart").position()
+        var scrolled = $(window).scrollTop()
+        if($(window).width()>992){
+            if(scrolled>=x.top*(2/5)){
+                $("#IphoneImgContainer").fadeIn(2000)
+            }
+        }
+        else{
+            if(scrolled>=x.top*(3/4)){
+                $("#IphoneImgContainer").fadeIn(2000)
+            }
+        }
+        
     })
 })
