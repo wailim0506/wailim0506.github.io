@@ -25,7 +25,7 @@ h2{
 
 
 .card{
-    height: 510px;
+    height: 530px;
     
 }
 
@@ -35,7 +35,7 @@ h2{
 
 #firstCardBtn{
     margin-top: 100px;
-    margin-bottom: 105px;
+    margin-bottom: 125px;
     width: 120px;
 }
 
@@ -51,7 +51,7 @@ h2{
 }
 
 .cardHr{
-    margin-top: 7px;
+    margin-top: 47px;
 }
 
 .delPrice{
@@ -72,6 +72,38 @@ h1{
 #iphoneImgWord{
     font-size: 20px;
     margin-top: 35px;
+}
+
+#googleImg,#appleImg{
+    width: 194px;
+    height: 75px;
+}
+
+#footerImg{
+    width: 115px;
+    height: 40px;
+}
+
+.footerList{
+    display: inline;
+    margin-left: 0px;
+}
+
+#questImg{
+    width: 20px;
+    height: 20px;
+}
+
+.monthlyBtn,.annualBtn{
+    background-color: rgb(189, 220, 255);
+    color: rgb(43, 43, 133);
+}
+#afterPriceOne,#afterPriceTwo,#afterPriceThree{
+    font-size: 15px;
+}
+
+#IphoneImgContainer{
+    margin-top:70px;
 }
 
 @media screen and (max-width:992px){   /*lg = 992px    md = 768px */
@@ -136,15 +168,40 @@ h1{
         font-size: 35px;
     }
 
-    #box1{
+    #box2{
         order: 2;
     }
 
-    #box2{
+    #box3{
         orphans: 1;
     }
 
     #iphoneImgWord{
         text-align: center;
+    }
+
+    #IphoneImgContainer{
+        margin-top: -10px;
+    }
+
+    
+}
+
+@media screen and (max-width:1200px){
+    #googleAppleImg{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:768px){
+    .footerUl,.footerUlTwo{
+        position: relative;
+        left: -42px;
+        margin-top: 5px;
+    }
+
+    .footerUlTwo{
+        margin-top: -15px;
     }
 }

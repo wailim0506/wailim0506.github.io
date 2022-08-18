@@ -83,8 +83,8 @@
             <p class="text-secondary text-center mt-5" style="font-size: 12px;">By subscribing to a Google One plan, you agree to the <a href="#">Google One Terms of Service</a>. Note: The <a href="#">Google Privacy Policy </a>describes how data is handled in this service.</p>
             <div class="text-center" id="buttonGp">
                 <div class="btn-group mt-4">
-                    <button class="btn btn-outline-secondary clicked" style="width: 160px;" id="monthlyBtn">Monthly</button>
-                    <button class="btn btn-outline-secondary" style="width: 160px;" id="annualBtn">Annual</button>
+                    <button class="btn" style="width: 160px; border: 1px solid rgb(53, 74, 100);" id="monthlyButton">Monthly</button>
+                    <button class="btn" style="width: 160px; border: 1px solid rgb(53, 74, 100);" id="annualButton">Annual</button>
                 </div>
             </div>
         </div>
@@ -97,11 +97,11 @@
                         <div class="card-body">
                             <p class="price text-center mt-5">15 GB</p>
                             <button class="btn btn-outline-secondary btn-sm d-block mx-auto disabled" id="firstCardBtn">Current plan</button>
-                            <hr>
+                            <hr>                           
                             <small>Includes</small>
                             <br>
                             <small style="color: rgb(53, 119, 241);">✓</small>
-                            <small>15 GB of storage</small>
+                            <small>15 GB of storage</small>                        
                         </div>
                     </div>
                 </div>
@@ -111,9 +111,9 @@
                             <span class="badge bg-success rounded-pill d-block mx-auto badge">🏷️ Discounted price</span>
                             <p class="text-center" style="font-size: 23px;">Basic</p>
                             <p class="price text-center gB">100 GB</p>
-                            <p class="text-center text-secondary delPrice">HK$15.00</p>
+                            <p class="text-center text-secondary delPrice" id="delPriceOne">HK$15.00</p>
                             <p class="text-center" style="font-size: 20px;">HK$3.75/month for 1 month</p>
-                            <p class="text-center text-secondary" style="font-size: 15px;">HK$ 15.00/month after</p>
+                            <p class="text-center text-secondary" id="afterPriceOne">HK$ 15.00/month after</p>
                             <button class="btn btn-primary btn-sm d-block mx-auto" style="width: 120px;">Get Offer</button>
                             <p class="text-center" style="font-size: 12px; margin-top: 16px; margin-bottom: 25px;">
                                 Cancel anytime.
@@ -142,9 +142,9 @@
                             <span class="badge bg-success rounded-pill d-block mx-auto badge">🏷️ Discounted price</span>
                             <p class="text-center" style="font-size: 23px;">Standard</p>
                             <p class="price text-center gB">200 GB</p>
-                            <p class="text-center text-secondary delPrice">HK$23.00</p>
+                            <p class="text-center text-secondary delPrice" id="delPriceTwo">HK$23.00</p>
                             <p class="text-center" style="font-size: 20px;">HK$5.75/month for 1 month</p>
-                            <p class="text-center text-secondary" style="font-size: 15px;">HK$ 23.00/month after</p>
+                            <p class="text-center text-secondary" id="afterPriceTwo">HK$ 23.00/month after</p>
                             <button class="btn btn-outline-primary btn-sm d-block mx-auto" style="width: 120px;">Get Offer</button>
                             <p class="text-center" style="font-size: 12px; margin-top: 16px; margin-bottom: 25px;">
                                 Cancel anytime.
@@ -173,9 +173,9 @@
                             <span class="badge bg-success rounded-pill d-block mx-auto badge">🏷️ Discounted price</span>
                             <p class="text-center" style="font-size: 23px;">Premium</p>
                             <p class="price text-center gB">2 TB</p>
-                            <p class="text-center text-secondary delPrice">HK$79.00</p>
+                            <p class="text-center text-secondary delPrice" id="delPriceThree">HK$79.00</p>
                             <p class="text-center" style="font-size: 20px;">HK$19.75/month for 1 month</p>
-                            <p class="text-center text-secondary" style="font-size: 15px;">HK$ 79.00/month after</p>
+                            <p class="text-center text-secondary" id="afterPriceThree">HK$ 79.00/month after</p>
                             <button class="btn btn-outline-primary btn-sm d-block mx-auto" style="width: 120px;">Get Offer</button>
                             <p class="text-center" style="font-size: 12px; margin-top: 16px; margin-bottom: 25px;">
                                 Cancel anytime.
@@ -202,22 +202,67 @@
         </div>
 
         <!--IPhone Image-->
-        <div class="container mt-5">
+        <div class="container" id="IphoneImgContainer">
             <div class="row">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-4" id="box1">
+                <div class="col-lg-1" id="box1"></div>
+                <div class="col-lg-5" id="box2">
                     <img src="https://s4.gifyu.com/images/G1_refresh_about_membership_desktop_4f47f44a99a5c5e8c08c5f6a274a3bb1.png" id="iphoneImg">
                 </div>
-                <div class="col-lg-4" id="box2">
+                <div class="col-lg-5" id="box3">
                     <h1>Manage your plan with the Google One app</h1>
                     <p class="text-secondary" id="iphoneImgWord">Check your storage, explore features, and take advantage of member benefits all in one place.</p>
-                    <!--<img src="https://s4.gifyu.com/images/en_badge_web_generic.png" alt="">
-                    <img src="https://s4.gifyu.com/images/5847e95fcef1014c0b5e4822.png" alt="">-->
+                    <div id="googleAppleImg">
+                    <a href="#"><img src="https://s4.gifyu.com/images/en_badge_web_generic.png" alt="" id="googleImg"></a>
+                    <a href="#"><img src="https://s4.gifyu.com/images/5847e95fcef1014c0b5e4822.png" alt="" id="appleImg"></a>
+                    </div>
                 </div>
-                <div class="col-lg-2"></div>
+                <div class="col-lg-1" id="box4"></div>
             </div>
         </div>
 
+        <!-- Footer-->
+        <footer class="container-fluid mt-5 bg-light p-5">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="#" style="display: inline-block;"><img src="https://s4.gifyu.com/images/_2022-08-18_21.41.49-removebg-preview.png" id="footerImg"></a>
+                </div>
+                <div class="col-md-6">                   
+                    <ul style="list-style:none;display: inline-block;" class="footerUl">
+                        <li class="footerList">
+                            <a href="#" style="text-decoration: none;" class="btn btn-light"><p class="text-secondary footerList">Privacy</p></a>
+                        </li>
+                        <li class="footerList">
+                            <a href="#" style="text-decoration: none;" class="btn btn-light"><p class="text-secondary footerList">Terms</p></a>
+                        </li>
+                        <li class="footerList">
+                            <a href="#" style="text-decoration: none;" class="btn btn-light"><p class="text-secondary footerList">About Google</p></a>
+                        </li>
+                        <li class="footerList">
+                            <a href="#" style="text-decoration: none;" class="btn btn-light"><p class="text-secondary footerList">Google products</p></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--<div class="col-md-1"></div>-->
+
+                <div class="col-md-4">
+                    <ul style="list-style:none;display: inline-block;" class="footerUlTwo">
+                        <li class="footerList">
+                            <a href="#" style="text-decoration: none;" class="btn btn-light">
+                                <img src="https://s4.gifyu.com/images/18436-removebg-preview.png" id="questImg">
+                                <p class="text-secondary footerList">Help</p>
+                            </a>
+                        </li>
+                        <li class="footerList">
+                            <select class="form-select bg-light footerList text-secondary" style="border: none; width: 235px;">
+                                <option value="English">English (United Kingdom)</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+               
+        </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
