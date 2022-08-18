@@ -61,7 +61,7 @@ h2{
 }
 
 #iphoneImg{
-    width: 291px;
+    width: 448px;
     height: 400px;
 }
 
@@ -161,6 +161,8 @@ h1{
     #iphoneImg{
         display: block;
         margin: auto;
+        width: 336px;
+        height: 300px;
     }
 
     h1{
