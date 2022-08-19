@@ -1,7 +1,7 @@
 # wailim0506.github.io
 
 Google Price
-http://wailim0506.github.io/Google-Price/
+[http://wailim0506.github.io/Google-Price/](https://wailim0506.github.io/Google-Price/)
 
 Checkout Form
 http://wailim0506.github.io/Checkout-Form/
