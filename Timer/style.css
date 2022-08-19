@@ -1,0 +1,27 @@
+.card{
+    position: relative;
+    top: 160px;
+    width: 600px;
+    height: 200px;
+    background-color: rgb(232, 252, 57);
+}
+
+p{
+    display: inline;
+}
+
+.btn{
+    width: 100%;
+}
+
+@media screen and (max-width:600px){
+    .card{
+        width: 90%;
+        height: 350px;
+    }
+
+    .btn{
+        width: 90%;
+        margin-top: 10px;
+    }
+}
