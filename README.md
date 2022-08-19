@@ -10,7 +10,7 @@ Intro Hong Kong
 [http://wailim0506.github.io/Intro-HK/](https://wailim0506.github.io/Intro-HK/)
 
 Timer
-[https://wailim0506.github.io/Timer/] (https://wailim0506.github.io/Timer/)
+https://wailim0506.github.io/Timer/
 
 GitHub Login Page
 [http://wailim0506.github.io/GitHub-Login-Page/](https://wailim0506.github.io/GitHub-Login-Page/)
