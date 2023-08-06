@@ -6,7 +6,7 @@ Google Price
 Checkout Form
 [http://wailim0506.github.io/Checkout-Form/](https://wailim0506.github.io/Checkout-Form/)
 
-Intro Hong Kong
+Hong Kong
 [http://wailim0506.github.io/Intro-HK/](https://wailim0506.github.io/Intro-HK/)
 
 Timer
