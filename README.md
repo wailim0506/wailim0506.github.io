@@ -1,8 +1,8 @@
 # wailim0506.github.io
 
 
-Checkout Form
-[http://wailim0506.github.io/Checkout-Form/](https://wailim0506.github.io/Checkout-Form/)
+<!--Checkout Form-->
+<!--[http://wailim0506.github.io/Checkout-Form/](https://wailim0506.github.io/Checkout-Form/)-->
 
 Hong Kong
 [http://wailim0506.github.io/HK/](https://wailim0506.github.io/HK/)
