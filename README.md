@@ -1,16 +1,11 @@
 # wailim0506.github.io
 
-Google Price
-[http://wailim0506.github.io/Google-Price/](https://wailim0506.github.io/Google-Price/)
 
-Checkout Form
-[http://wailim0506.github.io/Checkout-Form/](https://wailim0506.github.io/Checkout-Form/)
+<!--Checkout Form-->
+<!--[http://wailim0506.github.io/Checkout-Form/](https://wailim0506.github.io/Checkout-Form/)-->
 
 Hong Kong
-[http://wailim0506.github.io/Intro-HK/](https://wailim0506.github.io/Intro-HK/)
-
-Timer
-https://wailim0506.github.io/Timer/
+[http://wailim0506.github.io/HK/](https://wailim0506.github.io/HK/)
 
 GitHub Login Page
 [http://wailim0506.github.io/GitHub-Login-Page/](https://wailim0506.github.io/GitHub-Login-Page/)
