@@ -2,7 +2,7 @@ Gallery
 Song/ Anthem (https://www.mancity.com/news/club-news/club-news/2013/august/blue-moon)
 Fixture
 Result
-Table
+Table (PL+ChampionLeague(reference:Liverpool))
 Player
 History
 Time line
