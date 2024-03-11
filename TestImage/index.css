@@ -1,0 +1,41 @@
+body{
+    margin: 0px;
+    background-color: white;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    background-color: #88c4f1;
+}
+
+#menuLogo{
+    height: 65px;
+}
+
+.menu_tag{
+    margin-left: 20px;
+    
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #001838;
+    text-transform: uppercase;
+}
+
+.test{
+    display: inline-block;
+    width: 350px;
+}
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    body{
+        background-color: rgb(233, 233, 52);
+    }
+}

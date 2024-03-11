@@ -1,0 +1,703 @@
+/*---------Menu-------------*/
+body{
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu{
+    display: flex;
+    /*justify-content: flex-start;*/
+    align-items: center; /*align vertically*/
+    height: 75px;
+    background-color: #88c4f1;
+    position: sticky;
+    top: 0px;
+    z-index: 100;/*place the menu at the top level*/
+}
+
+
+.menu_div{
+    display: flex;
+    align-items: center;
+    height: 75px;
+    /*border: 1px solid black;*/
+    justify-content: center;
+    /*margin-left: 25px;*/
+    /*padding-left: 25px;*/
+    width: 100px;
+}
+
+#menu_div_home{
+    position: relative;
+    left: 10px;
+}
+#menu_div_home{
+    position: relative;
+    left: 10px;
+}
+
+.menu_div_no_flex{
+    height: 75px;
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #001838;
+    text-transform: uppercase;
+    width: 100px;
+    position: relative;
+    top: 3px;
+    right: 40px;
+}
+
+.menu_div_no_flex ul{
+    list-style: none;
+}
+
+
+
+.hidden{
+    display: none;
+    font-size: 15px;
+    height: 50px;
+    width: 150px;
+    background-color: antiquewhite;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.menu_div_no_flex ul:hover .hidden{
+    display: block;
+}
+
+.menuLogo{
+    height: 65px;
+    margin-left: 10px;
+}
+
+.menu_tag{
+    /*position: relative;
+    top: 23px;
+    margin-left: 20px;*/
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #001838;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*---------Menu-------------*/
+
+/*---------Sub Menu---------*/
+#sub_menu{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(12, 12, 12, 0.17);
+}
+
+.sub_menu_tag{
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #001838;
+    padding: 20px;
+}
+
+#sub_menu_tag_results{
+    color: rgba(12, 12, 12, 0.3);
+}
+
+#sub_menu_tag_tables{
+    color: rgba(12, 12, 12, 0.3);
+}
+
+#sub_menu_fixtures_div{
+    align-items: center;
+    display: flex;
+    height: 50px;
+    border-bottom: 2px solid #88c4f1;
+    
+}
+
+.sub_menu_div{
+    align-items: center;
+    display: flex;
+    height: 50px;
+    margin-left: 5px;
+}
+
+#sub_menu_tag_results:hover{
+    color: #001838;
+}
+
+#sub_menu_tag_tables:hover{
+    color: #001838;
+}
+
+.sub_menu_div:hover{
+    border-bottom: 2px solid #88c4f1;
+}
+/*---------Sub Menu---------*/
+
+/*---------Fixtures---------*/
+.fixture{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    margin-right: 10%;   /* or 150px*/
+    margin-left: 10%;    /* or 150px*/
+        
+}
+
+
+.fixture_month_heading{
+    font-size: 41px;
+    font-family: KippaxCondensed, sans-serif;
+    color: #88c4f1;
+    font-weight: 700;
+}
+.fixture_box{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 200px;  
+    /*   
+    /* */   
+    border-top: 1px solid rgba(12, 12, 12, 0.17);
+    position: relative;
+    bottom: 35px;
+}
+
+.fixture_box_upper_part{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 35%;
+    
+}
+
+.fixture_box_lower_part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 65%;
+}
+
+.fixture_box_upper_part_left{
+    width: 95%;
+}
+
+.fixture_box_match_name{
+    text-transform: uppercase;
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.fixture_box_date_venue{
+    text-transform: uppercase;
+    font-family: KippaxCondensed, sans-serif;
+    color: rgba(12, 12, 12, 0.7);
+    position: relative;
+    bottom: 20px;
+    font-size: 14px;
+}
+
+.stadium_link{
+    color: rgba(12, 12, 12, 0.7);
+}
+
+.fixture_box_match_logo{
+    width: 60px;
+    position: relative;
+    top: 5px;
+}
+
+.fixture_box_right_team_name{
+    font-size: 26px;
+    color: #0c0c0c;
+    font-weight: 500;
+}
+
+.fixture_box_left_team_name{
+    font-size: 26px;
+    color: #0c0c0c;
+    font-weight: 500;
+}
+
+.fixture_box_lower_part_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 44%;
+    
+}
+
+.fixture_box_lower_part_right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 44%;
+    
+}
+
+.fixture_box_left_team_logo{
+    height: 70px;
+}
+
+.fixture_box_right_team_logo{
+    height: 70px;
+}
+
+.fixture_box_lower_part_middle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+}
+
+.fixture_box_time{
+    font-size: 26px;
+}
+
+.fixture_box_time_box{
+    display: flex;
+    align-items: center;
+    background-color: #dde6ed;
+    width: 70px;
+    height: 50px;
+}
+
+#fixture_april{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 400px;  
+       
+        
+    margin-bottom: 100px;
+}
+
+#fixture_may{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    /*height: 400px;  */
+       
+        
+}
+
+.notes{
+    color: rgba(12, 12, 12, 0.7);
+    font-size: 14px;
+    
+    /*position: relative;
+    bottom: 35px;*/
+}
+
+
+/*---------Fixtures---------*/
+
+
+
+
+
+
+
+@media only screen and (max-width: 940px){
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+/*---------Fixtures---------*/
+.fixture_month_heading{
+    font-size: 25px;
+    font-family: KippaxCondensed, sans-serif;
+    color: #88c4f1;
+    font-weight: 700;
+}
+
+
+.fixture_box{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 150px;  
+    /*   
+    /* */   
+    border-top: 1px solid rgba(12, 12, 12, 0.17);
+    position: relative;
+    bottom: 30px;
+}
+
+.fixture_box_upper_part{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 35%;
+    
+}
+
+.fixture_box_lower_part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 65%;
+}
+
+.fixture_box_upper_part_left{
+    width: 95%;
+}
+
+.fixture_box_match_name{
+    text-transform: uppercase;
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.fixture_box_date_venue{
+    text-transform: uppercase;
+    font-family: KippaxCondensed, sans-serif;
+    color: rgba(12, 12, 12, 0.7);
+    position: relative;
+    bottom: 17px;
+    font-size: 12px;
+}
+
+.stadium_link{
+    color: rgba(12, 12, 12, 0.7);
+}
+
+.fixture_box_match_logo{
+    width: 30px;
+    position: relative;
+    top: 10px;
+}
+
+.fixture_box_right_team_name{
+    font-size: 14px;
+    color: #0c0c0c;
+}
+
+.fixture_box_left_team_name{
+    font-size: 14px;
+    color: #0c0c0c;
+}
+
+.fixture_box_lower_part_left{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 48%;
+    
+}
+
+.fixture_box_lower_part_right{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 48%;
+    
+    
+}
+
+.fixture_box_left_team_logo{
+    height: 40px;
+}
+
+.fixture_box_right_team_logo{
+    height: 40px;
+}
+
+.fixture_box_lower_part_middle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.fixture_box_time{
+    font-size: 14px;
+}
+
+.fixture_box_time_box{
+    display: flex;
+    align-items: center;
+    background-color: #dde6ed;
+    width: 38px;
+    height: 35px;
+}
+
+#fixture_april{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 400px;  
+       
+        
+    margin-bottom: 0px;
+}
+
+#fixture_may{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    /*height: 400px;  */
+       
+        
+}
+
+.notes{
+    color: rgba(12, 12, 12, 0.7);
+    font-size: 12px;
+    
+    /*position: relative;
+    bottom: 35px;*/
+}
+
+
+/*---------Fixtures---------*/
+
+
+
+}
+
+
+@media only screen and (max-width: 480px){
+    body{
+        background-color:rgb(255, 255, 255);
+    }
+
+/*---------Sub Menu---------*/
+#sub_menu{
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-bottom: 1px solid rgba(12, 12, 12, 0.17);
+}
+
+.sub_menu_tag{
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #001838;
+    padding: 20px;
+}
+
+#sub_menu_tag_results{
+    color: rgba(12, 12, 12, 0.3);
+}
+
+#sub_menu_tag_tables{
+    color: rgba(12, 12, 12, 0.3);
+}
+
+#sub_menu_fixtures_div{
+    align-items: center;
+    display: flex;
+    height: 40px;
+    border-bottom: 2px solid #88c4f1;
+    
+}
+
+.sub_menu_div{
+    align-items: center;
+    display: flex;
+    height: 40px;
+    margin-left: 5px;
+}
+
+#sub_menu_tag_results:hover{
+    color: #001838;
+}
+
+#sub_menu_tag_tables:hover{
+    color: #001838;
+}
+
+.sub_menu_div:hover{
+    border-bottom: 2px solid #88c4f1;
+}
+/*---------Sub Menu---------*/    
+
+
+/*---------Fixtures---------*/
+
+.fixture_month_heading{
+
+    font-size: 17px;
+    font-family: KippaxCondensed, sans-serif;
+    color: #88c4f1;
+    font-weight: 700;
+}
+.fixture_box{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 150px;  
+    /*   
+    /* */   
+    border-top: 1px solid rgba(12, 12, 12, 0.17);
+    position: relative;
+    bottom: 20px;
+}
+
+.fixture_box_upper_part{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 35%;
+    
+}
+
+.fixture_box_lower_part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 65%;
+}
+
+.fixture_box_upper_part_left{
+    width: 95%;
+}
+
+.fixture_box_match_name{
+    text-transform: uppercase;
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.fixture_box_date_venue{
+    text-transform: uppercase;
+    font-family: KippaxCondensed, sans-serif;
+    color: rgba(12, 12, 12, 0.7);
+    position: relative;
+    bottom: 12px;
+    font-size: 10px;
+}
+
+.stadium_link{
+    color: rgba(12, 12, 12, 0.7);
+}
+
+.fixture_box_match_logo{
+    width: 32px;
+    position: relative;
+    top: 10px;
+}
+
+.fixture_box_right_team_name{
+    font-size: 12px;
+    color: #0c0c0c;
+    text-align: center;
+}
+
+.fixture_box_left_team_name{
+    font-size: 12px;
+    color: #0c0c0c;
+    text-align: center;
+}
+
+.fixture_box_lower_part_left{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    
+}
+
+.fixture_box_lower_part_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    
+    
+}
+
+.fixture_box_left_team_logo{
+    height: 40px;
+}
+
+.fixture_box_right_team_logo{
+    height: 40px;
+}
+
+.fixture_box_lower_part_middle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.fixture_box_time{
+    font-size: 12px;
+}
+
+.fixture_box_time_box{
+    display: flex;
+    align-items: center;
+    background-color: #dde6ed;
+    width: 32px;
+    height: 21px;
+}
+
+#fixture_april{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 400px;  
+       
+        
+    margin-bottom: 0px;
+}
+
+#fixture_may{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    /*height: 400px;  */
+       
+        
+}
+
+.notes{
+    color: rgba(12, 12, 12, 0.7);
+    font-size: 8px;
+    
+    /*position: relative;
+    bottom: 35px;*/
+}
+
+
+/*---------Fixtures---------*/
+
+}
