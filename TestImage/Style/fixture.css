@@ -151,8 +151,8 @@ a{
     display: flex; 
     flex-direction: column; 
     justify-content: space-between;
-    margin-right: 10%;   /* or 150px*/
-    margin-left: 10%;    /* or 150px*/
+    margin-right: 10%;   
+    margin-left: 10%;    
         
 }
 
@@ -298,9 +298,11 @@ a{
     display: flex;
     flex-direction: column;
     width: auto;
-    /*height: 400px;  */
-       
-        
+    /*height: 400px;  */        
+}
+
+.fixture_box:hover{
+    transform:scale(1.005);
 }
 
 .notes{
@@ -315,8 +317,69 @@ a{
 /*---------Fixtures---------*/
 
 
+/*---------Footer---------*/
+
+.footer{
+    height: 320px;
+    background-color: #001838;
+}
+
+.footer_logo_first_half{
+    background-color: white;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer_club_logo{
+    height: 180px;
+}
+
+.footer_logo_second_half{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    font-family: KippaxCondensed, sans-serif;
+    font-style: italic;
+}
+
+.footer_social_media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height:109px;
+}
 
 
+.footer_social_media_img{
+    height: 60px;
+    position: relative;
+    bottom: 15px;
+}
+
+.author{
+    font-size: 12px;
+    color: rgba(94, 92, 92, 0.7);
+}
+
+.footer_social_media_img:hover{
+    transform:scale(1.15);
+}
+
+.footer_club_logo:hover{
+    transform: scale(1.02);
+}
+
+
+/*---------Footer---------*/
 
 
 
@@ -330,7 +393,6 @@ a{
     font-family: KippaxCondensed, sans-serif;
     color: #88c4f1;
     font-weight: 700;
-    
 }
 
 
@@ -339,53 +401,22 @@ a{
     flex-direction: column;
     width: auto;
     height: 150px;  
-    /*   
-    /* */   
     border-top: 1px solid rgba(12, 12, 12, 0.17);
     position: relative;
     bottom: 25px;
 }
 
-.fixture_box_upper_part{
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    height: 35%;
-    
-}
-
-.fixture_box_lower_part{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    height: 65%;
-}
-
-.fixture_box_upper_part_left{
-    width: 95%;
-}
 
 .fixture_box_match_name{
-    text-transform: uppercase;
-    font-family: KippaxCondensed, sans-serif;
-    font-weight: 700;
     font-size: 12px;
 }
 
 .fixture_box_date_venue{
-    text-transform: uppercase;
-    font-family: KippaxCondensed, sans-serif;
-    color: rgba(12, 12, 12, 0.7);
     position: relative;
     bottom: 15px;
     font-size: 12px;
 }
 
-.stadium_link{
-    color: rgba(12, 12, 12, 0.7);
-}
 
 .fixture_box_match_logo{
     width: 30px;
@@ -395,12 +426,10 @@ a{
 
 .fixture_box_right_team_name{
     font-size: 14px;
-    color: #0c0c0c;
 }
 
 .fixture_box_left_team_name{
     font-size: 14px;
-    color: #0c0c0c;
 }
 
 .fixture_box_lower_part_left{
@@ -418,8 +447,6 @@ a{
     justify-content: space-between;
     align-items: center;
     width: 48%;
-    
-    
 }
 
 .fixture_box_left_team_logo{
@@ -431,12 +458,8 @@ a{
 }
 
 .fixture_box_lower_part_middle{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     margin-left: 10px;
     margin-right: 10px;
-
 }
 
 .fixture_box_time{
@@ -444,45 +467,51 @@ a{
 }
 
 .fixture_box_time_box{
-    display: flex;
-    align-items: center;
-    background-color: #dde6ed;
-    width: 100%;
-    /*width: 70px;*/
-    height: 35px;
+    height: 28px;
 }
 
-#fixture_april{
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: 400px;  
-       
-        
+#fixture_april{   
     margin-bottom: 0px;
 }
 
-#fixture_may{
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    /*height: 400px;  */
-       
-        
-}
 
 .notes{
-    color: rgba(12, 12, 12, 0.7);
     font-size: 12px;
-    
-    /*position: relative;
-    bottom: 35px;*/
 }
 
 
 /*---------Fixtures---------*/
+/*---------Footer---------*/
+
+.footer{
+    height: 214px;
+}
+
+.footer_logo_first_half{
+    height: 52.5px;
+}
+.footer_club_logo{
+    height: 105px;
+}
+
+.footer_logo_second_half{
+    height: 52.5px;
+    font-size: 22px;
+}
+
+.footer_social_media{
+    font-size: 15px;
+    height:78px;
+}
 
 
+.footer_social_media_img{
+    height: 40px;
+    position: relative;
+    bottom:5px;
+}
+
+/*---------Footer---------*/
 
 }
 
