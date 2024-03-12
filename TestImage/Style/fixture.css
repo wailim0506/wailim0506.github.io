@@ -226,12 +226,14 @@ a{
     font-size: 26px;
     color: #0c0c0c;
     font-weight: 500;
+    font-family: KippaxCondensed, sans-serif;
 }
 
 .fixture_box_left_team_name{
     font-size: 26px;
     color: #0c0c0c;
     font-weight: 500;
+    font-family: KippaxCondensed, sans-serif;
 }
 
 .fixture_box_lower_part_left{
@@ -264,20 +266,22 @@ a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    
-    
+    width: auto;
+    height: auto;    
 }
 
 .fixture_box_time{
     font-size: 26px;
+    font-family: KippaxCondensed, sans-serif;
 }
 
 .fixture_box_time_box{
     display: flex;
     align-items: center;
     background-color: #dde6ed;
-    width: 70px;
     height: 50px;
+    width: 100%;
+    /*width: 70px;*/
 }
 
 #fixture_april{
@@ -316,7 +320,11 @@ a{
 
 
 
-@media only screen and (max-width: 940px){
+<<<<<<< HEAD
+@media only screen and (max-width: 989px){
+=======
+@media only screen and (max-width: 1300px){
+>>>>>>> e3e21ca6a01a9206301c2bf8993e3b969d261039
     body{
         background-color: rgb(255, 255, 255);
     }
@@ -326,6 +334,7 @@ a{
     font-family: KippaxCondensed, sans-serif;
     color: #88c4f1;
     font-weight: 700;
+    
 }
 
 
@@ -338,7 +347,7 @@ a{
     /* */   
     border-top: 1px solid rgba(12, 12, 12, 0.17);
     position: relative;
-    bottom: 30px;
+    bottom: 25px;
 }
 
 .fixture_box_upper_part{
@@ -374,7 +383,7 @@ a{
     font-family: KippaxCondensed, sans-serif;
     color: rgba(12, 12, 12, 0.7);
     position: relative;
-    bottom: 17px;
+    bottom: 15px;
     font-size: 12px;
 }
 
@@ -442,7 +451,8 @@ a{
     display: flex;
     align-items: center;
     background-color: #dde6ed;
-    width: 38px;
+    width: 100%;
+    /*width: 70px;*/
     height: 35px;
 }
 
@@ -481,7 +491,7 @@ a{
 }
 
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 447px){
     body{
         background-color:rgb(255, 255, 255);
     }
@@ -666,7 +676,7 @@ a{
     display: flex;
     align-items: center;
     background-color: #dde6ed;
-    width: 32px;
+    width: 100%;
     height: 21px;
 }
 
