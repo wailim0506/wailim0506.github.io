@@ -320,11 +320,7 @@ a{
 
 
 
-<<<<<<< HEAD
 @media only screen and (max-width: 989px){
-=======
-@media only screen and (max-width: 1300px){
->>>>>>> e3e21ca6a01a9206301c2bf8993e3b969d261039
     body{
         background-color: rgb(255, 255, 255);
     }
