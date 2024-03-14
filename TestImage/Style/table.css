@@ -1,0 +1,482 @@
+body{
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+/*---------Menu-------------*/
+.menu{
+    display: flex;
+    /*justify-content: flex-start;*/
+    align-items: center; /*align vertically*/
+    height: 75px;
+    background-color: #88c4f1;
+    position: sticky;
+    top: 0px;
+    z-index: 100;/*place the menu at the top level*/
+}
+
+
+.menu_div{
+    display: flex;
+    align-items: center;
+    height: 75px;
+    /*border: 1px solid black;*/
+    justify-content: center;
+    /*margin-left: 25px;*/
+    /*padding-left: 25px;*/
+    width: 100px;
+}
+
+#menu_div_home{
+    position: relative;
+    left: 10px;
+}
+#menu_div_home{
+    position: relative;
+    left: 10px;
+}
+
+.menu_div_no_flex{
+    height: 75px;
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #001838;
+    text-transform: uppercase;
+    width: 100px;
+    position: relative;
+    top: 3px;
+    right: 40px;
+}
+
+.menu_div_no_flex ul{
+    list-style: none;
+}
+
+
+
+.hidden{
+    display: none;
+    font-size: 15px;
+    height: 50px;
+    width: 150px;
+    background-color: antiquewhite;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.menu_div_no_flex ul:hover .hidden{
+    display: block;
+}
+
+.menuLogo{
+    height: 65px;
+    margin-left: 10px;
+}
+
+.menu_tag{
+    /*position: relative;
+    top: 23px;
+    margin-left: 20px;*/
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #001838;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*---------Menu-------------*/
+
+/*---------Sub Menu---------*/
+#sub_menu{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(12, 12, 12, 0.17);
+}
+
+.sub_menu_tag{
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #001838;
+    padding: 20px;
+}
+
+#sub_menu_tag_results{ /*unselected*/
+    color: rgba(12, 12, 12, 0.3);
+}
+
+#sub_menu_tag_fixtures{ /*unselected*/
+    color: rgba(12, 12, 12, 0.3);
+}
+
+#sub_menu_selected_div{
+    align-items: center;
+    display: flex;
+    height: 50px;
+    border-bottom: 2px solid #88c4f1;
+}
+
+.sub_menu_div{
+    align-items: center;
+    display: flex;
+    height: 50px;
+    margin-left: 5px;
+}
+
+#sub_menu_tag_results:hover{ /*unselected*/
+    color: #001838;
+}
+
+#sub_menu_tag_fixtures:hover{ /*unselected*/
+    color: #001838;
+}
+
+.sub_menu_div:hover{
+    border-bottom: 2px solid #88c4f1;
+}
+/*---------Sub Menu---------*/
+
+/*---------Table---------*/
+.table{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    width: 6.875%;
+    height: 55px;
+    text-align: center;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.positionColumn{
+    width: 10%;
+}
+
+.clubColumn{
+    width: 30%;
+    text-align: left;
+}
+
+.logoColumn{
+    width: 6%;
+}
+
+td{
+    height: 55px;
+    text-align: center;
+}
+
+.td_name{
+    text-align: left;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: KippaxCondensed, sans-serif;
+    padding-left: 5px;
+}
+
+.td_stat{
+    color: rgba(12, 12, 12, 0.7);
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.pts{
+    font-weight: bold;
+    color: black
+}
+
+.column_logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.table_position_number{
+    font-size: 18px;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.table_club_logo{
+    height: 35px;
+}
+
+tr{
+    border-bottom: 1px solid #dde6ed;
+}
+
+.man_city_row{
+    background-color: rgba(114, 233, 255, .15);
+}
+
+.row_black_bottom{
+    border-bottom: 1px solid #001838;
+}
+
+.row_top_bottom{
+    border-bottom: 1px solid black;
+}
+
+.notes{
+    color: rgba(12, 12, 12, 0.17);
+    font-size: 14px;
+    position: relative;
+    bottom: 3px;
+}
+
+tr:hover{
+    transform: scale(1.005);
+}
+
+
+/*---------Table---------*/
+
+/*---------Footer---------*/
+
+.footer{
+    margin-top: 5px;
+    height: 320px;
+    background-color: #001838;
+}
+
+.footer_logo_first_half{
+    background-color: white;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer_club_logo{
+    height: 180px;
+}
+
+.footer_logo_second_half{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    font-family: KippaxCondensed, sans-serif;
+    font-style: italic;
+}
+
+.dummy_space{
+    width: 260px;
+}
+
+.footer_tag_right{
+    width: 180px;
+}
+
+.footer_tag_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 180px;
+}
+
+.footer_social_media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height:109px;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+
+.footer_social_media_img{
+    height: 60px;
+    position: relative;
+    bottom: 15px;
+}
+
+.author{
+    font-size: 12px;
+    color: rgba(94, 92, 92, 0.7);
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.footer_social_media_img:hover{
+    transform:scale(1.15);
+}
+
+.footer_club_logo:hover{
+    transform: scale(1.02);
+}
+
+/*---------Footer---------*/
+
+
+
+@media only screen and (max-width: 810px){
+    .table_position_number{
+        font-size: 15px;
+    }
+
+    .table_club_logo{
+        height: 32px;
+    }
+
+    th{
+        font-size: 15px;
+    }
+
+    .td_name{
+        font-size: 15px;
+    }
+
+    .td_stat{
+        font-size: 14px;
+    }
+
+    .notes{
+        font-size: 11px;
+    }
+
+    /*---------Footer---------*/
+
+    .footer{
+        height: 214px;
+    }
+
+    .footer_logo_first_half{
+        height: 57.5px;
+    }
+    .footer_club_logo{
+        height: 115px;
+    }
+
+    .dummy_space{
+        width: 190px;
+    }
+
+    .footer_logo_second_half{
+        height: 57.5px;
+        font-size: 22px;
+    }
+
+    .footer_social_media{
+        font-size: 15px;
+        height: 70.5px;
+    }
+
+
+    .footer_social_media_img{
+        height: 40px;
+        position: relative;
+        bottom:5px;
+    }
+
+    /*---------Footer---------*/
+}
+
+
+@media only screen and (max-width: 631px){
+    .table_position_number{
+        font-size: 12px;
+    }
+
+    .table_club_logo{
+        height: 30px;
+    }
+
+    th{
+        font-size: 12px;
+    }
+
+    .td_name{
+        font-size: 12px;
+    }
+
+    .td_stat{
+        font-size: 12px;
+    }
+
+    .notes{
+        font-size: 10px;
+    }
+
+    /*---------Footer---------*/
+}
+
+@media only screen and (max-width: 447px){
+    
+
+    /*---------Sub Menu---------*/
+    #sub_menu{
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        border-bottom: 1px solid rgba(12, 12, 12, 0.17);
+    }
+
+    .sub_menu_tag{
+        font-family: KippaxCondensed, sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        color: #001838;
+        padding: 20px;
+    }
+
+    #sub_menu_tag_results{
+        color: rgba(12, 12, 12, 0.3);
+    }
+
+    #sub_menu_tag_tables{
+        color: rgba(12, 12, 12, 0.3);
+    }
+
+    #sub_menu_selected_div{
+        align-items: center;
+        display: flex;
+        height: 40px;
+        border-bottom: 2px solid #88c4f1;
+
+    }
+
+    .sub_menu_div{
+        align-items: center;
+        display: flex;
+        height: 40px;
+        margin-left: 5px;
+    }
+
+    #sub_menu_tag_results:hover{
+        color: #001838;
+    }
+
+    #sub_menu_tag_tables:hover{
+        color: #001838;
+    }
+
+    .sub_menu_div:hover{
+        border-bottom: 2px solid #88c4f1;
+    }
+    /*---------Sub Menu---------*/    
+
+}

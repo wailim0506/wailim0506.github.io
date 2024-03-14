@@ -2,8 +2,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Manchester City - Fixtures</title>
-        <link rel="stylesheet" href="../Style/fixture.css" />
+        <title>Manchester City - Results</title>
+        <link rel="stylesheet" href="../Style/result.css" />
     </head>
     <body>
         <!---------------------menu--------------------->
@@ -35,11 +35,11 @@
 
         <!---------------------sub menu--------------------->
         <div id="sub_menu">
-            <div id="sub_menu_selected_div"><a class="sub_menu_tag" id="sub_menu_tag_fixtures" href="">Fixtures</a></div>
-            <div class="sub_menu_div"><a class="sub_menu_tag" id="sub_menu_tag_results" href="">Results</a></div>
-            <div class="sub_menu_div"><a class="sub_menu_tag" id="sub_menu_tag_tables" href="table.html">Tables</a></div>
+            <div class="sub_menu_div"><a class="sub_menu_tag" id="sub_menu_tag_fixtures" href="fixture.html">Fixtures</a></div>
+            <div id="sub_menu_selected_div"><a class="sub_menu_tag" id="sub_menu_tag_results" href="">Results</a></div>
+            <div class="sub_menu_div"><a class="sub_menu_tag" id="sub_menu_tag_tables" href="">Tables</a></div>
         </div>
-        
+
         <!---------------------sub menu--------------------->
 
         <!---------------------fixture--------------------->
@@ -60,15 +60,16 @@
                     </div>
                     <div class="fixture_box_middle_part">
                         <div class="fixture_box_middle_part_home">
-                            <div class="fixture_box_team_name_box">
-                                <p class="fixture_team_name">Tottenham Hotspur</p>
-                            </div>
-                            <div class="fixture_box_team_logo_box">
-                                <img class="fixture_team_logo" src="../Image/Logo/Club/PremierLeague/spursLogo.png">
-                            </div>
+                                <div class="fixture_box_team_name_box">
+                                    <p class="fixture_team_name">Tottenham Hotspur</p>
+                                    <p class="hidden_score" >2</p>
+                                </div>
+                                <div class="fixture_box_team_logo_box">
+                                    <img class="fixture_team_logo" src="../Image/Logo/Club/PremierLeague/spursLogo.png">
+                                </div>
                         </div>
-                        <div class="fixture_vs">
-                            <p class="vs">VS</p>
+                        <div class="fixture_score">
+                            <p class="score">1-2</p>
                         </div>
                         <div class="fixture_box_middle_part_away">
                             <div class="fixture_box_team_logo_box">
@@ -76,6 +77,7 @@
                             </div>
                             <div class="fixture_box_team_name_box">
                                 <p class="fixture_team_name">Manchester City</p>
+                                <p class="hidden_score" >2</p>
                             </div>
                         </div>
                     </div>

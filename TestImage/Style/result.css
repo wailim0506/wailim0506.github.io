@@ -1,9 +1,9 @@
+/*---------Menu-------------*/
 body{
     margin: 0px;
     background-color: rgb(255, 255, 255);
 }
 
-/*---------Menu-------------*/
 .menu{
     display: flex;
     /*justify-content: flex-start;*/
@@ -110,11 +110,11 @@ a{
     padding: 20px;
 }
 
-#sub_menu_tag_results{
+#sub_menu_tag_tables{ /*unselected*/
     color: rgba(12, 12, 12, 0.3);
 }
 
-#sub_menu_tag_tables{
+#sub_menu_tag_fixtures{ /*unselected*/
     color: rgba(12, 12, 12, 0.3);
 }
 
@@ -123,7 +123,6 @@ a{
     display: flex;
     height: 50px;
     border-bottom: 2px solid #88c4f1;
-    
 }
 
 .sub_menu_div{
@@ -133,11 +132,11 @@ a{
     margin-left: 5px;
 }
 
-#sub_menu_tag_results:hover{
+#sub_menu_tag_tables:hover{ /*unselected*/
     color: #001838;
 }
 
-#sub_menu_tag_tables:hover{
+#sub_menu_tag_fixtures:hover{ /*unselected*/
     color: #001838;
 }
 
@@ -240,7 +239,7 @@ a{
     height: 57%; 
 }
 
-.fixture_vs{
+.fixture_score{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -248,8 +247,8 @@ a{
     width: 10%;
 }
 
-.vs{
-    font-size: 22px;
+.score{
+    font-size: 40px;
     font-family: KippaxCondensed, sans-serif;
     font-weight: bold;
     color: #001838;
@@ -276,6 +275,16 @@ a{
     font-weight: 700;
     font-family: KippaxCondensed, sans-serif;
     color: #001838;
+}
+
+.hidden_score{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: KippaxCondensed, sans-serif;
+    color: #001838;
+    display: inline-block;
+    margin-right: 15px;
+    display: none;
 }
 
 .fixture_team_logo{
@@ -406,7 +415,7 @@ a{
 
 
 
-@media only screen and (max-width: 1060px){
+@media only screen and (max-width: 1065px){
 
 .fixture_team_name{
     font-size: 17px;
@@ -420,8 +429,8 @@ a{
     color: #001838;
 }
 
-.vs{
-    font-size: 14px;
+.score{
+    font-size: 21px;
 }
 
 
@@ -462,7 +471,7 @@ a{
 /*---------Footer---------*/
 }
 
-@media only screen and (max-width: 865px){
+@media only screen and (max-width: 867px){
     .fixture_team_name{
         font-size: 15px;
     }
@@ -471,8 +480,8 @@ a{
         font-size: 15px;
     }
 
-    .vs{
-        font-size: 11px;
+    .score{
+        font-size: 21px;
     }
 }
 
@@ -521,7 +530,7 @@ a{
         width: 100%; 
     }
 
-    .fixture_vs{
+    .fixture_score{
         display: none;
     }
 
@@ -533,6 +542,9 @@ a{
 
     .fixture_box_team_name_box{
         width: 85% ;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     .fixture_box_team_logo_box{
         display: flex;
@@ -541,12 +553,22 @@ a{
         width: 20% ;
     }
 
+    .fixture_competition_logo{
+        height: 50px;
+        position: relative;
+        top: 3px;
+    }
+
     .fixture_team_name{
         font-size: 20px;
     }
 
     .fixture_match_centre{
         font-size: 20px;
+    }
+
+    .hidden_score{
+        display: inline-block;
     }
 }
 
