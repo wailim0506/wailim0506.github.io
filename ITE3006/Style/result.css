@@ -145,7 +145,7 @@ a{
 }
 /*---------Sub Menu---------*/
 
-/*---------Fixtures---------*/
+/*---------Results---------*/
 .result{
     display: flex; 
     flex-direction: column; 
@@ -315,7 +315,7 @@ a{
     justify-content: center;
     align-items: center;
 }
-
+ 
 .result_highlight{
     font-size: 22px;
     width: 50%;
@@ -332,22 +332,12 @@ a{
 .result_box:hover{
     transform: scale(1.01);
 }
-
-
-
-.notes{
-    color: rgba(12, 12, 12, 0.7);
-    font-size: 14px;
-    font-family: KippaxCondensed, sans-serif;
     
-    /*position: relative;
-    bottom: 35px;*/
-}    
 
 
 
 
-/*---------Fixtures---------*/
+/*---------Results---------*/
 
 
 /*---------Footer---------*/
