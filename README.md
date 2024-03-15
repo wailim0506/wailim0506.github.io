@@ -17,4 +17,4 @@ To Do List
 [http://wailim0506.github.io/ToDoList/](https://wailim0506.github.io/ToDoList/)--->
 
 TestImage
-[http://wailim0506.github.io/TestImage](https://wailim0506.github.io/TestImage)
+[http://wailim0506.github.io/ITE3006](https://wailim0506.github.io/ITE3006)
