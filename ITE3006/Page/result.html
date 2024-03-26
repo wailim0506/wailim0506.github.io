@@ -4,32 +4,81 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Manchester City - Results</title>
         <link rel="stylesheet" href="../Style/result.css" />
+        <script type="text/javascript" src="../Script/result.js"></script>
     </head>
-    <body>
+    <body id="body">
         <!---------------------menu--------------------->
         <div class="menu">
-            <img class="menuLogo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
-            <div class="menu_div" id="menu_div_home"><a class="menu_tag">Home</a></div>
-            <div class="menu_div_no_flex">
-                <ul>
-                    <li>Fixtures</li>
-                    <li class="hidden">Fixtures</li>
-                    <li class="hidden">Results</li>
-                    <li class="hidden">Tables</li>
+            <img class="menu_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+            <div class="menu_tag"><span class="word"><a href="../index.html">Home</a></span></div>
+            <div class="menu_tag menu_tag_sub">
+                <span class="word">Fixtures</span>
+                <ul class="menu_list">
+                    <li class="hidden word"><a href="fixture.html">Fixtures</a></li>
+                    <li class="hidden word"><a href="result.html">Results</a></li>
+                    <li class="hidden word"><a href="table.html">Tables</a></li>
                 </ul>
             </div>
-            <div class="menu_div" id="menu_div_players"><a class="menu_tag">Players</a></div>
-            <div class="menu_div" id="menu_div_gallery"><a class="menu_tag">Gallery</a></div>
-            <div class="menu_div_no_flex">
-                <ul>
-                    <li>More</li>
-                    <li class="hidden">Stadium</li>
-                    <li class="hidden">Hall of Frame</li>
-                    <li class="hidden">Song</li>
-                    <li class="hidden">Sponsor</li>
-                    <li class="hidden">History</li>
+            <div class="menu_tag"><span class="word"><a href="player.html">Players</a></span></div>
+            <div class="menu_tag"><span class="word"><a href="gallery.html">Gallery</a></span></div>
+            <div class="menu_tag menu_tag_sub">
+                <span class="word">More</span>
+                <ul class="menu_list">
+                    <li class="hidden word"><a href="stadium.html">Stadium</a></li>
+                    <li class="hidden word"><a href="hallOfFrame.html">Hall of Frame</a></li>
+                    <li class="hidden word"><a href="song.html">Song</a></li>
+                    <li class="hidden word"><a href="sponsor.html">Sponsor</a></li>
+                    <li class="hidden word"><a href="history.html">History</a></li>
+                    <li class="hidden word"><a href="aboutUs.html">About Us</a></li>
                 </ul>
-            </div> 
+            </div>
+            <img src="../Image/menu.png" class="hidden_menu_icon" onclick="show()">
+        </div>
+        <div class="hidden_menu" id="hidden_menu">
+            <div class="hidden_menu_body">
+                <div class="hidden_menu_body_top">
+                    <img class="hidden_menu_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                    <img class="hidden_menu_x_icon" src="../Image/close.png" onclick="hide()">
+                </div>
+                <div class="hidden_menu_body_main">
+                    <div class="hidden_menu_tag">
+                        <a href="../index.html">Home</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="fixture.html">Fixtures</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="result.html">Results</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="table.html">Tables</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="player.html">Players</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="gallery.html">Gallery</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="stadium.html">Stadium</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="hallOfFrame.html">Hall of Frame</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="song.html">Song</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="sponsor.html">Sponsor</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="history.html">History</a>
+                    </div>
+                    <div class="hidden_menu_tag hidden_menu_tag_last">
+                        <a href="aboutUs.html">About Us</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <!---------------------menu--------------------->
 
@@ -1184,6 +1233,652 @@
             </div>
             <div class="result_month">
                 <p class="result_month_heading">October 2023</p>
+                <div class="result_box">
+                    <div class="result_box_upper_part">
+                        <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
+                        </div>
+                        <div class="result_box_upper_part_middle">
+                            <p class="result_competition_name">Premier League</p>
+                            <span class="result_competition_venue_date_time"><a href="https://maps.app.goo.gl/CjSn7tDGNJ9diG9f7" target="_blank" class="stadium">Old Trafford</a> • Sun 29 Oct 2023</span>
+                        </div>
+                        <div class="result_box_upper_part_left_right" >
+                            <img class="result_competition_logo" src="../Image/Logo/Competition/premierLeagueLogo.png">
+                        </div>
+                    </div>
+                    <div class="result_box_middle_part">
+                        <div class="result_box_middle_part_home">
+                                <div class="result_box_team_name_box">
+                                    <p class="result_team_name">Manchester United</p>
+                                    <p class="hidden_score">0</p>
+                                </div>
+                                <div class="result_box_team_logo_box">
+                                    <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/manUnitedLogo.png">
+                                </div>
+                        </div>
+                        <div class="result_score">
+                            <p class="score">0-3</p>
+                        </div>
+                        <div class="result_box_middle_part_away">
+                            <div class="result_box_team_logo_box">
+                                <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                            </div>
+                            <div class="result_box_team_name_box">
+                                <p class="result_team_name">Manchester City</p>
+                                <p class="hidden_score">3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result_box_lower_part">
+                        <a href="https://www.premierleague.com/match/93418" class="result_match_centre" target="_blank">Match Report</a>
+                        <a href="https://youtu.be/U8PPkFS0Cbg?si=WIgpnUGQGIa714Xx" class="result_highlight" target="_blank">Watch Highlights</a>
+                    </div>
+                </div>
+                <div class="result_box">
+                    <div class="result_box_upper_part">
+                        <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
+                        </div>
+                        <div class="result_box_upper_part_middle">
+                            <p class="result_competition_name">UEFA Champions League</p>
+                            <span class="result_competition_venue_date_time"><a href="https://maps.app.goo.gl/74ngaWEHCkjGEKzi7" target="_blank" class="stadium">Wankdorf Stadium</a> • Wed 25 Oct 2023</span>
+                        </div>
+                        <div class="result_box_upper_part_left_right" >
+                            <img class="result_competition_logo" src="../Image/Logo/Competition/championLeagueLogo.png">
+                        </div>
+                    </div>
+                    <div class="result_box_middle_part">
+                        <div class="result_box_middle_part_home">
+                                <div class="result_box_team_name_box">
+                                    <p class="result_team_name">Young Boys</p>
+                                    <p class="hidden_score">1</p>
+                                </div>
+                                <div class="result_box_team_logo_box">
+                                    <img class="result_team_logo" src="../Image/Logo/Club/ChampionLeague/youngBoysLogo.png">
+                                </div>
+                        </div>
+                        <div class="result_score">
+                            <p class="score">1-3</p>
+                        </div>
+                        <div class="result_box_middle_part_away">
+                            <div class="result_box_team_logo_box">
+                                <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                            </div>
+                            <div class="result_box_team_name_box">
+                                <p class="result_team_name">Manchester City</p>
+                                <p class="hidden_score">3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result_box_lower_part">
+                        <a href="https://www.uefa.com/uefachampionsleague/match/2039128--young-boys-vs-man-city/" class="result_match_centre" target="_blank">Match Report</a>
+                        <a href="https://youtu.be/euo2G90bBBU?si=XdXJq5sMxgXlgQhz" class="result_highlight" target="_blank">Watch Highlights</a>
+                    </div>
+                </div>
+                <div class="result_box">
+                    <div class="result_box_upper_part">
+                        <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
+                        </div>
+                        <div class="result_box_upper_part_middle">
+                            <p class="result_competition_name">Premier League</p>
+                            <span class="result_competition_venue_date_time"><a href="https://maps.app.goo.gl/Bc5sipqmPjS5VJNN9" target="_blank" class="stadium">Etihad Stadium</a> • Sat 21 Oct 2023</span>
+                        </div>
+                        <div class="result_box_upper_part_left_right" >
+                            <img class="result_competition_logo" src="../Image/Logo/Competition/premierLeagueLogo.png">
+                        </div>
+                    </div>
+                    <div class="result_box_middle_part">
+                        <div class="result_box_middle_part_home">
+                                <div class="result_box_team_name_box">
+                                    <p class="result_team_name">Manchester City</p>
+                                    <p class="hidden_score">2</p>
+                                </div>
+                                <div class="result_box_team_logo_box">
+                                    <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                                </div>
+                        </div>
+                        <div class="result_score">
+                            <p class="score">2-1</p>
+                        </div>
+                        <div class="result_box_middle_part_away">
+                            <div class="result_box_team_logo_box">
+                                <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/brightonLogo.png">
+                            </div>
+                            <div class="result_box_team_name_box">
+                                <p class="result_team_name">Brighton</p>
+                                <p class="hidden_score">1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result_box_lower_part">
+                        <a href="https://www.premierleague.com/match/93406" class="result_match_centre" target="_blank">Match Report</a>
+                        <a href="https://youtu.be/Teyp-Xw3abc?si=eUv54U3act2R2QEh" class="result_highlight" target="_blank">Watch Highlights</a>
+                    </div>
+                </div>
+                <div class="result_box">
+                    <div class="result_box_upper_part">
+                        <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
+                        </div>
+                        <div class="result_box_upper_part_middle">
+                            <p class="result_competition_name">Premier League</p>
+                            <span class="result_competition_venue_date_time"><a href="https://maps.app.goo.gl/ggAsKbmCByXQKuoN8" target="_blank" class="stadium">Emirates Stadium</a> • Sun 08 Oct 2023</span>
+                        </div>
+                        <div class="result_box_upper_part_left_right" >
+                            <img class="result_competition_logo" src="../Image/Logo/Competition/premierLeagueLogo.png">
+                        </div>
+                    </div>
+                    <div class="result_box_middle_part">
+                        <div class="result_box_middle_part_home">
+                                <div class="result_box_team_name_box">
+                                    <p class="result_team_name">Arsenal</p>
+                                    <p class="hidden_score">1</p>
+                                </div>
+                                <div class="result_box_team_logo_box">
+                                    <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/arsenalLogo.png">
+                                </div>
+                        </div>
+                        <div class="result_score">
+                            <p class="score">1-0</p>
+                        </div>
+                        <div class="result_box_middle_part_away">
+                            <div class="result_box_team_logo_box">
+                                <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                            </div>
+                            <div class="result_box_team_name_box">
+                                <p class="result_team_name">Manchester City</p>
+                                <p class="hidden_score">0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result_box_lower_part">
+                        <a href="https://www.premierleague.com/match/93391" class="result_match_centre" target="_blank">Match Report</a>
+                        <a href="https://youtu.be/JvJHjVi03GQ?si=YQVY_kKTHBwH-W_A" class="result_highlight" target="_blank">Watch Highlights</a>
+                    </div>
+                </div>
+                <div class="result_box">
+                    <div class="result_box_upper_part">
+                        <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
+                        </div>
+                        <div class="result_box_upper_part_middle">
+                            <p class="result_competition_name">UEFA Champions League</p>
+                            <span class="result_competition_venue_date_time"><a href="https://maps.app.goo.gl/3FqkjWreCLUWXw6a6" target="_blank" class="stadium">Red Bull Arena</a> • Wed 04 Oct 2023</span>
+                        </div>
+                        <div class="result_box_upper_part_left_right" >
+                            <img class="result_competition_logo" src="../Image/Logo/Competition/premierLeagueLogo.png">
+                        </div>
+                    </div>
+                    <div class="result_box_middle_part">
+                        <div class="result_box_middle_part_home">
+                                <div class="result_box_team_name_box">
+                                    <p class="result_team_name">RB Leipzig</p>
+                                    <p class="hidden_score">1</p>
+                                </div>
+                                <div class="result_box_team_logo_box">
+                                    <img class="result_team_logo" src="../Image/Logo/Club/ChampionLeague/rbLeizigLogo.png">
+                                </div>
+                        </div>
+                        <div class="result_score">
+                            <p class="score">1-3</p>
+                        </div>
+                        <div class="result_box_middle_part_away">
+                            <div class="result_box_team_logo_box">
+                                <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                            </div>
+                            <div class="result_box_team_name_box">
+                                <p class="result_team_name">Manchester City</p>
+                                <p class="hidden_score">3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result_box_lower_part">
+                        <a href="https://www.uefa.com/uefachampionsleague/match/2039111--leipzig-vs-man-city/" class="result_match_centre" target="_blank">Match Report</a>
+                        <a href="https://youtu.be/O6Oa2_dA-hU?si=sVfZYngTZNofe8tQ" class="result_highlight" target="_blank">Watch Highlights</a>
+                    </div>
+                </div>
+            </div>
+            <div class="result_month">
+                <p class="result_month_heading">September 2023</p>
+                <div class="result_box">
+                    <div class="result_box_upper_part">
+                        <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
+                        </div>
+                        <div class="result_box_upper_part_middle">
+                            <p class="result_competition_name">Premier League</p>
+                            <span class="result_competition_venue_date_time"><a href="https://maps.app.goo.gl/ePDo7MUSKAKQBsw2A" target="_blank" class="stadium">Molineux Stadium</a> • Sat 30 Sep 2023</span>
+                        </div>
+                        <div class="result_box_upper_part_left_right" >
+                            <img class="result_competition_logo" src="../Image/Logo/Competition/premierLeagueLogo.png">
+                        </div>
+                    </div>
+                    <div class="result_box_middle_part">
+                        <div class="result_box_middle_part_home">
+                                <div class="result_box_team_name_box">
+                                    <p class="result_team_name">Wolves</p>
+                                    <p class="hidden_score">2</p>
+                                </div>
+                                <div class="result_box_team_logo_box">
+                                    <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/wolvesLogo.png">
+                                </div>
+                        </div>
+                        <div class="result_score">
+                            <p class="score">2-1</p>
+                        </div>
+                        <div class="result_box_middle_part_away">
+                            <div class="result_box_team_logo_box">
+                                <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                            </div>
+                            <div class="result_box_team_name_box">
+                                <p class="result_team_name">Manchester City</p>
+                                <p class="hidden_score">1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result_box_lower_part">
+                        <a href="https://www.premierleague.com/match/93390" class="result_match_centre" target="_blank">Match Report</a>
+                        <a href="https://youtu.be/ugc35l-3GNQ?si=hp1GIEDOAiSc6THU" class="result_highlight" target="_blank">Watch Highlights</a>
+                    </div>
+                </div>
+                <div class="result_box">
+                    <div class="result_box_upper_part">
+                        <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
+                        </div>
+                        <div class="result_box_upper_part_middle">
+                            <p class="result_competition_name">Carabao Cup</p>
+                            <span class="result_competition_venue_date_time"><a href="https://maps.app.goo.gl/YMmUJpRvRhwcam1d7" target="_blank" class="stadium">St. James' Park</a> • Wed 27 Sep 2023</span>
+                        </div>
+                        <div class="result_box_upper_part_left_right" >
+                            <img class="result_competition_logo" src="../Image/Logo/Competition/carabaoCupLogo.png">
+                        </div>
+                    </div>
+                    <div class="result_box_middle_part">
+                        <div class="result_box_middle_part_home">
+                                <div class="result_box_team_name_box">
+                                    <p class="result_team_name">Newcastle United</p>
+                                    <p class="hidden_score">1</p>
+                                </div>
+                                <div class="result_box_team_logo_box">
+                                    <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/newcastleLogo.png">
+                                </div>
+                        </div>
+                        <div class="result_score">
+                            <p class="score">1-0</p>
+                        </div>
+                        <div class="result_box_middle_part_away">
+                            <div class="result_box_team_logo_box">
+                                <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                            </div>
+                            <div class="result_box_team_name_box">
+                                <p class="result_team_name">Manchester City</p>
+                                <p class="hidden_score">0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result_box_lower_part">
+                        <a href="https://www.mancity.com/news/mens/newcastle-united-v-manchester-city-match-report-63831437" class="result_match_centre" target="_blank">Match Report</a>
+                        <a href="https://youtu.be/_oUqB_iIIL4?si=pTQ6-8XJolmz__LJ" class="result_highlight" target="_blank">Watch Highlights</a>
+                    </div>
+                </div>
+                <div class="result_box">
+                    <div class="result_box_upper_part">
+                        <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
+                        </div>
+                        <div class="result_box_upper_part_middle">
+                            <p class="result_competition_name">Premier League</p>
+                            <span class="result_competition_venue_date_time"><a href="https://maps.app.goo.gl/Bc5sipqmPjS5VJNN9" target="_blank" class="stadium">Etihad Stadium</a> • Sat 23 Sep 2023</span>
+                        </div>
+                        <div class="result_box_upper_part_left_right" >
+                            <img class="result_competition_logo" src="../Image/Logo/Competition/premierLeagueLogo.png">
+                        </div>
+                    </div>
+                    <div class="result_box_middle_part">
+                        <div class="result_box_middle_part_home">
+                                <div class="result_box_team_name_box">
+                                    <p class="result_team_name">Manchester City</p>
+                                    <p class="hidden_score">2</p>
+                                </div>
+                                <div class="result_box_team_logo_box">
+                                    <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                                </div>
+                        </div>
+                        <div class="result_score">
+                            <p class="score">2-0</p>
+                        </div>
+                        <div class="result_box_middle_part_away">
+                            <div class="result_box_team_logo_box">
+                                <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/NottinghamForestLogo.png">
+                            </div>
+                            <div class="result_box_team_name_box">
+                                <p class="result_team_name">Nottingham Forest</p>
+                                <p class="hidden_score">0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result_box_lower_part">
+                        <a href="https://www.premierleague.com/match/93379" class="result_match_centre" target="_blank">Match Report</a>
+                        <a href="https://youtu.be/RB_40gOh4zk?si=SaZ5Lni4ld_lK54V" class="result_highlight" target="_blank">Watch Highlights</a>
+                    </div>
+                </div>
+                <div class="result_box">
+                    <div class="result_box_upper_part">
+                        <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
+                        </div>
+                        <div class="result_box_upper_part_middle">
+                            <p class="result_competition_name">UEFA Champions League</p>
+                            <span class="result_competition_venue_date_time"><a href="https://maps.app.goo.gl/Bc5sipqmPjS5VJNN9" target="_blank" class="stadium">Etihad Stadium</a> • Tue 19 Sep 2023</span>
+                        </div>
+                        <div class="result_box_upper_part_left_right" >
+                            <img class="result_competition_logo" src="../Image/Logo/Competition/championLeagueLogo.png">
+                        </div>
+                    </div>
+                    <div class="result_box_middle_part">
+                        <div class="result_box_middle_part_home">
+                                <div class="result_box_team_name_box">
+                                    <p class="result_team_name">Manchester City</p>
+                                    <p class="hidden_score">3</p>
+                                </div>
+                                <div class="result_box_team_logo_box">
+                                    <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                                </div>
+                        </div>
+                        <div class="result_score">
+                            <p class="score">3-1</p>
+                        </div>
+                        <div class="result_box_middle_part_away">
+                            <div class="result_box_team_logo_box">
+                                <img class="result_team_logo" src="../Image/Logo/Club/ChampionLeague/fkCrvenaZvezdaLogo.png">
+                            </div>
+                            <div class="result_box_team_name_box">
+                                <p class="result_team_name">FK Crvena Zvezda</p>
+                                <p class="hidden_score">1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result_box_lower_part">
+                        <a href="https://www.uefa.com/uefachampionsleague/match/2039190--man-city-vs-crvena-zvezda/" class="result_match_centre" target="_blank">Match Report</a>
+                        <a href="https://youtu.be/W2cGRjMQHss?si=qCf-jb5mC-HYpCvE" class="result_highlight" target="_blank">Watch Highlights</a>
+                    </div>
+                </div>
+                <div class="result_box">
+                    <div class="result_box_upper_part">
+                        <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
+                        </div>
+                        <div class="result_box_upper_part_middle">
+                            <p class="result_competition_name">Premier League</p>
+                            <span class="result_competition_venue_date_time"><a href="https://maps.app.goo.gl/H7zLnaCtoaqgQCUQ9" target="_blank" class="stadium">London Stadium</a> • Sat 16 Sep 2023</span>
+                        </div>
+                        <div class="result_box_upper_part_left_right" >
+                            <img class="result_competition_logo" src="../Image/Logo/Competition/premierLeagueLogo.png">
+                        </div>
+                    </div>
+                    <div class="result_box_middle_part">
+                        <div class="result_box_middle_part_home">
+                                <div class="result_box_team_name_box">
+                                    <p class="result_team_name">West Ham</p>
+                                    <p class="hidden_score">1</p>
+                                </div>
+                                <div class="result_box_team_logo_box">
+                                    <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/westHamLogo.png">
+                                </div>
+                        </div>
+                        <div class="result_score">
+                            <p class="score">1-3</p>
+                        </div>
+                        <div class="result_box_middle_part_away">
+                            <div class="result_box_team_logo_box">
+                                <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                            </div>
+                            <div class="result_box_team_name_box">
+                                <p class="result_team_name">Manchester City</p>
+                                <p class="hidden_score">3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result_box_lower_part">
+                        <a href="https://www.premierleague.com/match/93369" class="result_match_centre" target="_blank">Match Report</a>
+                        <a href="https://youtu.be/n2qULJEJGY4?si=fUFB-ZiIydYUfSlO" class="result_highlight" target="_blank">Watch Highlights</a>
+                    </div>
+                </div>
+                <div class="result_box">
+                    <div class="result_box_upper_part">
+                        <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
+                        </div>
+                        <div class="result_box_upper_part_middle">
+                            <p class="result_competition_name">Premier League</p>
+                            <span class="result_competition_venue_date_time"><a href="https://maps.app.goo.gl/Bc5sipqmPjS5VJNN9" target="_blank" class="stadium">Etihad Stadium</a> • Sat 02 Sep 2023</span>
+                        </div>
+                        <div class="result_box_upper_part_left_right" >
+                            <img class="result_competition_logo" src="../Image/Logo/Competition/premierLeagueLogo.png">
+                        </div>
+                    </div>
+                    <div class="result_box_middle_part">
+                        <div class="result_box_middle_part_home">
+                                <div class="result_box_team_name_box">
+                                    <p class="result_team_name">Manchester City</p>
+                                    <p class="hidden_score">5</p>
+                                </div>
+                                <div class="result_box_team_logo_box">
+                                    <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                                </div>
+                        </div>
+                        <div class="result_score">
+                            <p class="score">5-1</p>
+                        </div>
+                        <div class="result_box_middle_part_away">
+                            <div class="result_box_team_logo_box">
+                                <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/fulhamLogo.png">
+                            </div>
+                            <div class="result_box_team_name_box">
+                                <p class="result_team_name">Fulham</p>
+                                <p class="hidden_score">1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result_box_lower_part">
+                        <a href="https://www.premierleague.com/match/93359" class="result_match_centre" target="_blank">Match Report</a>
+                        <a href="https://youtu.be/kK0Puj4ySO4?si=a8qqNbB1vqxJ-wCT" class="result_highlight" target="_blank">Watch Highlights</a>
+                    </div>
+                </div>
+            </div>
+            <div class="result_month">
+                <p class="result_month_heading">August 2023</p>
+                <div class="result_box">
+                    <div class="result_box_upper_part">
+                        <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
+                        </div>
+                        <div class="result_box_upper_part_middle">
+                            <p class="result_competition_name">Premier League</p>
+                            <span class="result_competition_venue_date_time"><a href="https://maps.app.goo.gl/vUMB16A9EaNFniV1A" target="_blank" class="stadium">Bramall Lane</a> • Sun 27 Aug 2023</span>
+                        </div>
+                        <div class="result_box_upper_part_left_right" >
+                            <img class="result_competition_logo" src="../Image/Logo/Competition/premierLeagueLogo.png">
+                        </div>
+                    </div>
+                    <div class="result_box_middle_part">
+                        <div class="result_box_middle_part_home">
+                                <div class="result_box_team_name_box">
+                                    <p class="result_team_name">Sheffield United</p>
+                                    <p class="hidden_score">1</p>
+                                </div>
+                                <div class="result_box_team_logo_box">
+                                    <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/sheffieldUnitedLogo.png">
+                                </div>
+                        </div>
+                        <div class="result_score">
+                            <p class="score">1-2</p>
+                        </div>
+                        <div class="result_box_middle_part_away">
+                            <div class="result_box_team_logo_box">
+                                <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                            </div>
+                            <div class="result_box_team_name_box">
+                                <p class="result_team_name">Manchester City</p>
+                                <p class="hidden_score">2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result_box_lower_part">
+                        <a href="https://www.premierleague.com/match/93350" class="result_match_centre" target="_blank">Match Report</a>
+                        <a href="https://youtu.be/Kn6ey2JvUcc?si=5RbzGJ8ndOiVvqo-" class="result_highlight" target="_blank">Watch Highlights</a>
+                    </div>
+                </div>
+                <div class="result_box">
+                    <div class="result_box_upper_part">
+                        <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
+                        </div>
+                        <div class="result_box_upper_part_middle">
+                            <p class="result_competition_name">Premier League</p>
+                            <span class="result_competition_venue_date_time"><a href="https://maps.app.goo.gl/Bc5sipqmPjS5VJNN9" target="_blank" class="stadium">Etihad Stadium</a> • Sat 19 Aug 2023</span>
+                        </div>
+                        <div class="result_box_upper_part_left_right" >
+                            <img class="result_competition_logo" src="../Image/Logo/Competition/premierLeagueLogo.png">
+                        </div>
+                    </div>
+                    <div class="result_box_middle_part">
+                        <div class="result_box_middle_part_home">
+                                <div class="result_box_team_name_box">
+                                    <p class="result_team_name">Manchester City</p>
+                                    <p class="hidden_score">1</p>
+                                </div>
+                                <div class="result_box_team_logo_box">
+                                    <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                                </div>
+                        </div>
+                        <div class="result_score">
+                            <p class="score">1-0</p>
+                        </div>
+                        <div class="result_box_middle_part_away">
+                            <div class="result_box_team_logo_box">
+                                <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/newcastleLogo.png">
+                            </div>
+                            <div class="result_box_team_name_box">
+                                <p class="result_team_name">Newcastle United</p>
+                                <p class="hidden_score">0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result_box_lower_part">
+                        <a href="https://www.premierleague.com/match/93336" class="result_match_centre" target="_blank">Match Report</a>
+                        <a href="https://youtu.be/ge6IbUHrW-w?si=JghpYuZQQgDyUugj" class="result_highlight" target="_blank">Watch Highlights</a>
+                    </div>
+                </div>
+                <div class="result_box">
+                    <div class="result_box_upper_part">
+                        <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
+                        </div>
+                        <div class="result_box_upper_part_middle">
+                            <p class="result_competition_name">UEFA Super Cup</p>
+                            <span class="result_competition_venue_date_time"><a href="https://maps.app.goo.gl/HQK9ZHe2HhXToFqA9" target="_blank" class="stadium">Georgios Karaiskakis Stadium</a> • Wed 16 Aug 2023</span>
+                        </div>
+                        <div class="result_box_upper_part_left_right" >
+                            <img class="result_competition_logo" src="../Image/Logo/Competition/superCupLogo.png">
+                        </div>
+                    </div>
+                    <div class="result_box_middle_part">
+                        <div class="result_box_middle_part_home">
+                                <div class="result_box_team_name_box">
+                                    <p class="result_team_name">Manchester City</p>
+                                    <p class="hidden_score">1</p>
+                                </div>
+                                <div class="result_box_team_logo_box">
+                                    <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                                </div>
+                        </div>
+                        <div class="result_score">
+                            <p class="score">1-1</p>
+                        </div>
+                        <div class="result_box_middle_part_away">
+                            <div class="result_box_team_logo_box">
+                                <img class="result_team_logo" src="../Image/Logo/Club/SuperCup/sevillaLogo.png">
+                            </div>
+                            <div class="result_box_team_name_box">
+                                <p class="result_team_name">Sevilla</p>
+                                <p class="hidden_score">1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result_box_lower_part">
+                        <a href="https://www.uefa.com/uefasupercup/news/0284-18c07e15b0ff-af3118a0e297-1000--highlights-report-man-city-win-super-cup/" class="result_match_centre" target="_blank">Match Report</a>
+                        <a href="https://youtu.be/5YH4kefS2D0?si=Zs40oxhnWMyUaB32" class="result_highlight" target="_blank">Watch Highlights</a>
+                    </div>
+                </div>
+                <div class="result_box">
+                    <div class="result_box_upper_part">
+                        <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
+                        </div>
+                        <div class="result_box_upper_part_middle">
+                            <p class="result_competition_name">Premier League</p>
+                            <span class="result_competition_venue_date_time"><a href="https://maps.app.goo.gl/x4yrjHtwHYDLsGNR6" target="_blank" class="stadium">Turf Moor</a> • Fri 11 Aug 2023</span>
+                        </div>
+                        <div class="result_box_upper_part_left_right" >
+                            <img class="result_competition_logo" src="../Image/Logo/Competition/premierLeagueLogo.png">
+                        </div>
+                    </div>
+                    <div class="result_box_middle_part">
+                        <div class="result_box_middle_part_home">
+                                <div class="result_box_team_name_box">
+                                    <p class="result_team_name">Burnley</p>
+                                    <p class="hidden_score">0</p>
+                                </div>
+                                <div class="result_box_team_logo_box">
+                                    <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/burnleyLogo.png">
+                                </div>
+                        </div>
+                        <div class="result_score">
+                            <p class="score">0-3</p>
+                        </div>
+                        <div class="result_box_middle_part_away">
+                            <div class="result_box_team_logo_box">
+                                <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                            </div>
+                            <div class="result_box_team_name_box">
+                                <p class="result_team_name">Manchester City</p>
+                                <p class="hidden_score">3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result_box_lower_part">
+                        <a href="https://www.premierleague.com/match/93321" class="result_match_centre" target="_blank">Match Report</a>
+                        <a href="https://youtu.be/nwjfxKsG4AY?si=leOHaML2bLL4VcK6" class="result_highlight" target="_blank">Watch Highlights</a>
+                    </div>
+                </div>
+                <div class="result_box">
+                    <div class="result_box_upper_part">
+                        <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
+                        </div>
+                        <div class="result_box_upper_part_middle">
+                            <p class="result_competition_name">FA Community Shield</p>
+                            <span class="result_competition_venue_date_time"><a href="https://maps.app.goo.gl/cooh3JWQUVwRxmbF6" target="_blank" class="stadium">Wembley Stadium</a> • Sun 06 Aug 2023</span>
+                        </div>
+                        <div class="result_box_upper_part_left_right" >
+                            <img class="result_competition_logo" src="../Image/Logo/Competition/communityShieldLogo.png">
+                        </div>
+                    </div>
+                    <div class="result_box_middle_part">
+                        <div class="result_box_middle_part_home">
+                                <div class="result_box_team_name_box">
+                                    <p class="result_team_name">Arsenal</p>
+                                    <p class="hidden_score">1</p>
+                                </div>
+                                <div class="result_box_team_logo_box">
+                                    <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/arsenalLogo.png">
+                                </div>
+                        </div>
+                        <div class="result_score">
+                            <p class="score">1-1</p>
+                        </div>
+                        <div class="result_box_middle_part_away">
+                            <div class="result_box_team_logo_box">
+                                <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                            </div>
+                            <div class="result_box_team_name_box">
+                                <p class="result_team_name">Manchester City</p>
+                                <p class="hidden_score">1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result_box_lower_part">
+                        <a href="https://www.mancity.com/news/mens/arsenal-community-shield-match-report-august-6-63826929" class="result_match_centre" target="_blank">Match Report</a>
+                        <a href="https://youtu.be/hg54toLLWIA?si=fzrrvufgI0xTFNhK" class="result_highlight" target="_blank">Watch Highlights</a>
+                    </div>
+                </div>
             </div>
         </div>
         <!---------------------result--------------------->
