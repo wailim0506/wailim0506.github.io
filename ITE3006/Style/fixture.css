@@ -54,6 +54,7 @@ body{
 
 .menu_tag_sub{
     margin-left: -20px;
+    cursor: pointer;
 }
 
 .menu_list{

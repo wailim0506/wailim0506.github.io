@@ -54,6 +54,7 @@ body{
 
 .menu_tag_sub{
     margin-left: -20px;
+    cursor: pointer;
 }
 
 .menu_list{
@@ -199,3 +200,229 @@ body{
 
 
 /*---------Menu-------------*/
+
+/*---------Song-------------*/
+.song{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 45px;
+    font-family: KippaxCondensed, sans-serif;
+    text-transform: uppercase;
+    color: #88c4f1;
+    font-weight: 700;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.hidden_title{
+    display: none;
+}
+
+.video{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.description{
+    width: 70%;
+}
+
+.heading{
+    font-weight:700 ;
+    color: #001838;
+    font-size: 20px;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.description p{
+    font-family: KippaxCondensed, sans-serif;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.lyrics{
+    width: 70%;
+    line-height: 10px;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.lyrics p{
+    font-style: italic;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+/*---------Song-------------*/
+
+/*---------Footer---------*/
+
+.footer{
+    margin-top: 5px;
+    height: 320px;
+    background-color: #001838;
+}
+
+.footer_logo_first_half{
+    background-color: white;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer_club_logo{
+    height: 180px;
+}
+
+.footer_logo_second_half{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    font-family: KippaxCondensed, sans-serif;
+    font-style: italic;
+}
+
+.dummy_space{
+    width: 260px;
+}
+
+.footer_tag_right{
+    width: 180px;
+}
+
+.footer_tag_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 180px;
+}
+
+.footer_social_media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height:109px;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+
+.footer_social_media_img{
+    height: 60px;
+    position: relative;
+    bottom: 15px;
+}
+
+.author{
+    font-size: 12px;
+    color: rgba(94, 92, 92, 0.7);
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.footer_social_media_img:hover{
+    transform:scale(1.15);
+}
+
+.footer_club_logo:hover{
+    transform: scale(1.02);
+}
+
+
+/*---------Footer---------*/
+
+@media only screen and (max-width: 939px){
+    .title{
+        font-size: 38px;
+    }
+
+    .description{
+        width: 95%;
+    }
+
+    .lyrics{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 793px){
+    .title{
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 793px){
+    .footer{
+        height: 214px;
+    }
+
+    .footer_logo_first_half{
+        height: 57.5px;
+    }
+    
+    .footer_club_logo{
+        height: 115px;
+    }
+
+    .dummy_space{
+        width: 190px;
+    }
+
+    .footer_logo_second_half{
+        height: 57.5px;
+        font-size: 22px;
+    }
+
+    .footer_social_media{
+        font-size: 15px;
+        height: 70.5px;
+    }
+
+
+    .footer_social_media_img{
+        height: 40px;
+        position: relative;
+        bottom:5px;
+    }
+
+    .author{
+        font-size: 10px;
+        color: rgba(94, 92, 92, 0.7);
+        font-family: KippaxCondensed, sans-serif;
+        padding-top: 4.5px;
+    }
+}
+
+@media only screen and (max-width: 668px){
+    .title{
+        font-size: 29px;
+    }
+}
+
+@media only screen and (max-width: 591px){
+    .title{
+        justify-content: flex-start;
+    }
+
+    .title p span{
+        display: none;
+    }
+}

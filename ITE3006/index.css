@@ -198,3 +198,90 @@ body{
 }
 
 /*---------Menu-------------*/
+
+
+
+
+
+
+/*---------Footer---------*/
+
+.footer{
+    margin-top: 5px;
+    height: 320px;
+    background-color: #001838;
+}
+
+.footer_logo_first_half{
+    background-color: white;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer_club_logo{
+    height: 180px;
+}
+
+.footer_logo_second_half{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    font-family: KippaxCondensed, sans-serif;
+    font-style: italic;
+}
+
+.dummy_space{
+    width: 260px;
+}
+
+.footer_tag_right{
+    width: 180px;
+}
+
+.footer_tag_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 180px;
+}
+
+.footer_social_media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height:109px;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+
+.footer_social_media_img{
+    height: 60px;
+    position: relative;
+    bottom: 15px;
+}
+
+.author{
+    font-size: 12px;
+    color: rgba(94, 92, 92, 0.7);
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.footer_social_media_img:hover{
+    transform:scale(1.15);
+}
+
+.footer_club_logo:hover{
+    transform: scale(1.02);
+}
+
+
+/*---------Footer---------*/
