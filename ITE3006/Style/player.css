@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     background-color: rgb(255, 255, 255);
+    overflow: auto;
 }
 
 a{
@@ -13,12 +14,6 @@ html{
 
 
 /*---------Menu-------------*/
-body{
-    margin: 0px;
-    background-color: rgb(255, 255, 255);
-    overflow: auto;
-}
-
 .menu_logo{
     height: 70px;
     padding-top: 2.5px;
@@ -382,6 +377,34 @@ body{
     font-size: 22px;
     font-weight: 700;
     color: #001838;
+}
+
+.btt_button_div{
+    width: 100%;
+    height: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btt_button{
+    height: 10px;
+    width: auto;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    color: #001838;
+    text-decoration: underline;
+}
+
+.btt_button:hover{
+    background-color: #001838;
+    color: aliceblue;
 }
 
 .player_card:hover{
