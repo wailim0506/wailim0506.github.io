@@ -1,6 +1,7 @@
 body{
     margin: 0px;
-    background-color: rgb(255, 255, 255);
+    background-color: #F5F5F5;
+    overflow: auto;
 }
 
 a{
@@ -9,11 +10,7 @@ a{
 
 
 /*---------Menu-------------*/
-body{
-    margin: 0px;
-    background-color: rgb(255, 255, 255);
-    overflow: auto;
-}
+
 
 .menu_logo{
     height: 70px;

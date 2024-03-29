@@ -1,6 +1,7 @@
 body{
     margin: 0px;
-    background-color: rgb(255, 255, 255);
+    background-color: #F5F5F5;
+    overflow: auto;
 }
 
 a{
@@ -9,11 +10,6 @@ a{
 
 
 /*---------Menu-------------*/
-body{
-    margin: 0px;
-    background-color: rgb(255, 255, 255);
-    overflow: auto;
-}
 
 .menu_logo{
     height: 70px;
@@ -242,7 +238,7 @@ body{
     height: 270px;
     width: 270px;
     margin: 10px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0) 44%, rgb(0, 0, 0) 85%);;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 44%, rgb(0, 0, 0) 85%);
 }
 
 #silva{
@@ -364,7 +360,7 @@ body{
 }
 
 .footer_logo_first_half{
-    background-color: white;
+    background-color: #F5F5F5;
     height: 90px;
     display: flex;
     flex-direction: row;
