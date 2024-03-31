@@ -249,6 +249,7 @@ html{
     align-items: flex-start;
     justify-content: center;
     color: #001838;
+    margin-left: 20px;
 }
 
 .first_name{
@@ -289,7 +290,7 @@ html{
 }
 
 .player_nation img{
-    height: 60%;
+    height: 55%;
     margin-left: 5px;
     margin-right: 10px;
 }
@@ -386,6 +387,26 @@ html{
     font-size: 20px;
 }
 
+#readmore_button{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #88c4f1;
+    text-transform: uppercase;
+    border: 1px solid #88c4f1;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#hidden_bio{
+    width: 100%;
+    display: none;
+}
+
 .honour{
     margin-top: 20px;
     width: 78%;
@@ -455,6 +476,10 @@ html{
 
 .follow a img{
     height: 100%;
+}
+#readmore_button:hover{
+    background-color: #88c4f1;
+    color: #001838;
 }
 
 /*---------Player-------------*/
@@ -661,6 +686,7 @@ html{
         flex-direction: row;
         align-items: center;
         height: 100%;
+        margin-left: 0px;
     }
     .first_name{
         margin-right: 10px;
@@ -672,17 +698,24 @@ html{
 
     .player_pos_nation{
         justify-content: center;
+        position: relative;
+        right: 16px;
+        
     }
 
     .player_pos{
-        width: 50%;
+        width: 30%;
         justify-content: right;
         margin-right: 10px;
     }
 
     .player_nation{
-        width: 50%;
+        width: 30%;
         margin-left: 10px;
+    }
+
+    .player_nation img{
+        height: 45%;
     }
 
     .overview{
