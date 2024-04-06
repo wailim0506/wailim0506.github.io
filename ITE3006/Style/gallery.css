@@ -245,10 +245,12 @@ a{
 
 #enlarge{
     width: 99%;
+    height: 100vh;
     position: fixed;
     top: 85px;
     display: none;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-left: 0.5%;
     z-index: 1;
@@ -263,7 +265,7 @@ a{
 
 #enlarge_img{
     margin-top: 8px;
-    height:500px;
+    height:450px;
     margin-bottom: 200px;
 }
 
@@ -383,9 +385,9 @@ a{
         height: 230px;
     }
 
-    #enlarge{
+   /* #enlarge{
         top: 95px;
-    }
+    }*/
     
     .enlarge_close_div{
         width: 880px;
@@ -401,9 +403,9 @@ a{
 }
 
 @media only screen and (max-width: 894px){
-    #enlarge{
+    /*#enlarge{
         top: 120px;
-    }
+    }*/
 
     .enlarge_close_div{
         width: 777px;
@@ -432,9 +434,9 @@ a{
 }
 
 @media only screen and (max-width: 794px){
-    #enlarge{
+   /* #enlarge{
         top: 150px;
-    }
+    }*/
 
     .enlarge_close_div{
         width: 690px;
@@ -493,9 +495,9 @@ a{
         height: 170px;
     }
 
-    #enlarge{
+   /* #enlarge{
         top: 180px;
-    }
+    }*/
 
     .enlarge_close_div{
         width: 590px;
@@ -527,9 +529,9 @@ a{
         height: 310px;
     }
 
-    #enlarge{
+    /*#enlarge{
         top: 190px;
-    }
+    }*/
 
     .enlarge_close_div{
         width: 560px;
@@ -549,9 +551,9 @@ a{
         height: 280px;
     }
 
-    #enlarge{
+    /*#enlarge{
         top: 200px;
-    }
+    }*/
 
     .enlarge_close_div{
         width: 513px;
@@ -571,9 +573,9 @@ a{
         height: 260px;
     }
 
-    #enlarge{
+  /*  #enlarge{
         top: 210px;
-    }
+    }*/
 
     .enlarge_close_div{
         width: 480px;
