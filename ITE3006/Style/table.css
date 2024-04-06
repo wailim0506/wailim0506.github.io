@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    background-color: #F5F5F5;
+    background-color: white;
     overflow: auto;
 }
 
@@ -198,7 +198,7 @@ a{
 
 /*---------Sub Menu---------*/
 #sub_menu{
-    background-color: #F5F5F5;
+    background-color: white;
     display: flex;
     height: 50px;
     justify-content: center;

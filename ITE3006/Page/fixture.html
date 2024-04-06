@@ -84,16 +84,39 @@
 
         <!---------------------sub menu--------------------->
         <div id="sub_menu">
-            <div id="sub_menu_selected_div"><a class="sub_menu_tag" id="sub_menu_tag_fixtures" href="fixture.html">Fixtures</a></div>
-            <div class="sub_menu_div"><a class="sub_menu_tag" id="sub_menu_tag_results" href="result.html">Results</a></div>
-            <div class="sub_menu_div"><a class="sub_menu_tag" id="sub_menu_tag_tables" href="table.html">Tables</a></div>
+            <div class="sub_menu_left"></div>
+            <div class="sub_menu_middle">
+                <div id="sub_menu_selected_div"><a class="sub_menu_tag" id="sub_menu_tag_fixtures" href="fixture.html">Fixtures</a></div>
+                <div class="sub_menu_div"><a class="sub_menu_tag" id="sub_menu_tag_results" href="result.html">Results</a></div>
+                <div class="sub_menu_div"><a class="sub_menu_tag" id="sub_menu_tag_tables" href="table.html">Tables</a></div>
+            </div>  
+            <form class="sub_menu_right" name="filter">
+                <select class="selection" name="month">
+                    <option value="all">All Months</option>
+                    <option value="april">April</option>
+                    <option value="may">May</option>
+                </select>
+                <select class="selection" name="competiton">
+                    <option value="all">All Competitions</option>
+                    <option value="pl">Premier League</option>
+                    <option value="cl">Champions League</option>
+                    <option value="faCup">Emirates FA Cup</option>
+                    <option value="carabaoCup">Carabao Cup</option>
+                    <option value="superCup">UEFA Super Cup</option>
+                    <option value="clubWordCup">Club World Cup</option>
+                    <option value="communityShield">Community Shield</option>
+                </select>
+                <div class="filter" onclick="r();">
+                    Search
+                </div>
+            </form>  
         </div>
         
         <!---------------------sub menu--------------------->
 
         <!---------------------fixture--------------------->
         <div class="fixture">
-            <div class="fixture_month">
+            <div class="fixture_month" id="april">
                 <p class="fixture_month_heading">April 2024</p>
                 <div class="fixture_box">
                     <div class="fixture_box_upper_part">
@@ -170,7 +193,7 @@
                     </div>
                 </div>
             </div>
-            <div class="fixture_month">
+            <div class="fixture_month" id="may">
                 <p class="fixture_month_heading">May 2024</p>
                 <div class="fixture_box">
                     <div class="fixture_box_upper_part">

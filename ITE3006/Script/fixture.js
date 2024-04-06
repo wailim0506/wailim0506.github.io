@@ -7,3 +7,8 @@ function hide(){   //hide the hidden menu
     document.getElementById('hidden_menu').style.display = 'none';
     document.getElementById('body').style.overflow = 'auto'; //allow scrolling so the index page can be scrolled after the hidden menu is hide
 }
+
+function r(){
+    var month = document.getElementById('april');
+    month.style.display = 'none';
+}
