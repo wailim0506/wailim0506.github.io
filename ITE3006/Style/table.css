@@ -361,7 +361,7 @@ tr:hover{
 }
 
 .footer_logo_first_half{
-    background-color: #F5F5F5;
+    background-color: white;
     height: 90px;
     display: flex;
     flex-direction: row;

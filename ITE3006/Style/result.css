@@ -210,6 +210,74 @@ html{
     border-bottom: 1px solid rgba(12, 12, 12, 0.17);
 }
 
+.sub_menu_left{
+    width: 33.3333%;
+}
+
+.sub_menu_middle{
+    width: 33.3333%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sub_menu_right{
+    width: 33.3333%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+
+
+.selection{
+    height: 70%;
+    background-color: #F5F5F5;
+    border: 0px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.search_button{
+    height: 70%;
+    background-color: #F5F5F5;
+    border: 0px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;   
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.hidden_sub_menu{
+    width: 100%;
+    background-color: white;
+    display: none;
+    flex-direction: row;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.hidden_form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+
 .sub_menu_tag{
     font-family: KippaxCondensed, sans-serif;
     font-weight: 700;
@@ -470,11 +538,25 @@ html{
     background-color: #001838;
     color: aliceblue;
 }
-    
 
+#search_error{
+    width: 100%;
+    height: 550px;
+    font-family: KippaxCondensed, sans-serif;
+    color: rgba(12,12,12,0.7);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
 
+#search_error_competition{
+    font-weight: bold;
+}
 
-
+#search_error_month{
+    font-weight: bold;
+}
 /*---------Results---------*/
 
 
@@ -578,6 +660,50 @@ html{
 
 .score{
     font-size: 21px;
+}
+
+#sub_menu{
+    justify-content: center;
+}
+.sub_menu_left{
+    display: none;
+}
+
+.sub_menu_middle{
+    width: 33.3333%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sub_menu_right{
+    display: none;
+}
+
+.hidden_sub_menu{
+    display: flex;
+}
+
+.selection{
+    height: 70%;
+    background-color: #F5F5F5;
+    border: 0px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.search_button{
+    height: 70%;
+    background-color: #F5F5F5;
+    border: 0px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;   
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
 }
 
 

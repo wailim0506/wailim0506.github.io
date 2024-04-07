@@ -84,21 +84,80 @@
 
         <!---------------------sub menu--------------------->
         <div id="sub_menu">
-            <div class="sub_menu_div"><a class="sub_menu_tag" id="sub_menu_tag_fixtures" href="fixture.html">Fixtures</a></div>
-            <div id="sub_menu_selected_div"><a class="sub_menu_tag" id="sub_menu_tag_results" href="result.html">Results</a></div>
-            <div class="sub_menu_div"><a class="sub_menu_tag" id="sub_menu_tag_tables" href="table.html">Tables</a></div>
+            <div class="sub_menu_left"></div>
+            <div class="sub_menu_middle">
+                <div class="sub_menu_div"><a class="sub_menu_tag" id="sub_menu_tag_fixtures" href="fixture.html">Fixtures</a></div>
+                <div id="sub_menu_selected_div"><a class="sub_menu_tag" id="sub_menu_tag_results" href="result.html">Results</a></div>
+                <div class="sub_menu_div"><a class="sub_menu_tag" id="sub_menu_tag_tables" href="table.html">Tables</a></div>
+            </div>  
+            <form class="sub_menu_right" name="search">
+                <select class="selection" name="month">
+                    <option>All Months</option>
+                    <option>Auguest</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                </select>
+                <select class="selection" name="competition">
+                    <option>All Competitions</option>
+                    <option>Premier League</option>
+                    <option>Champions League</option>
+                    <option>Emirates FA Cup</option>
+                    <option>Carabao Cup</option>
+                    <option>UEFA Super Cup</option>
+                    <option>Club World Cup</option>
+                    <option>Community Shield</option>
+                </select>
+                <div class="search_button" onclick="filter();">
+                    Search
+                </div>
+            </form>
+        </div>
+        <div class="hidden_sub_menu">
+            <form class="hidden_form" name="hidden_search">
+                <select class="selection" name="month">
+                    <option>All Months</option>
+                    <option>Auguest</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                </select>
+                <select class="selection" name="competition">
+                    <option>All Competitions</option>
+                    <option>Premier League</option>
+                    <option>Champions League</option>
+                    <option>Emirates FA Cup</option>
+                    <option>Carabao Cup</option>
+                    <option>UEFA Super Cup</option>
+                    <option>Club World Cup</option>
+                    <option>Community Shield</option>
+                </select>
+                <div class="search_button" onclick="hidden_filter();">
+                    Search
+                </div>
+            </form> 
         </div>
 
         <!---------------------sub menu--------------------->
 
         <!---------------------result--------------------->
-        <div class="result">
-            <div class="result_month">
+        <div class="result" id="result">
+            <div class="result_month" id="april">
                 <p class="result_month_heading">April 2024</p>  
             </div>
-            <div class="result_month">
+            <div class="result_month" id="march">
                 <p class="result_month_heading">March 2024</p>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -138,7 +197,7 @@
                         <a href="https://youtu.be/KZOzwJ-T0V4?si=_A5QaWyn1riTfHei" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box cl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -178,7 +237,7 @@
                         <a href="https://youtu.be/XeiKi0Gm2sc?si=U4nV918JvyosMKbc" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -219,9 +278,9 @@
                     </div>
                 </div>
             </div>
-            <div class="result_month">
+            <div class="result_month" id="february">
                 <p class="result_month_heading">February 2024</p>
-                <div class="result_box">
+                <div class="result_box fa">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -261,7 +320,7 @@
                         <a href="https://youtu.be/DsKRznEbT7I?si=snj1mAOPTCaKy6vV" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -301,7 +360,7 @@
                         <a href="https://youtu.be/GsjSDKPwWHw?si=eztiue7q-sriybb0" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -341,7 +400,7 @@
                         <a href="https://youtu.be/-ofbkFD-MbE?si=7IKeJ7vxLaoA5KJ7" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -381,7 +440,7 @@
                         <a href="https://youtu.be/6DM3AsW6HLU?si=LBN2AEbzLZwYgr7m" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box cl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -421,7 +480,7 @@
                         <a href="https://youtu.be/7MbIbp12BqU?si=LOjS7cLsZmine9aS" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -461,7 +520,7 @@
                         <a href="https://youtu.be/PLjia7THIXE?si=wYYgbVJRjeENUq-h" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -502,9 +561,9 @@
                     </div>
                 </div>
             </div>
-            <div class="result_month">
+            <div class="result_month" id="january">
                 <p class="result_month_heading">January 2024</p>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -544,7 +603,7 @@
                         <a href="https://youtu.be/4pH2JahzvNw?si=efJj627YuC2v_bGB" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box fa">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -584,7 +643,7 @@
                         <a href="https://youtu.be/4yOyeviq7bM?si=__eutmagzbpo7YHf" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -624,7 +683,7 @@
                         <a href="https://youtu.be/6sgrt2GQF8c?si=OqXmDhzv_1GlhBu5" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box fa">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -665,9 +724,9 @@
                     </div>
                 </div>
             </div>
-            <div class="result_month">
+            <div class="result_month" id="december">
                 <p class="result_month_heading">December 2023</p>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -707,7 +766,7 @@
                         <a href="https://youtu.be/-Zi8f5nYcH0?si=3bgB7LiQjCotSmM2" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -747,7 +806,7 @@
                         <a href="https://youtu.be/9zOeaHUrnYw?si=OhomJeJvNH1QQmod" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box wc">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -787,7 +846,7 @@
                         <a href="https://youtu.be/aWCNkD-Bm1w?si=JUeM7iO8NTLSYANU" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box wc">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -827,7 +886,7 @@
                         <a href="https://youtu.be/8yp6bOQzj-Q?si=TC2vIemyfp8hzcQN" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -867,7 +926,7 @@
                         <a href="https://youtu.be/Qnxx8KBHXgI?si=HeVWslfj82Cp31mc" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box cl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -907,7 +966,7 @@
                         <a href="https://youtu.be/4YeVHDGegm4?si=XavSuBCc-ICx4Cf1" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -947,7 +1006,7 @@
                         <a href="https://youtu.be/Zqok8eVQQTw?si=zIcZkCjrgJOfB5Fm" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -962,8 +1021,7 @@
                     <div class="result_box_middle_part">
                         <div class="result_box_middle_part_home">
                                 <div class="result_box_team_name_box">
-                                    <p class="result_team_name">Aston Villa</p>
-                                    <p class="hidden_score">1</p>
+                                    <p class="result_team_name">Asto                                 <p class="hidden_score">1</p>
                                 </div>
                                 <div class="result_box_team_logo_box">
                                     <img class="result_team_logo" src="../Image/Logo/Club/PremierLeague/astonVillaLogo.png">
@@ -987,7 +1045,7 @@
                         <a href="https://youtu.be/vKj1ygLykYI?si=tOzpE7p1jpqoPgZf" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1028,9 +1086,9 @@
                     </div>
                 </div>
             </div>
-            <div class="result_month">
+            <div class="result_month" id="november">
                 <p class="result_month_heading">November 2023</p>
-                <div class="result_box">
+                <div class="result_box cl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1070,7 +1128,7 @@
                         <a href="https://youtu.be/oOBOxMCYp0I?si=-7O_PETPepIrJI8P" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1110,7 +1168,7 @@
                         <a href="https://youtu.be/5Zztv57CiWk?si=c5bVPUFxN_BRt7fG" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1150,7 +1208,7 @@
                         <a href="https://youtu.be/jMzgSDbtXks?si=0xhfFyiL-8-EMW46" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box cl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1190,7 +1248,7 @@
                         <a href="https://youtu.be/5eh99PZpDZs?si=3LAmhx8sEoprOc1D" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1231,9 +1289,9 @@
                     </div>
                 </div>
             </div>
-            <div class="result_month">
+            <div class="result_month" id="october">
                 <p class="result_month_heading">October 2023</p>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1273,7 +1331,7 @@
                         <a href="https://youtu.be/U8PPkFS0Cbg?si=WIgpnUGQGIa714Xx" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box cl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1313,7 +1371,7 @@
                         <a href="https://youtu.be/euo2G90bBBU?si=XdXJq5sMxgXlgQhz" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1353,7 +1411,7 @@
                         <a href="https://youtu.be/Teyp-Xw3abc?si=eUv54U3act2R2QEh" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1393,7 +1451,7 @@
                         <a href="https://youtu.be/JvJHjVi03GQ?si=YQVY_kKTHBwH-W_A" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box cl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1434,9 +1492,9 @@
                     </div>
                 </div>
             </div>
-            <div class="result_month">
+            <div class="result_month" id="september">
                 <p class="result_month_heading">September 2023</p>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1476,7 +1534,7 @@
                         <a href="https://youtu.be/ugc35l-3GNQ?si=hp1GIEDOAiSc6THU" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box cc">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1516,7 +1574,7 @@
                         <a href="https://youtu.be/_oUqB_iIIL4?si=pTQ6-8XJolmz__LJ" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1556,7 +1614,7 @@
                         <a href="https://youtu.be/RB_40gOh4zk?si=SaZ5Lni4ld_lK54V" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box cl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1596,7 +1654,7 @@
                         <a href="https://youtu.be/W2cGRjMQHss?si=qCf-jb5mC-HYpCvE" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1636,7 +1694,7 @@
                         <a href="https://youtu.be/n2qULJEJGY4?si=fUFB-ZiIydYUfSlO" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1677,9 +1735,9 @@
                     </div>
                 </div>
             </div>
-            <div class="result_month">
+            <div class="result_month" id="august">
                 <p class="result_month_heading">August 2023</p>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1719,7 +1777,7 @@
                         <a href="https://youtu.be/Kn6ey2JvUcc?si=5RbzGJ8ndOiVvqo-" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1759,7 +1817,7 @@
                         <a href="https://youtu.be/ge6IbUHrW-w?si=JghpYuZQQgDyUugj" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box sc">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1799,7 +1857,7 @@
                         <a href="https://youtu.be/5YH4kefS2D0?si=Zs40oxhnWMyUaB32" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box pl">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1839,7 +1897,7 @@
                         <a href="https://youtu.be/nwjfxKsG4AY?si=leOHaML2bLL4VcK6" class="result_highlight" target="_blank">Watch Highlights</a>
                     </div>
                 </div>
-                <div class="result_box">
+                <div class="result_box cs">
                     <div class="result_box_upper_part">
                         <div class="result_box_upper_part_left_right" id="result_box_upper_part_left">
                         </div>
@@ -1887,6 +1945,10 @@
                     </div>
                 </a>
             </div>
+        </div>
+        <div id="search_error">
+            <p>No data available for <span id="search_error_competition"></span> in <span id="search_error_month">May</span></p>
+            <p>Try changing your selected filters.</p>
         </div>
         <!---------------------result--------------------->
 
