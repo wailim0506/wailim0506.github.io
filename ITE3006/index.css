@@ -8,7 +8,6 @@ a{
     text-decoration: none;
 }
 
-
 /*---------Menu-------------*/
 .menu_logo{
     height: 70px;
@@ -194,7 +193,320 @@ a{
 
 /*---------Menu-------------*/
 
+/*---------Player-------------*/
+.player{
+    width: 99.9%;
+    height: 550px;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #001838;
+}
 
+.player_heading{
+    font-size: 35px;
+    color: #88c4f1;
+    font-weight: 800;
+    font-family: KippaxCondensed, sans-serif;
+    text-transform: uppercase;
+}
+
+.player_slide_box{
+    width: 99%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.player_slide_box_button{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.player_slide_box_button img{
+    width: 100%;
+}
+
+.player_container{
+    width: 88%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: scroll;
+    scrollbar-width: none;  /*hide the scroll bar*/
+    scroll-behavior: smooth;
+}
+
+
+.player_card{
+    width: 345px;  /*change when resize*/
+    height: 345px;
+    background-size: contain;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.player_card_top{
+    width: 100%;
+    height:80%;
+    transition: height 0.1s;
+}
+
+.player_card_bottom{
+    width: 100%;
+    height: 20%;
+    color: white;
+    font-family: KippaxCondensed, sans-serif;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.player_hidden_stat{
+    width: 95%;
+    display: block;
+    height: 18%;
+    color: white;
+    font-family: KippaxCondensed, sans-serif;
+    border-top: 1px solid rgba(94, 92, 92, 0.7);
+    margin-left: 2.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.player_card_top img{
+    width: 80%;
+}
+
+.player_card_bottom_name{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.player_number{
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+    margin-right: 20px;
+}
+
+.player_first_name{
+    font-size: 27px;
+    font-weight: 400;
+    color: white;
+    margin-right: 5px;
+}
+
+.player_last_name{
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+}
+
+.player_position{
+    font-size: 14px;
+}
+
+.hidden_stat_box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden_stat_box_top{
+    font-size: 13px;
+}
+
+.hidden_stat_box_bottom{
+    font-size: 20px;
+}
+
+
+.player_card:hover .player_card_top{
+    height: 63%;
+}
+
+.player_card:hover {
+    overflow: visible;
+}
+
+#slide2{
+    display: none;
+}
+
+#slide3{
+    display: none;
+}
+
+/*---------Player-------------*/
+
+/*---------Trophy-------------*/
+
+.trophy{
+    width: 99%;
+    background-color: white;
+    font-family: KippaxCondensed, sans-serif;
+    margin-top: 20px;
+}
+
+.trophy_top{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.trophy_bottom{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.trophy_top p{
+    font-size: 35px;
+    color: #88c4f1;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.trophy_img{
+    width: 700px; /*resize change this*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trophy_stat{
+    width: 40%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.trophy_img img{
+    width: 71%;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.stat{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stat_top{
+    height: 20px;
+    font-size: 14px;
+    color: #5e6a83;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stat_bottom{
+    height: 30px;
+    background-color: #88c4f1;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.stat_bottom p{
+    font-size: 20px;
+    position: relative;
+    right: 20px;
+    font-weight: 700;
+}
+
+#stat_bottom_pl{
+    width: 87.5%;
+}
+
+#stat_bottom_fa{
+    width: 87.5%;
+}
+
+#stat_bottom_cc{
+    width: 100%;
+}
+
+#stat_bottom_cs{
+    width: 75%;
+}
+
+#stat_bottom_cl{
+    width: 12.5%;
+}
+
+#stat_bottom_sc{
+    width: 12.5%;
+}
+
+#stat_bottom_wc{
+    width: 12.5%;
+}
+
+@media only screen and (max-width: 1070px){
+    
+
+    .trophy_img{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .trophy_bottom{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trophy_img{
+        width: 100%;
+    }
+
+    .trophy_img2{
+        display: none;
+        width: 100%;
+    }
+
+    .trophy_stat{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 567px){
+    .trophy_top p{
+        font-size: 30px;
+    }
+}
+/*---------Trophy-------------*/
 
 
 
