@@ -141,7 +141,7 @@ a{
     scrollbar-width: none;  /*hide the scroll bar*/
 }
 
-.hidden_menu_body_main ::-webkit-scrollbar{ /*hide the scroll bar*/
+.hidden_menu_body_main ::-webkit-scrollbar{ /*hide the scroll bar*/ /*found on w3school*/
     display: none;
 }
 
