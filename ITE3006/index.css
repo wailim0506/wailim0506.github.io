@@ -202,13 +202,13 @@ a{
     flex-direction: column;
     align-items: center;
     background-color: #001838;
+    font-family: KippaxCondensed, sans-serif;
 }
 
 .player_heading{
     font-size: 35px;
     color: #88c4f1;
     font-weight: 800;
-    font-family: KippaxCondensed, sans-serif;
     text-transform: uppercase;
 }
 
@@ -222,7 +222,7 @@ a{
 }
 
 .player_slide_box_button{
-    width: 5%;
+    width: 5%;  /*change to 10% when resize*/
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -235,19 +235,19 @@ a{
 }
 
 .player_container{
-    width: 88%;
+    width: 1075px;
+    height: 360px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     overflow: scroll;
     scrollbar-width: none;  /*hide the scroll bar*/
-    scroll-behavior: smooth;
 }
 
 
 .player_card{
-    width: 345px;  /*change when resize*/
+    width: 345px; 
     height: 345px;
     background-size: contain;
     overflow: hidden;
@@ -266,7 +266,6 @@ a{
     width: 100%;
     height: 20%;
     color: white;
-    font-family: KippaxCondensed, sans-serif;
     display: flex ;
     flex-direction: column;
     align-items: center;
@@ -278,7 +277,6 @@ a{
     display: block;
     height: 18%;
     color: white;
-    font-family: KippaxCondensed, sans-serif;
     border-top: 1px solid rgba(94, 92, 92, 0.7);
     margin-left: 2.5%;
     display: flex;
