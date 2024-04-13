@@ -196,3 +196,280 @@ a{
 
 
 /*---------Menu-------------*/
+
+/*---------History-------------*/
+.history{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.history h1{
+    color: #88c4f1;
+}
+
+.history_heading_img{
+    width: 800px;
+}
+.history_word{
+    width: 800px;
+}
+
+.history_word p{
+    font-family: KippaxCondensed, sans-serif;
+    text-align: justify;
+}
+
+.history_word h2{
+    font-family: KippaxCondensed, sans-serif;
+    color: #88c4f1;
+}
+
+.float_div{
+    width: 300px;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+    font-size: 88.4%;
+    margin-bottom: 10px;
+}
+
+.right{
+    float: right;
+    margin-left: 20px;
+}
+
+.left{
+    float: left;
+    margin-right: 20px;
+}
+
+.float_div img{
+    width: 98%;
+}
+
+.float_div p{
+    width: 98%;
+}
+/*---------History-------------*/
+
+
+
+/*---------Footer---------*/
+
+.footer{
+    margin-top: 5px;
+    height: 320px;
+    background-color: #001838;
+}
+
+.footer_logo_first_half{
+    background-color: white;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer_club_logo{
+    height: 180px;
+}
+
+.footer_logo_second_half{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    font-family: KippaxCondensed, sans-serif;
+    font-style: italic;
+}
+
+.dummy_space{
+    width: 260px;
+}
+
+.footer_tag_right{
+    width: 180px;
+}
+
+.footer_tag_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 180px;
+}
+
+.footer_social_media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height:109px;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+
+.footer_social_media_img{
+    height: 60px;
+    position: relative;
+    bottom: 15px;
+}
+
+.author{
+    font-size: 12px;
+    color: rgba(94, 92, 92, 0.7);
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.footer_social_media_img:hover{
+    transform:scale(1.15);
+}
+
+.footer_club_logo:hover{
+    transform: scale(1.02);
+}
+
+
+/*---------Footer---------*/
+
+
+
+@media only screen and (max-width: 925px){
+    .history_heading_img{
+        width: 600px;
+    }
+    
+    .history_word{
+        width: 600px;
+        font-size: 16px;
+    }
+
+    .history h1{
+        font-family: KippaxCondensed, sans-serif;
+        font-size: 27px;
+    }
+
+}
+
+@media only screen and (max-width: 784px){
+    .history_heading_img{
+        width: 500px;
+    }
+    
+    .history_word{
+        width: 500px;
+        font-size: 14px;
+    }
+
+    .history h1{
+        font-family: KippaxCondensed, sans-serif;
+        font-size: 23px;
+    }
+
+    .footer{
+        height: 214px;
+    }
+    
+    .footer_logo_first_half{
+        height: 57.5px;
+    }
+    .footer_club_logo{
+        height: 115px;
+    }
+    
+    .dummy_space{
+        width: 190px;
+    }
+    
+    .footer_logo_second_half{
+        height: 57.5px;
+        font-size: 22px;
+    }
+    
+    .footer_social_media{
+        font-size: 15px;
+        height: 70.5px;
+    }
+    
+    
+    .footer_social_media_img{
+        height: 40px;
+        position: relative;
+        bottom:5px;
+    }
+
+    .author{
+        font-size: 10px;
+        color: rgba(94, 92, 92, 0.7);
+        font-family: KippaxCondensed, sans-serif;
+        padding-top: 4.5px;
+    }
+
+}
+
+@media only screen and (max-width: 710px){
+    .float_div{
+        width: 250px;
+    }
+}
+@media only screen and (max-width: 620px){
+    .float_div{
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    .history{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .float_div{
+        float: unset;
+        width: 90%;
+    }
+
+    .history_word{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 670px){
+    .history_heading_img{
+        width: 400px;
+    }
+    
+    .history_word{
+        width: 400px;
+        font-size: 14px;
+    }
+
+    .history_word h2{
+        font-family: KippaxCondensed, sans-serif;
+        color: #88c4f1;
+        font-size: 18px;
+    }
+
+    .history h1{
+        font-family: KippaxCondensed, sans-serif;
+        font-size: 20px;
+    }
+
+    .history span{
+        display: none;
+    }
+
+}
