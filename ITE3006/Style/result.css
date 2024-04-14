@@ -517,6 +517,9 @@ html{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    position: sticky;
+    left: 0px;
+    bottom: 5px;
 }
 
 .btt_button{
@@ -534,10 +537,6 @@ html{
     font-family: KippaxCondensed, sans-serif;
 }
 
-.btt_button:hover{
-    background-color: #001838;
-    color: aliceblue;
-}
 
 #search_error{
     width: 100%;
