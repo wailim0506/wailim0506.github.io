@@ -512,29 +512,20 @@ html{
 
 .btt_button_div{
     width: 100%;
-    height: 10px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     position: sticky;
-    left: 0px;
-    bottom: 5px;
+    bottom: 0px;
+    right: 100px;
 }
 
-.btt_button{
-    height: 10px;
-    width: auto;
-    padding: 8px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10px;
-    color: #001838;
-    text-decoration: underline;
-    font-family: KippaxCondensed, sans-serif;
+
+.btt_button_div img{
+    height: 50px;
+    position: relative;
+    right: 15px;
 }
 
 
@@ -858,11 +849,34 @@ html{
         padding-top: 4.5px;
     }
 }
+@media only screen and (max-width: 723px){
+    .btt_button_div img{
+        height: 40px;
+        right: 5px;
+    }
+}
+
+@media only screen and (max-width: 658px){
+    .btt_button_div img{
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 532px){
+    .btt_button_div img{
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width: 475px){
+    .btt_button_div img{
+        height: 32px;
+    }
+
+}
 
 
 @media only screen and (max-width: 447px){
-    
-
 /*---------Sub Menu---------*/
 #sub_menu{
     display: flex;
