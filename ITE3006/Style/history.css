@@ -9,6 +9,12 @@ a{
 }
 
 
+html{
+    scroll-behavior: smooth;
+}
+
+
+
 /*---------Menu-------------*/
 
 .menu_logo{
@@ -258,6 +264,24 @@ a{
 .float_div p{
     width: 98%;
 }
+
+.btt_button_div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    bottom: 0px;
+    right: 100px;
+}
+
+
+.btt_button_div img{
+    height: 50px;
+    position: relative;
+    right: 15px;
+}
 /*---------History-------------*/
 
 
@@ -473,4 +497,30 @@ a{
         display: none;
     }
 
+}
+
+@media only screen and (max-width: 962px){
+    .btt_button_div img{
+        height: 40px;
+        right: 5px;
+    }
+}
+
+@media only screen and (max-width: 658px){
+    .btt_button_div img{
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 532px){
+    .btt_button_div img{
+        height: 32px;
+        right: 5px
+    }
+}
+
+@media only screen and (max-width: 475px){
+    .btt_button_div img{
+        height: 29px;
+    }
 }
