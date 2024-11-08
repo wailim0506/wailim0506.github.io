@@ -1,0 +1,856 @@
+body{
+    margin: 0px;
+    background-color: white;
+    overflow: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*---------Menu-------------*/
+.menu_logo{
+    height: 70px;
+    padding-top: 2.5px;
+    padding-left: 5px;
+}
+
+.menu{
+    height: 75px;
+    background-color: #88c4f1;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #001838;
+}
+
+.word{
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.menu_tag{
+    font-size: 20px;
+    font-family: KippaxCondensed, sans-serif;
+    padding-top: 24px;
+    width: 130px;
+    text-align: center;
+    font-weight: 800;
+    color: #001838;
+}
+
+.menu_tag_sub{
+    margin-left: -20px;
+    cursor: pointer;
+}
+
+.menu_list{
+    border: 1px solid black;
+    background-color: white;
+    position: relative;
+    right: 9px;
+    bottom: 20px;
+    width: 100px;
+    display: none;
+}
+
+.hidden{
+    font-family: KippaxCondensed, sans-serif;
+    height: 40px;
+    width: 150px;
+    list-style: none;
+    position: relative;
+    right: 45px;
+    top: 10px;
+    font-size: 15px;
+    display: none;
+}
+
+.hidden a{
+    text-decoration: none;
+    color: #001838
+}
+
+.hidden_menu_icon{
+    display: none;
+    height: 24px;
+}
+
+.word:hover{
+    text-decoration: underline;
+}
+
+.menu_tag_sub:hover .hidden{
+    display: block;
+}
+
+.menu_tag_sub:hover ul{
+    display: block;
+}
+
+.hidden_menu{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #001838;
+    z-index: 10;
+    top: 0px;
+}
+
+.hidden_menu_body{
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    height: 99%;
+}
+
+.hidden_menu_body_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.hidden_menu_logo{
+    height: 50px;
+}
+
+.hidden_menu_x_icon{
+    height: 40px;
+}
+
+.hidden_menu_body_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    overflow: scroll;
+    scrollbar-width: none;  /*hide the scroll bar*/
+}
+
+.hidden_menu_body_main ::-webkit-scrollbar{ /*hide the scroll bar*/ /*found on w3school*/
+    display: none;
+}
+
+.hidden_menu_tag{
+    height: 50px;
+    margin: 2px;
+    border-bottom: 1px solid #fff3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hidden_menu_tag_last{
+    border-bottom: 0px;
+}
+
+.hidden_menu_tag a{
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.hidden_menu_tag a:hover{
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 720px){
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu_tag{
+        display: none;
+    }
+
+    .menu_logo{
+        padding-top: 0px;
+    }
+
+    .hidden_menu_icon{
+        display: block;
+        padding-right: 10px;
+    }
+}
+
+
+/*---------Menu-------------*/
+
+/*---------Sub Menu---------*/
+#sub_menu{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(12, 12, 12, 0.17);
+}
+
+.sub_menu_left{
+    width: 33.3333%;
+}
+
+.sub_menu_middle{
+    width: 33.3333%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sub_menu_right{
+    width: 33.3333%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.selection{
+    height: 70%;
+    background-color: #F5F5F5;
+    border: 0px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.search_button{
+    height: 70%;
+    background-color: #F5F5F5;
+    border: 0px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;   
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.hidden_sub_menu{
+    width: 100%;
+    background-color: white;
+    display: none;
+    flex-direction: row;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.hidden_form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.sub_menu_tag{
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #001838;
+    padding: 20px;
+}
+
+#sub_menu_tag_results{
+    color: rgba(12, 12, 12, 0.3);
+}
+
+#sub_menu_tag_tables{
+    color: rgba(12, 12, 12, 0.3);
+}
+
+#sub_menu_selected_div{
+    align-items: center;
+    display: flex;
+    height: 50px;
+    border-bottom: 2px solid #88c4f1;
+    
+}
+
+.sub_menu_div{
+    align-items: center;
+    display: flex;
+    height: 50px;
+    margin-left: 5px;
+}
+
+#sub_menu_tag_results:hover{
+    color: #001838;
+}
+
+#sub_menu_tag_tables:hover{
+    color: #001838;
+}
+
+.sub_menu_div:hover{
+    border-bottom: 2px solid #88c4f1;
+}
+/*---------Sub Menu---------*/
+
+/*---------Fixtures---------*/
+.fixture{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    margin-right: 10%;   
+    margin-left: 10%;        
+}
+
+.fixture a{
+    text-decoration: none;
+}
+
+.fixture_month{
+    display: flex;
+    flex-direction: column;
+}
+
+.fixture_month_heading{
+    font-family: KippaxCondensed, sans-serif;
+    font-size: 41px;
+    font-weight: 700;
+    color: #88c4f1;
+}
+
+.fixture_box{
+    display: flex;
+    flex-direction: column;
+    height: 285px;
+    box-shadow: 0px 1px 2px rgba(12,12,12,0.7) ;
+    border-top: 3px solid #88c4f1;
+    margin-bottom: 23px;
+    position: relative;
+    bottom: 22px;
+    background-color: white;
+}
+
+.fixture_box_upper_part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 19%;
+    width: 100%;    
+}
+
+.fixture_box_upper_part_left_right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 10%;
+}
+
+.fixture_box_upper_part_middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+
+.fixture_competition_logo{
+    height: 64px;
+    position: relative;
+    top: 3px;
+}
+
+.fixture_competition_name{
+    font-size: 17px;
+    font-weight: bold;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.fixture_competition_venue_date_time{
+    font-size: 15px;
+    color: rgba(12,12,12,0.7);
+    position: relative;
+    bottom: 10px;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.stadium{
+    color: rgba(12,12,12,0.7);
+}
+
+
+.fixture_box_middle_part{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 57%; 
+}
+
+.fixture_vs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+
+.vs{
+    font-size: 22px;
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: bold;
+    color: #001838;
+}
+
+.fixture_box_middle_part_home{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+}
+
+.fixture_box_middle_part_away{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%; 
+}
+
+.fixture_team_name{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: KippaxCondensed, sans-serif;
+    color: #001838;
+}
+
+.fixture_team_logo{
+    height: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+}   
+
+.fixture_box_lower_part{
+    height: 24%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(12,12,12,0.7);
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.fixture_match_centre{
+    font-size: 22px;
+    color: #001838;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.fixture_box:hover{
+    transform: scale(1.01);
+}
+
+#last_box{
+    margin-bottom: 0px;
+}
+
+.notes{
+    color: rgba(12, 12, 12, 0.7);
+    font-size: 14px;
+    font-family: KippaxCondensed, sans-serif;
+}    
+
+#search_error{
+    width: 100%;
+    height: 550px;
+    font-family: KippaxCondensed, sans-serif;
+    color: rgba(12,12,12,0.7);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#search_error_competition{
+    font-weight: bold;
+}
+
+#search_error_month{
+    font-weight: bold;
+}
+
+
+
+/*---------Fixtures---------*/
+
+
+/*---------Footer---------*/
+
+.footer{
+    margin-top: 5px;
+    height: 320px;
+    background-color: #001838;
+}
+
+.footer_logo_first_half{
+    background-color: white;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer_club_logo{
+    height: 180px;
+}
+
+.footer_logo_second_half{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    font-family: KippaxCondensed, sans-serif;
+    font-style: italic;
+}
+
+.dummy_space{
+    width: 260px;
+}
+
+.footer_tag_right{
+    width: 180px;
+}
+
+.footer_tag_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 180px;
+}
+
+.footer_social_media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height:109px;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+
+.footer_social_media_img{
+    height: 60px;
+    position: relative;
+    bottom: 15px;
+}
+
+.author{
+    font-size: 12px;
+    color: rgba(94, 92, 92, 0.7);
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.footer_social_media_img:hover{
+    transform:scale(1.15);
+}
+
+.footer_club_logo:hover{
+    transform: scale(1.02);
+}
+
+
+/*---------Footer---------*/
+
+
+
+@media only screen and (max-width: 1060px){
+
+.fixture_team_name{
+    font-size: 17px;
+    font-weight: 700;
+    font-family: KippaxCondensed, sans-serif;
+    color: #001838;
+}
+
+.fixture_match_centre{
+    font-size: 17px;
+    color: #001838;
+}
+
+.vs{
+    font-size: 22px;
+}
+
+#sub_menu{
+    justify-content: center;
+}
+.sub_menu_left{
+    display: none;
+}
+
+.sub_menu_middle{
+    width: 33.3333%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sub_menu_right{
+    display: none;
+}
+
+.hidden_sub_menu{
+    display: flex;
+}
+
+.selection{
+    height: 70%;
+    background-color: #F5F5F5;
+    border: 0px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.search_button{
+    height: 70%;
+    background-color: #F5F5F5;
+    border: 0px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;   
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+
+/*---------Footer---------*/
+
+.footer{
+    height: 214px;
+}
+
+.footer_logo_first_half{
+    height: 57.5px;
+}
+.footer_club_logo{
+    height: 115px;
+}
+
+.dummy_space{
+    width: 190px;
+}
+
+.footer_logo_second_half{
+    height: 57.5px;
+    font-size: 22px;
+}
+
+.footer_social_media{
+    font-size: 15px;
+    height: 70.5px;
+}
+
+
+.footer_social_media_img{
+    height: 40px;
+    position: relative;
+    bottom:5px;
+}
+
+/*---------Footer---------*/
+}
+
+@media only screen and (max-width: 865px){
+    .fixture_team_name{
+        font-size: 15px;
+    }
+
+    .fixture_match_centre{
+        font-size: 15px;
+    }
+
+    .vs{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 819px){
+    #fixture_box_upper_part_left{
+        display: none;
+    }
+
+    
+    .fixture_box_upper_part_middle{
+        justify-content: center;
+        align-items: baseline;
+        width: 90%;
+    }
+
+    .fixture_competition_name{
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    
+    .fixture_competition_venue_date_time{
+        font-size: 13px;
+    }
+
+    .fixture_box_middle_part{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        height: 57%; 
+    }
+
+    .fixture_box_middle_part_home{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .fixture_box_middle_part_away{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%; 
+    }
+
+    .fixture_vs{
+        display: none;
+    }
+
+    .fixture_team_logo{
+        height: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }  
+
+    .fixture_box_team_name_box{
+        width: 85% ;
+    }
+    .fixture_box_team_logo_box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 20% ;
+    }
+
+    .fixture_team_name{
+        font-size: 20px;
+    }
+
+    .fixture_match_centre{
+        font-size: 20px;
+    }
+
+    .fixture_competition_logo{
+        height: 50px;
+        position: relative;
+        top: 3px;
+    }
+
+    .author{
+        font-size: 10px;
+        color: rgba(94, 92, 92, 0.7);
+        font-family: KippaxCondensed, sans-serif;
+        padding-top: 4.5px;
+    }
+}
+
+@media only screen and (max-width: 447px){
+    
+
+/*---------Sub Menu---------*/
+#sub_menu{
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-bottom: 1px solid rgba(12, 12, 12, 0.17);
+}
+
+.sub_menu_tag{
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #001838;
+    padding: 20px;
+}
+
+#sub_menu_tag_results{
+    color: rgba(12, 12, 12, 0.3);
+}
+
+#sub_menu_tag_tables{
+    color: rgba(12, 12, 12, 0.3);
+}
+
+#sub_menu_selected_div{
+    align-items: center;
+    display: flex;
+    height: 40px;
+    border-bottom: 2px solid #88c4f1;
+    
+}
+
+.sub_menu_div{
+    align-items: center;
+    display: flex;
+    height: 40px;
+    margin-left: 5px;
+}
+
+#sub_menu_tag_results:hover{
+    color: #001838;
+}
+
+#sub_menu_tag_tables:hover{
+    color: #001838;
+}
+
+.sub_menu_div:hover{
+    border-bottom: 2px solid #88c4f1;
+}
+/*---------Sub Menu---------*/    
+
+}

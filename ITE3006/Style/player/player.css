@@ -1,0 +1,798 @@
+body{
+    margin: 0px;
+    background-color: white;
+    overflow: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*---------Menu-------------*/
+.menu_logo{
+    height: 70px;
+    padding-top: 2.5px;
+    padding-left: 5px;
+}
+
+.menu{
+    height: 75px;
+    background-color: #88c4f1;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #001838
+}
+
+.word{
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.menu_tag{
+    font-size: 20px;
+    font-family: KippaxCondensed, sans-serif;
+    padding-top: 24px;
+    width: 130px;
+    text-align: center;
+    font-weight: 800;
+    color: #001838;
+}
+
+.menu_tag_sub{
+    margin-left: -20px;
+    cursor: pointer;
+}
+
+.menu_list{
+    border: 1px solid black;
+    background-color: white;
+    position: relative;
+    right: 9px;
+    bottom: 20px;
+    width: 100px;
+    display: none;
+}
+
+.hidden{
+    font-family: KippaxCondensed, sans-serif;
+    height: 40px;
+    width: 150px;
+    list-style: none;
+    position: relative;
+    right: 45px;
+    top: 10px;
+    font-size: 15px;
+    display: none;
+}
+
+.hidden a{
+    text-decoration: none;
+    color: #001838
+}
+
+.hidden_menu_icon{
+    display: none;
+    height: 24px;
+}
+
+.word:hover{
+    text-decoration: underline;
+}
+
+.menu_tag_sub:hover .hidden{
+    display: block;
+}
+
+.menu_tag_sub:hover ul{
+    display: block;
+}
+
+.hidden_menu{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #001838;
+    z-index: 10;
+    top: 0px;
+}
+
+.hidden_menu_body{
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    height: 99%;
+}
+
+.hidden_menu_body_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.hidden_menu_logo{
+    height: 50px;
+}
+
+.hidden_menu_x_icon{
+    height: 40px;
+}
+
+.hidden_menu_body_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    overflow: scroll;
+    scrollbar-width: none;  /*hide the scroll bar*/
+}
+
+.hidden_menu_body_main ::-webkit-scrollbar{ /*hide the scroll bar*/ /*found on w3school*/
+    display: none;
+}
+
+.hidden_menu_tag{
+    height: 50px;
+    margin: 2px;
+    border-bottom: 1px solid #fff3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hidden_menu_tag_last{
+    border-bottom: 0px;
+}
+
+.hidden_menu_tag a{
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.hidden_menu_tag a:hover{
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 720px){
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu_tag{
+        display: none;
+    }
+
+    .menu_logo{
+        padding-top: 0px;
+    }
+
+    .hidden_menu_icon{
+        display: block;
+        padding-right: 10px;
+    }
+}
+
+
+/*---------Menu-------------*/
+
+
+/*---------Player-------------*/
+.player{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 45px;
+    font-family: KippaxCondensed, sans-serif;
+    text-transform: uppercase;
+    color: #88c4f1;
+    font-weight: 700;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.subMenu{
+    height: 60px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+
+.subMenu_bottom{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.subMenu_bottom a{
+    text-decoration: none;
+    color: #001838;
+    text-transform: uppercase;
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 700;
+}
+
+.subMenu_button{
+    height: 0%;
+    width: 120px;
+    border: 1px solid black;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.subMenu_button:hover{
+    background-color: #001838;
+    color: aliceblue;
+}
+
+.player_box{
+    width: 100%;
+    margin-top: 35px;
+}
+
+.player_box_position{
+    text-transform: uppercase;
+    font-family: KippaxCondensed, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #001838;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.player_box_player{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    justify-content: flex-start;
+}
+
+.first_card{
+    margin-left: 0px;
+}
+
+.player_card{
+    height: 380px;
+    width: 320px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.player_card_top{
+    height: 80%;
+    width: 100%;
+}
+
+.player_card_bottom{
+    height: 19%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.player_card_number{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    position: absolute;
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #001838;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.player_card_img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.player_img{
+    height: 100%;
+}
+
+.country_flag{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.country_flag img{
+    height: 36px;
+}
+
+.player_card_name{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    height: 100%;
+    text-transform: uppercase;
+    margin-left: 1px;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.first_name{
+    font-size: 18px;
+    font-weight: 400;
+    color: #88c4f1;
+}
+.last_name{
+    font-size: 22px;
+    font-weight: 700;
+    color: #001838;
+}
+
+
+
+.player_card:hover{
+    transform: scale(1.01);;
+}
+
+.player_card:hover .player_card_number{
+    background-color: #001838;
+    color: aliceblue;
+}
+
+.player_card:hover .first_name{
+    color: #001838;
+}
+
+.btt_button_div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    bottom: 0px;
+    right: 100px;
+}
+
+
+.btt_button_div img{
+    height: 50px;
+    position: relative;
+    right: 15px;
+}
+/*---------Player-------------*/
+
+
+/*---------Footer---------*/
+
+.footer{
+    margin-top: 5px;
+    height: 320px;
+    background-color: #001838;
+}
+
+.footer_logo_first_half{
+    background-color: white;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer_club_logo{
+    height: 180px;
+}
+
+.footer_logo_second_half{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    font-family: KippaxCondensed, sans-serif;
+    font-style: italic;
+}
+
+.dummy_space{
+    width: 260px;
+}
+
+.footer_tag_right{
+    width: 180px;
+}
+
+.footer_tag_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 180px;
+}
+
+.footer_social_media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height:109px;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+
+.footer_social_media_img{
+    height: 60px;
+    position: relative;
+    bottom: 15px;
+}
+
+.author{
+    font-size: 12px;
+    color: rgba(94, 92, 92, 0.7);
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.footer_social_media_img:hover{
+    transform:scale(1.15);
+}
+
+.footer_club_logo:hover{
+    transform: scale(1.02);
+}
+
+
+/*---------Footer---------*/
+
+
+@media only screen and (max-width: 1730px){
+    .player_card{
+        height: 344px;
+        width: 290px;
+    }
+}
+
+@media only screen and (max-width: 1578px){
+    .player_card{
+        height: 297px;
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 1380px){
+    .player_card{
+        height: 267px;
+        width: 220px;
+    }
+
+    .country_flag img{
+        height: 30px;
+    }
+
+    .first_name{
+        font-size: 13px;
+    }
+    .last_name{
+        font-size: 19px;
+    }
+
+    .player_card_number{
+        font-size: 29px;
+    }
+}
+
+@media only screen and (max-width: 1225px){
+    .player_card{
+        height: 316px;
+        width: 280px;
+    }
+    .player_card_number{
+        font-size: 32px;
+    }
+
+    .country_flag img{
+        height: 36px;
+    }
+    
+    .first_name{
+        font-size: 18px;
+    }
+    .last_name{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 1149px){
+    .player_card{
+        height: 304px;
+        width: 260px;
+    }
+
+    .player_card_number{
+        font-size: 29px;
+    }
+
+    .country_flag img{
+        height: 33px;
+    }
+    
+    .first_name{
+        font-size: 16px;
+    }
+    .last_name{
+        font-size: 20px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1075px){
+    .player_card{
+        height: 380px;
+        width: 340px;
+    }
+
+    .player_card_number{
+        font-size: 33px;
+    }
+
+    .country_flag img{
+        height: 33px;
+    }
+    
+    .first_name{
+        font-size: 22px;
+    }
+    .last_name{
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 925px){
+    .player_card{
+        height: 328px;
+        width: 310px;
+    }
+
+    .player_card_number{
+        font-size: 38px;
+    }
+
+    .country_flag img{
+        height: 38px;
+    }
+    
+    .first_name{
+        font-size: 26px;
+    }
+    .last_name{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 925px){
+    .player{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .player_card{
+        height: 272px;
+        width: 230px;
+    }
+
+    .country_flag img{
+        height: 30px;
+    }
+
+    .first_name{
+        font-size: 13px;
+    }
+    .last_name{
+        font-size: 19px;
+    }
+
+    .player_card_number{
+        font-size: 29px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .subMenu_button{
+        width: 90px;
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 778px){
+    .player_card{
+        height: 304px;
+        width: 260px;
+    }
+
+    .player_card_number{
+        font-size: 29px;
+    }
+
+    .country_flag img{
+        height: 33px;
+    }
+    
+    .first_name{
+        font-size: 16px;
+    }
+    .last_name{
+        font-size: 20px;
+    }
+
+    .footer{
+        height: 214px;
+    }
+    
+    .footer_logo_first_half{
+        height: 57.5px;
+    }
+    .footer_club_logo{
+        height: 115px;
+    }
+    
+    .dummy_space{
+        width: 190px;
+    }
+    
+    .footer_logo_second_half{
+        height: 57.5px;
+        font-size: 22px;
+    }
+    
+    .footer_social_media{
+        font-size: 15px;
+        height: 70.5px;
+    }
+    
+    
+    .footer_social_media_img{
+        height: 40px;
+        position: relative;
+        bottom:5px;
+    }
+
+    .author{
+        font-size: 10px;
+        color: rgba(94, 92, 92, 0.7);
+        font-family: KippaxCondensed, sans-serif;
+        padding-top: 4.5px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .player_card{
+        height: 272px;
+        width: 230px;
+    }
+
+    .country_flag img{
+        height: 30px;
+    }
+
+    .first_name{
+        font-size: 13px;
+    }
+    .last_name{
+        font-size: 19px;
+    }
+
+    .player_card_number{
+        font-size: 29px;
+    }
+
+    .subMenu_button{
+        width: 75px;
+        font-size: 10px;
+        margin-left: 1px;
+    }
+}
+
+@media only screen and (max-width: 531px){
+    .player_card{
+        height: 264px;
+        width: 210px;
+    }
+
+    .country_flag img{
+        height: 27px;
+    }
+
+    .first_name{
+        font-size: 13px;
+    }
+    .last_name{
+        font-size: 17px;
+    }
+
+    .player_card_number{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 962px){
+    .btt_button_div img{
+        height: 40px;
+        right: 5px;
+    }
+}
+
+@media only screen and (max-width: 658px){
+    .btt_button_div img{
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 532px){
+    .btt_button_div img{
+        height: 32px;
+        right: 5px
+    }
+}
+
+@media only screen and (max-width: 475px){
+    .btt_button_div img{
+        height: 29px;
+    }
+}

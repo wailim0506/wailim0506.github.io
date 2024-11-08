@@ -1,0 +1,467 @@
+body{
+    margin: 0px;
+    background-color: white;
+    overflow: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*---------Menu-------------*/
+.menu_logo{
+    height: 70px;
+    padding-top: 2.5px;
+    padding-left: 5px;
+}
+
+.menu{
+    height: 75px;
+    background-color: #88c4f1;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #001838
+}
+
+.word{
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.menu_tag{
+    font-size: 20px;
+    font-family: KippaxCondensed, sans-serif;
+    padding-top: 24px;
+    width: 130px;
+    text-align: center;
+    font-weight: 800;
+    color: #001838;
+}
+
+.menu_tag_sub{
+    margin-left: -20px;
+    cursor: pointer;
+}
+
+.menu_list{
+    border: 1px solid black;
+    background-color: white;
+    position: relative;
+    right: 9px;
+    bottom: 20px;
+    width: 100px;
+    display: none;
+}
+
+.hidden{
+    font-family: KippaxCondensed, sans-serif;
+    height: 40px;
+    width: 150px;
+    list-style: none;
+    position: relative;
+    right: 45px;
+    top: 10px;
+    font-size: 15px;
+    display: none;
+}
+
+.hidden a{
+    text-decoration: none;
+    color: #001838
+}
+
+.hidden_menu_icon{
+    display: none;
+    height: 24px;
+}
+
+.word:hover{
+    text-decoration: underline;
+}
+
+.menu_tag_sub:hover .hidden{
+    display: block;
+}
+
+.menu_tag_sub:hover ul{
+    display: block;
+}
+
+.hidden_menu{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #001838;
+    z-index: 10;
+    top: 0px;
+}
+
+.hidden_menu_body{
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    height: 99%;
+}
+
+.hidden_menu_body_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.hidden_menu_logo{
+    height: 50px;
+}
+
+.hidden_menu_x_icon{
+    height: 40px;
+}
+
+.hidden_menu_body_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    overflow: scroll;
+    scrollbar-width: none;  /*hide the scroll bar*/
+}
+
+.hidden_menu_body_main ::-webkit-scrollbar{ /*hide the scroll bar*/ /*found on w3school*/
+    display: none;
+}
+
+.hidden_menu_tag{
+    height: 50px;
+    margin: 2px;
+    border-bottom: 1px solid #fff3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hidden_menu_tag_last{
+    border-bottom: 0px;
+}
+
+.hidden_menu_tag a{
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.hidden_menu_tag a:hover{
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 720px){
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu_tag{
+        display: none;
+    }
+
+    .menu_logo{
+        padding-top: 0px;
+    }
+
+    .hidden_menu_icon{
+        display: block;
+        padding-right: 10px;
+    }
+}
+
+
+/*---------Menu-------------*/
+
+/*---------About Us-------------*/
+.about_us{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.title{
+    font-size: 45px;
+    font-family: KippaxCondensed, sans-serif;
+    text-transform: uppercase;
+    color: #88c4f1;
+    font-weight: 700;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.description{
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.description p{
+    font-size: 30px;
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 500;
+}
+
+form{
+    width: 80%;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 10px;
+    font-family: KippaxCondensed, sans-serif;
+    margin-top: 10px;
+}
+
+.form_input{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+}
+
+.input_name{
+    width: 30%;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.input_field{
+    width: 70%;
+}
+
+input{
+    width: 100%;
+    font-size: 20px;
+}
+
+textarea{
+    resize: none;
+    font-size: 20px;
+    width: 100%;
+}
+
+.input_field input{
+    height: 30px;
+}
+
+.button{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 50%;
+    height: 50px;
+    font-size: 20px;
+    background-color: #88c4f1;
+    border-radius: 25px;
+    margin-left: 5px;
+}
+/*---------About Us-------------*/
+
+/*---------Footer---------*/
+
+.footer{
+    margin-top: 5px;
+    height: 320px;
+    background-color: #001838;
+}
+
+.footer_logo_first_half{
+    background-color: white;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer_club_logo{
+    height: 180px;
+}
+
+.footer_logo_second_half{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    font-family: KippaxCondensed, sans-serif;
+    font-style: italic;
+}
+
+.dummy_space{
+    width: 260px;
+}
+
+.footer_tag_right{
+    width: 180px;
+}
+
+.footer_tag_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 180px;
+}
+
+.footer_social_media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height:109px;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+
+.footer_social_media_img{
+    height: 60px;
+    position: relative;
+    bottom: 15px;
+}
+
+.author{
+    font-size: 12px;
+    color: rgba(94, 92, 92, 0.7);
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.footer_social_media_img:hover{
+    transform:scale(1.15);
+}
+
+.footer_club_logo:hover{
+    transform: scale(1.02);
+}
+
+
+/*---------Footer---------*/
+
+@media only screen and (max-width: 800px){
+    .description p{
+        font-size: 23px;
+        font-family: KippaxCondensed, sans-serif;
+        font-weight: 500;
+    }
+    .input_name{
+        width: 30%;
+        font-size: 18px;
+    }
+
+    input{
+        font-size: 13px;
+    }
+
+    textarea{
+        font-size: 13px;
+    }
+
+    button{
+        font-size: 17px;
+    }
+
+    .footer{
+        height: 214px;
+    }
+
+    .footer_logo_first_half{
+        height: 57.5px;
+    }
+    
+    .footer_club_logo{
+        height: 115px;
+    }
+
+    .dummy_space{
+        width: 190px;
+    }
+
+    .footer_logo_second_half{
+        height: 57.5px;
+        font-size: 22px;
+    }
+
+    .footer_social_media{
+        font-size: 15px;
+        height: 70.5px;
+    }
+
+
+    .footer_social_media_img{
+        height: 40px;
+        position: relative;
+        bottom:5px;
+    }
+
+    .author{
+        font-size: 10px;
+        color: rgba(94, 92, 92, 0.7);
+        font-family: KippaxCondensed, sans-serif;
+        padding-top: 4.5px;
+    }
+}
+
+@media only screen and (max-width: 560px){
+    .form_input{
+        flex-direction: column;
+    }
+
+    .input_name{
+        width: 100%;
+    }
+    .input_field{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .button{
+        flex-direction: column;
+    }
+
+    button{
+        width: 100%;
+        margin-top: 5px;
+    }
+}

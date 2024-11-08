@@ -1,0 +1,935 @@
+body{
+    margin: 0px;
+    background-color: white;
+    overflow: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*---------Menu-------------*/
+.menu_logo{
+    height: 70px;
+    padding-top: 2.5px;
+    padding-left: 5px;
+}
+
+.menu{
+    height: 75px;
+    background-color: #88c4f1;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #001838
+}
+
+.word{
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.menu_tag{
+    font-size: 20px;
+    font-family: KippaxCondensed, sans-serif;
+    padding-top: 24px;
+    width: 130px;
+    text-align: center;
+    font-weight: 800;
+    color: #001838;
+}
+
+.menu_tag_sub{
+    margin-left: -20px;
+    cursor: pointer;
+}
+
+.menu_list{
+    border: 1px solid black;
+    background-color: white;
+    position: relative;
+    right: 9px;
+    bottom: 20px;
+    width: 100px;
+    display: none;
+}
+
+.hidden{
+    font-family: KippaxCondensed, sans-serif;
+    height: 40px;
+    width: 150px;
+    list-style: none;
+    position: relative;
+    right: 45px;
+    top: 10px;
+    font-size: 15px;
+    display: none;
+}
+
+.hidden a{
+    text-decoration: none;
+    color: #001838
+}
+
+.hidden_menu_icon{
+    display: none;
+    height: 24px;
+}
+
+.word:hover{
+    text-decoration: underline;
+}
+
+.menu_tag_sub:hover .hidden{
+    display: block;
+}
+
+.menu_tag_sub:hover ul{
+    display: block;
+}
+
+.hidden_menu{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #001838;
+    z-index: 10;
+    top: 0px;
+}
+
+.hidden_menu_body{
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    height: 99%;
+}
+
+.hidden_menu_body_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.hidden_menu_logo{
+    height: 50px;
+}
+
+.hidden_menu_x_icon{
+    height: 40px;
+}
+
+.hidden_menu_body_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    overflow: scroll;
+    scrollbar-width: none;  /*hide the scroll bar*/
+}
+
+.hidden_menu_body_main ::-webkit-scrollbar{ /*hide the scroll bar*/ /*found on w3school*/
+    display: none;
+}
+
+.hidden_menu_tag{
+    height: 50px;
+    margin: 2px;
+    border-bottom: 1px solid #fff3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hidden_menu_tag_last{
+    border-bottom: 0px;
+}
+
+.hidden_menu_tag a{
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.hidden_menu_tag a:hover{
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 720px){
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu_tag{
+        display: none;
+    }
+
+    .menu_logo{
+        padding-top: 0px;
+    }
+
+    .hidden_menu_icon{
+        display: block;
+        padding-right: 10px;
+    }
+}
+
+
+/*---------Menu-------------*/
+
+/*---------Sub Menu---------*/
+#sub_menu{
+    background-color: white;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(12, 12, 12, 0.17);
+}
+
+.sub_menu_left{
+    width: 33.3333%;
+}
+
+.sub_menu_middle{
+    width: 33.3333%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sub_menu_right{
+    width: 33.3333%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+
+
+.selection{
+    height: 70%;
+    background-color: #F5F5F5;
+    border: 0px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.search_button{
+    height: 70%;
+    background-color: #F5F5F5;
+    border: 0px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;   
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.hidden_sub_menu{
+    width: 100%;
+    background-color: white;
+    display: none;
+    flex-direction: row;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.hidden_form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+
+.sub_menu_tag{
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #001838;
+    padding: 20px;
+}
+
+#sub_menu_tag_tables{ /*unselected*/
+    color: rgba(12, 12, 12, 0.3);
+}
+
+#sub_menu_tag_fixtures{ /*unselected*/
+    color: rgba(12, 12, 12, 0.3);
+}
+
+#sub_menu_selected_div{
+    align-items: center;
+    display: flex;
+    height: 50px;
+    border-bottom: 2px solid #88c4f1;
+}
+
+.sub_menu_div{
+    align-items: center;
+    display: flex;
+    height: 50px;
+    margin-left: 5px;
+}
+
+#sub_menu_tag_tables:hover{ /*unselected*/
+    color: #001838;
+}
+
+#sub_menu_tag_fixtures:hover{ /*unselected*/
+    color: #001838;
+}
+
+.sub_menu_div:hover{
+    border-bottom: 2px solid #88c4f1;
+}
+/*---------Sub Menu---------*/
+
+/*---------Results---------*/
+.result{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    margin-right: 10%;   
+    margin-left: 10%;        
+}
+
+.result a{
+    text-decoration: none;
+}
+
+.result_month{
+    display: flex;
+    flex-direction: column;
+}
+
+.result_month_heading{
+    font-family: KippaxCondensed, sans-serif;
+    font-size: 41px;
+    font-weight: 700;
+    color: #88c4f1;
+}
+
+.result_box{
+    display: flex;
+    flex-direction: column;
+    height: 285px;
+    box-shadow: 0px 1px 2px rgba(12,12,12,0.7) ;
+    border-top: 3px solid #88c4f1;
+    margin-bottom: 23px;
+    position: relative;
+    bottom: 22px;
+    background-color: white;
+}
+
+.result_box_upper_part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 19%;
+    width: 100%;    
+}
+
+.result_box_upper_part_left_right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 10%;
+}
+
+.result_box_upper_part_middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+
+.result_competition_logo{
+    height: 64px;
+    position: relative;
+    top: 3px;
+}
+
+.result_competition_name{
+    font-size: 17px;
+    font-weight: bold;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.result_competition_venue_date_time{
+    font-size: 15px;
+    color: rgba(12,12,12,0.7);
+    position: relative;
+    bottom: 10px;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.stadium{
+    color: rgba(12,12,12,0.7);
+}
+
+
+.result_box_middle_part{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 57%; 
+}
+
+.result_score{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+
+.score{
+    font-size: 40px;
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: bold;
+    color: #001838;
+}
+
+.result_box_middle_part_home{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+}
+
+.result_box_middle_part_away{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%; 
+}
+
+.result_team_name{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: KippaxCondensed, sans-serif;
+    color: #001838;
+}
+
+.hidden_score{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: KippaxCondensed, sans-serif;
+    color: #001838;
+    display: inline-block;
+    margin-right: 15px;
+    display: none;
+}
+
+.result_team_logo{
+    height: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+}   
+
+.result_box_lower_part{
+    height: 24%;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #001838;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.result_match_centre{
+    font-size: 22px;
+    width: 50%;
+    color: #001838;
+    font-family: KippaxCondensed, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.result_highlight{
+    font-size: 22px;
+    width: 50%;
+    color: #001838;
+    font-family: KippaxCondensed, sans-serif;
+    border-left: 1px solid #001838;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.result_box:hover{
+    transform: scale(1.01);
+}
+
+.btt_button_div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    bottom: 0px;
+    right: 100px;
+}
+
+
+.btt_button_div img{
+    height: 50px;
+    position: relative;
+    right: 15px;
+}
+
+
+#search_error{
+    width: 100%;
+    height: 550px;
+    font-family: KippaxCondensed, sans-serif;
+    color: rgba(12,12,12,0.7);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#search_error_competition{
+    font-weight: bold;
+}
+
+#search_error_month{
+    font-weight: bold;
+}
+/*---------Results---------*/
+
+
+/*---------Footer---------*/
+
+.footer{
+    margin-top: 5px;
+    height: 320px;
+    background-color: #001838;
+}
+
+.footer_logo_first_half{
+    background-color: white;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer_club_logo{
+    height: 180px;
+}
+
+.footer_logo_second_half{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    font-family: KippaxCondensed, sans-serif;
+    font-style: italic;
+}
+
+.dummy_space{
+    width: 260px;
+}
+
+.footer_tag_right{
+    width: 180px;
+}
+
+.footer_tag_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 180px;
+}
+
+.footer_social_media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height:109px;
+    font-family: KippaxCondensed, sans-serif;
+}
+
+
+.footer_social_media_img{
+    height: 60px;
+    position: relative;
+    bottom: 15px;
+}
+
+.author{
+    font-size: 12px;
+    color: rgba(94, 92, 92, 0.7);
+    font-family: KippaxCondensed, sans-serif;
+}
+
+.footer_social_media_img:hover{
+    transform:scale(1.15);
+}
+
+.footer_club_logo:hover{
+    transform: scale(1.02);
+}
+
+
+/*---------Footer---------*/
+
+
+
+@media only screen and (max-width: 1065px){
+
+.result_team_name{
+    font-size: 17px;
+}
+
+.result_match_centre{
+    font-size: 19px;
+}
+
+.result_highlight{
+    font-size: 19px;
+}
+
+.score{
+    font-size: 21px;
+}
+
+#sub_menu{
+    justify-content: center;
+}
+.sub_menu_left{
+    display: none;
+}
+
+.sub_menu_middle{
+    width: 33.3333%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sub_menu_right{
+    display: none;
+}
+
+.hidden_sub_menu{
+    display: flex;
+}
+
+.selection{
+    height: 70%;
+    background-color: #F5F5F5;
+    border: 0px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.search_button{
+    height: 70%;
+    background-color: #F5F5F5;
+    border: 0px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;   
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+
+/*---------Footer---------*/
+
+.footer{
+    height: 214px;
+}
+
+.footer_logo_first_half{
+    height: 57.5px;
+}
+.footer_club_logo{
+    height: 115px;
+}
+
+.dummy_space{
+    width: 190px;
+}
+
+.footer_logo_second_half{
+    height: 57.5px;
+    font-size: 22px;
+}
+
+.footer_social_media{
+    font-size: 15px;
+    height: 70.5px;
+}
+
+
+.footer_social_media_img{
+    height: 40px;
+    position: relative;
+    bottom:5px;
+}
+
+/*---------Footer---------*/
+}
+
+@media only screen and (max-width: 867px){
+    .result_team_name{
+        font-size: 15px;
+    }
+
+    .result_match_centre{
+        font-size: 15px;
+    }
+
+    .result_highlight{
+        font-size: 15px;
+    }
+
+    .score{
+        font-size: 21px;
+    }
+}
+
+@media only screen and (max-width: 819px){
+    #result_box_upper_part_left{
+        display: none;
+    }
+
+    
+    .result_box_upper_part_middle{
+        justify-content: center;
+        align-items: baseline;
+        width: 90%;
+    }
+
+    .result_competition_name{
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    
+    .result_competition_venue_date_time{
+        font-size: 13px;
+    }
+
+    .result_box_middle_part{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        height: 57%; 
+    }
+
+    .result_box_middle_part_home{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .result_box_middle_part_away{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%; 
+    }
+
+    .result_score{
+        display: none;
+    }
+
+    .result_team_logo{
+        height: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }  
+
+    .result_box_team_name_box{
+        width: 85% ;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .result_box_team_logo_box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 20% ;
+    }
+
+    .result_competition_logo{
+        height: 50px;
+        position: relative;
+        top: 3px;
+    }
+
+    .result_team_name{
+        font-size: 20px;
+    }
+
+    .result_match_centre{
+        font-size: 17px;
+    }
+
+    .result_highlight{
+        font-size: 17px;
+    }
+
+    .hidden_score{
+        display: inline-block;
+    }
+
+    .author{
+        font-size: 10px;
+        color: rgba(94, 92, 92, 0.7);
+        font-family: KippaxCondensed, sans-serif;
+        padding-top: 4.5px;
+    }
+}
+@media only screen and (max-width: 723px){
+    .btt_button_div img{
+        height: 40px;
+        right: 5px;
+    }
+}
+
+@media only screen and (max-width: 658px){
+    .btt_button_div img{
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 532px){
+    .btt_button_div img{
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width: 475px){
+    .btt_button_div img{
+        height: 32px;
+    }
+
+}
+
+
+@media only screen and (max-width: 447px){
+/*---------Sub Menu---------*/
+#sub_menu{
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-bottom: 1px solid rgba(12, 12, 12, 0.17);
+}
+
+.sub_menu_tag{
+    font-family: KippaxCondensed, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #001838;
+    padding: 20px;
+}
+
+#sub_menu_tag_results{
+    color: rgba(12, 12, 12, 0.3);
+}
+
+#sub_menu_tag_tables{
+    color: rgba(12, 12, 12, 0.3);
+}
+
+#sub_menu_selected_div{
+    align-items: center;
+    display: flex;
+    height: 40px;
+    border-bottom: 2px solid #88c4f1;
+    
+}
+
+.sub_menu_div{
+    align-items: center;
+    display: flex;
+    height: 40px;
+    margin-left: 5px;
+}
+
+#sub_menu_tag_results:hover{
+    color: #001838;
+}
+
+#sub_menu_tag_tables:hover{
+    color: #001838;
+}
+
+.sub_menu_div:hover{
+    border-bottom: 2px solid #88c4f1;
+}
+/*---------Sub Menu---------*/    
+
+}

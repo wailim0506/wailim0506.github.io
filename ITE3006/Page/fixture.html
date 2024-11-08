@@ -1,0 +1,437 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Manchester City - Fixtures</title>
+        <link rel="stylesheet" href="../Style/fixture.css" />
+        <script type="text/javascript" src="../Script/fixture.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body id="body">
+        <!---------------------menu--------------------->
+        <div class="menu">
+            <img class="menu_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+            <div class="menu_tag"><span class="word"><a href="../index.html">Home</a></span></div>
+            <div class="menu_tag menu_tag_sub">
+                <span class="word">Fixtures</span>
+                <ul class="menu_list">
+                    <li class="hidden word"><a href="fixture.html">Fixtures</a></li>
+                    <li class="hidden word"><a href="result.html">Results</a></li>
+                    <li class="hidden word"><a href="table.html">Tables</a></li>
+                </ul>
+            </div>
+            <div class="menu_tag"><span class="word"><a href="./player/player.html">Players</a></span></div>
+            <div class="menu_tag"><span class="word"><a href="gallery.html">Gallery</a></span></div>
+            <div class="menu_tag menu_tag_sub">
+                <span class="word">More</span>
+                <ul class="menu_list">
+                    <li class="hidden word"><a href="stadium.html">Stadium</a></li>
+                    <li class="hidden word"><a href="./hallOfFrame/hallOfFrame.html">Hall of Frame</a></li>
+                    <li class="hidden word"><a href="song.html">Song</a></li>
+                    <li class="hidden word"><a href="history.html">History</a></li>
+                    <li class="hidden word"><a href="aboutUs.html">About</a></li>
+                </ul>
+            </div>
+            <img src="../Image/menu.png" class="hidden_menu_icon" onclick="show()">
+        </div>
+        <div class="hidden_menu" id="hidden_menu">
+            <div class="hidden_menu_body">
+                <div class="hidden_menu_body_top">
+                    <img class="hidden_menu_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                    <img class="hidden_menu_x_icon" src="../Image/close.png" onclick="hide()">
+                </div>
+                <div class="hidden_menu_body_main">
+                    <div class="hidden_menu_tag">
+                        <a href="../index.html">Home</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="fixture.html">Fixtures</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="result.html">Results</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="table.html">Tables</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="./player/player.html">Players</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="gallery.html">Gallery</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="stadium.html">Stadium</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="./hallOfFrame/hallOfFrame.html">Hall of Frame</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="song.html">Song</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="history.html">History</a>
+                    </div>
+                    <div class="hidden_menu_tag hidden_menu_tag_last">
+                        <a href="aboutUs.html">About</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------menu--------------------->
+
+        <!---------------------sub menu--------------------->
+        <div id="sub_menu">
+            <div class="sub_menu_left"></div>
+            <div class="sub_menu_middle">
+                <div id="sub_menu_selected_div"><a class="sub_menu_tag" id="sub_menu_tag_fixtures" href="fixture.html">Fixtures</a></div>
+                <div class="sub_menu_div"><a class="sub_menu_tag" id="sub_menu_tag_results" href="result.html">Results</a></div>
+                <div class="sub_menu_div"><a class="sub_menu_tag" id="sub_menu_tag_tables" href="table.html">Tables</a></div>
+            </div>  
+            <form class="sub_menu_right" name="search">
+                <select class="selection" name="month">
+                    <option>All Months</option>
+                    <option>April</option>
+                    <option>May</option>
+                </select>
+                <select class="selection" name="competition">
+                    <option>All Competitions</option>
+                    <option>Premier League</option>
+                    <option>Champions League</option>
+                    <option>Emirates FA Cup</option>
+                    <option>Carabao Cup</option>
+                    <option>UEFA Super Cup</option>
+                    <option>Club World Cup</option>
+                    <option>Community Shield</option>
+                </select>
+                <div class="search_button" onclick="filter();">
+                    Search
+                </div>
+            </form>  
+        </div>
+        <div class="hidden_sub_menu">
+            <form class="hidden_form" name="hidden_search">
+                <select class="selection" name="month">
+                    <option>All Months</option>
+                    <option>April</option>
+                    <option>May</option>
+                </select>
+                <select class="selection" name="competition">
+                    <option>All Competitions</option>
+                    <option>Premier League</option>
+                    <option>Champions League</option>
+                    <option>Emirates FA Cup</option>
+                    <option>Carabao Cup</option>
+                    <option>UEFA Super Cup</option>
+                    <option>Club World Cup</option>
+                    <option>Community Shield</option>
+                </select>
+                <div class="search_button" onclick="hidden_filter();">
+                    Search
+                </div>
+            </form> 
+        </div>
+        
+        <!---------------------sub menu--------------------->
+
+        <!---------------------fixture--------------------->
+        <div class="fixture" id="fixture">
+            <div class="fixture_month" id="april">
+                <p class="fixture_month_heading">April 2024</p>
+                <div class="fixture_box fa">
+                    <div class="fixture_box_upper_part">
+                        <div class="fixture_box_upper_part_left_right" id="fixture_box_upper_part_left">
+                        </div>
+                        <div class="fixture_box_upper_part_middle">
+                            <p class="fixture_competition_name">Emirates FA Cup</p>
+                            <span class="fixture_competition_venue_date_time"><a href="https://maps.app.goo.gl/2LM6CJdebvDF1xEZ9" target="_blank" class="stadium">Etihad Stadium</a> • 00:15, Sun 21 Apr 2024</span>
+                        </div>
+                        <div class="fixture_box_upper_part_left_right" >
+                            <img class="fixture_competition_logo" src="../Image/Logo/Competition/faCupLogo.png">
+                        </div>
+                    </div>
+                    <div class="fixture_box_middle_part">
+                        <div class="fixture_box_middle_part_home">
+                            <div class="fixture_box_team_name_box">
+                                <p class="fixture_team_name">Manchester City</p>
+                            </div>
+                            <div class="fixture_box_team_logo_box">
+                                <img class="fixture_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                            </div>
+                        </div>
+                        <div class="fixture_vs">
+                            <p class="vs">VS</p>
+                        </div>
+                        <div class="fixture_box_middle_part_away">
+                            <div class="fixture_box_team_logo_box">
+                                <img class="fixture_team_logo" src="../Image/Logo/Club/PremierLeague/chelseaLogo.png">
+                            </div>
+                            <div class="fixture_box_team_name_box">
+                                <p class="fixture_team_name">Chelsea</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fixture_box_lower_part">
+                        <a href="https://www.fotmob.com/matches/chelsea-vs-manchester-city/2d55kw#4447993" class="fixture_match_centre" target="_blank">Match Centre</a>
+                    </div>
+                </div>
+                <div class="fixture_box pl">
+                    <div class="fixture_box_upper_part">
+                        <div class="fixture_box_upper_part_left_right" id="fixture_box_upper_part_left">
+                        </div>
+                        <div class="fixture_box_upper_part_middle">
+                            <p class="fixture_competition_name">Premier League</p>
+                            <span class="fixture_competition_venue_date_time"><a href="https://maps.app.goo.gl/Ukw47dUgG6M8Z2j76" target="_blank" class="stadium">American Express Stadium</a> • 03:00, Fri 26 Apr 2024</span>
+                        </div>
+                        <div class="fixture_box_upper_part_left_right">
+                            <img class="fixture_competition_logo" src="../Image/Logo/Competition/premierLeagueLogo.png">
+                        </div>
+                    </div>
+                    <div class="fixture_box_middle_part">
+                        <div class="fixture_box_middle_part_home">
+                            <div class="fixture_box_team_name_box">
+                                <p class="fixture_team_name">Brighton</p>
+                            </div>
+                            <div class="fixture_box_team_logo_box">
+                                <img class="fixture_team_logo" src="../Image/Logo/Club/PremierLeague/brightonLogo.png">
+                            </div>
+                        </div>
+                        <div class="fixture_vs">
+                            <p class="vs">VS</p>
+                        </div>
+                        <div class="fixture_box_middle_part_away">
+                            <div class="fixture_box_team_logo_box">
+                                <img class="fixture_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                            </div>
+                            <div class="fixture_box_team_name_box">
+                                <p class="fixture_team_name">Manchester City</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fixture_box_lower_part">
+                        <a href="https://www.premierleague.com/match/93602" class="fixture_match_centre" target="_blank">Match Centre</a>
+                    </div>
+                </div>
+                <div class="fixture_box pl">
+                    <div class="fixture_box_upper_part">
+                        <div class="fixture_box_upper_part_left_right" id="fixture_box_upper_part_left">
+                        </div>
+                        <div class="fixture_box_upper_part_middle">
+                            <p class="fixture_competition_name">Premier League</p>
+                            <span class="fixture_competition_venue_date_time"><a href="https://maps.app.goo.gl/U1m8mXQtumKyF1jH9" target="_blank" class="stadium">The City Ground</a> • 23:30, Sun 28 Apr 2024</span>
+                        </div>
+                        <div class="fixture_box_upper_part_left_right">
+                            <img class="fixture_competition_logo" src="../Image/Logo/Competition/premierLeagueLogo.png">
+                        </div>
+                    </div>
+                    <div class="fixture_box_middle_part">
+                        <div class="fixture_box_middle_part_home">
+                            <div class="fixture_box_team_name_box">
+                                <p class="fixture_team_name">Nottingham Forest</p>
+                            </div>
+                            <div class="fixture_box_team_logo_box">
+                                <img class="fixture_team_logo" src="../Image/Logo/Club/PremierLeague/NottinghamForestLogo.png">
+                            </div>
+                        </div>
+                        <div class="fixture_vs">
+                            <p class="vs">VS</p>
+                        </div>
+                        <div class="fixture_box_middle_part_away">
+                            <div class="fixture_box_team_logo_box">
+                                <img class="fixture_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                            </div>
+                            <div class="fixture_box_team_name_box">
+                                <p class="fixture_team_name">Manchester City</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fixture_box_lower_part">
+                        <a href="https://www.premierleague.com/match/93667" class="fixture_match_centre" target="_blank">Match Centre</a>
+                    </div>
+                </div>
+            </div>
+            <div class="fixture_month" id="may">
+                <p class="fixture_month_heading">May 2024</p>
+                <div class="fixture_box pl">
+                    <div class="fixture_box_upper_part">
+                        <div class="fixture_box_upper_part_left_right" id="fixture_box_upper_part_left">
+                        </div>
+                        <div class="fixture_box_upper_part_middle">
+                            <p class="fixture_competition_name">Premier League</p>
+                            <span class="fixture_competition_venue_date_time"><a href="https://maps.app.goo.gl/2LM6CJdebvDF1xEZ9" target="_blank" class="stadium">Etihad Stadium</a> • 00:30, Sun 05 May 2024</span>
+                        </div>
+                        <div class="fixture_box_upper_part_left_right" >
+                            <img class="fixture_competition_logo" src="../Image/Logo/Competition/premierLeagueLogo.png">
+                        </div>
+                    </div>
+                    <div class="fixture_box_middle_part">
+                        <div class="fixture_box_middle_part_home">
+                            <div class="fixture_box_team_name_box">
+                                <p class="fixture_team_name">Manchester City</p>
+                            </div>
+                            <div class="fixture_box_team_logo_box">
+                                <img class="fixture_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                            </div>
+                        </div>
+                        <div class="fixture_vs">
+                            <p class="vs">VS</p>
+                        </div>
+                        <div class="fixture_box_middle_part_away">
+                            <div class="fixture_box_team_logo_box">
+                                <img class="fixture_team_logo" src="../Image/Logo/Club/PremierLeague/wolvesLogo.png">
+                            </div>
+                            <div class="fixture_box_team_name_box">
+                                <p class="fixture_team_name">Wolves</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fixture_box_lower_part">
+                        <a href="https://www.premierleague.com/match/93679" class="fixture_match_centre" target="_blank">Match Centre</a>
+                    </div>
+                </div>
+                <div class="fixture_box pl">
+                    <div class="fixture_box_upper_part">
+                        <div class="fixture_box_upper_part_left_right" id="fixture_box_upper_part_left">
+                        </div>
+                        <div class="fixture_box_upper_part_middle">
+                            <p class="fixture_competition_name">Premier League</p>
+                            <span class="fixture_competition_venue_date_time"><a href="https://maps.app.goo.gl/6seqtpRP6pzGvwma7" target="_blank" class="stadium">Craven Cottage</a> • 19:30, Sat 11 May 2024</span>
+                        </div>
+                        <div class="fixture_box_upper_part_left_right">
+                            <img class="fixture_competition_logo" src="../Image/Logo/Competition/premierLeagueLogo.png">
+                        </div>
+                    </div>
+                    <div class="fixture_box_middle_part">
+                        <div class="fixture_box_middle_part_home">
+                            <div class="fixture_box_team_name_box">
+                                <p class="fixture_team_name">Fulham</p>
+                            </div>
+                            <div class="fixture_box_team_logo_box">
+                                <img class="fixture_team_logo" src="../Image/Logo/Club/PremierLeague/fulhamLogo.png">
+                            </div>
+                        </div>
+                        <div class="fixture_vs">
+                            <p class="vs">VS</p>
+                        </div>
+                        <div class="fixture_box_middle_part_away">
+                            <div class="fixture_box_team_logo_box">
+                                <img class="fixture_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                            </div>
+                            <div class="fixture_box_team_name_box">
+                                <p class="fixture_team_name">Manchester City</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fixture_box_lower_part">
+                        <a href="https://www.premierleague.com/match/93684" class="fixture_match_centre" target="_blank">Match Centre</a>
+                    </div>
+                </div>
+                <div class="fixture_box pl">
+                    <div class="fixture_box_upper_part">
+                        <div class="fixture_box_upper_part_left_right" id="fixture_box_upper_part_left">
+                        </div>
+                        <div class="fixture_box_upper_part_middle">
+                            <p class="fixture_competition_name">Premier League</p>
+                            <span class="fixture_competition_venue_date_time"><a href="https://maps.app.goo.gl/fBBf2RKoGXoPP1pv6" target="_blank" class="stadium">Tottenham Hotspur Stadium</a> • 03:00, Wed 15 May 2024</span>
+                        </div>
+                        <div class="fixture_box_upper_part_left_right" >
+                            <img class="fixture_competition_logo" src="../Image/Logo/Competition/premierLeagueLogo.png">
+                        </div>
+                    </div>
+                    <div class="fixture_box_middle_part">
+                        <div class="fixture_box_middle_part_home">
+                            <div class="fixture_box_team_name_box">
+                                <p class="fixture_team_name">Tottenham Hotspur</p>
+                            </div>
+                            <div class="fixture_box_team_logo_box">
+                                <img class="fixture_team_logo" src="../Image/Logo/Club/PremierLeague/spursLogo.png">
+                            </div>
+                        </div>
+                        <div class="fixture_vs">
+                            <p class="vs">VS</p>
+                        </div>
+                        <div class="fixture_box_middle_part_away">
+                            <div class="fixture_box_team_logo_box">
+                                <img class="fixture_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                            </div>
+                            <div class="fixture_box_team_name_box">
+                                <p class="fixture_team_name">Manchester City</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fixture_box_lower_part">
+                        <a href="https://www.premierleague.com/match/93659" class="fixture_match_centre" target="_blank">Match Centre</a>
+                    </div>
+                </div>
+                <div class="fixture_box pl" id="last_box">
+                    <div class="fixture_box_upper_part">
+                        <div class="fixture_box_upper_part_left_right" id="fixture_box_upper_part_left">
+                        </div>
+                        <div class="fixture_box_upper_part_middle">
+                            <p class="fixture_competition_name">Premier League</p>
+                            <span class="fixture_competition_venue_date_time"><a href="https://maps.app.goo.gl/2LM6CJdebvDF1xEZ9" target="_blank" class="stadium">Etihad Stadium</a> • 23:00, Sun 19 May 2024</span>
+                        </div>
+                        <div class="fixture_box_upper_part_left_right" >
+                            <img class="fixture_competition_logo" src="../Image/Logo/Competition/premierLeagueLogo.png">
+                        </div>
+                    </div>
+                    <div class="fixture_box_middle_part">
+                        <div class="fixture_box_middle_part_home">
+                            <div class="fixture_box_team_name_box">
+                                <p class="fixture_team_name">Manchester City</p>
+                            </div>
+                            <div class="fixture_box_team_logo_box">
+                                <img class="fixture_team_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                            </div>
+                        </div>
+                        <div class="fixture_vs">
+                            <p class="vs">VS</p>
+                        </div>
+                        <div class="fixture_box_middle_part_away">
+                            <div class="fixture_box_team_logo_box">
+                                <img class="fixture_team_logo" src="../Image/Logo/Club/PremierLeague/westHamLogo.png">
+                            </div>
+                            <div class="fixture_box_team_name_box">
+                                <p class="fixture_team_name">West Ham</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fixture_box_lower_part">
+                        <a href="https://www.premierleague.com/match/93699" class="fixture_match_centre" target="_blank">Match Centre</a>
+                    </div>
+                </div>
+            </div>
+            <p class="notes">*Last updated: 18 April 2024.</p>
+            <p class="notes">*All time are HK time.</p>
+        </div>
+        <div id="search_error">
+            <p>No data available for <span id="search_error_competition"></span> in <span id="search_error_month">May</span></p>
+            <p>Try changing your selected filters.</p>
+        </div>
+        <!---------------------fixture--------------------->
+
+        <!---------------------footer--------------------->
+        <div class="footer">
+            <div class="footer_logo_first_half">
+                <img src="../Image/Logo/Club/PremierLeague/manCityLogo.png" class="footer_club_logo">
+            </div>
+            <div class="footer_logo_second_half">
+                <div class="footer_tag_left"><p class="footer_tag">#MCFC</p></div>
+                <div class="dummy_space"></div>
+                <div class="footer_tag_right"><p class="footer_tag">#Citizens</p></div>
+            </div>
+            <div class="footer_social_media">
+                <p>Man City on Social Media</p>
+                <div class="footer_social_media_logo">
+                    <a href="https://www.facebook.com/mancity/" target="_blank"><img src="../Image/Logo/SocialMedia/facebook_square_white.png" class="footer_social_media_img"></a>
+                    <a href="https://www.instagram.com/mancity/" target="_blank"><img src="../Image/Logo/SocialMedia/igLogo_white.png" class="footer_social_media_img"></a>
+                    <a href="https://twitter.com/ManCity" target="_blank"><img src="../Image/Logo/SocialMedia/xLogo_white.png" class="footer_social_media_img"></a>
+                    <a href="https://www.youtube.com/channel/UCkzCjdRMrW2vXLx8mvPVLdQ" target="_blank"><img src="../Image/Logo/SocialMedia/youtubeLogo_White.png" class="footer_social_media_img"></a>
+                </div>
+            </div>
+            <p class="author">©2024 IVE(ST) SE1D Fung Wai Lim</p>
+        </div>
+        
+        <!---------------------footer--------------------->
+    
+    </body>
+</html>

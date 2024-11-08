@@ -1,0 +1,470 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Manchester City - Tables</title>
+        <link rel="stylesheet" href="../Style/table.css" />
+        <script type="text/javascript" src="../Script/table.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body id="body">
+        <!---------------------menu--------------------->
+        <div class="menu">
+            <img class="menu_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+            <div class="menu_tag"><span class="word"><a href="../index.html">Home</a></span></div>
+            <div class="menu_tag menu_tag_sub">
+                <span class="word">Fixtures</span>
+                <ul class="menu_list">
+                    <li class="hidden word"><a href="fixture.html">Fixtures</a></li>
+                    <li class="hidden word"><a href="result.html">Results</a></li>
+                    <li class="hidden word"><a href="table.html">Tables</a></li>
+                </ul>
+            </div>
+            <div class="menu_tag"><span class="word"><a href="./player/player.html">Players</a></span></div>
+            <div class="menu_tag"><span class="word"><a href="gallery.html">Gallery</a></span></div>
+            <div class="menu_tag menu_tag_sub">
+                <span class="word">More</span>
+                <ul class="menu_list">
+                    <li class="hidden word"><a href="stadium.html">Stadium</a></li>
+                    <li class="hidden word"><a href="./hallOfFrame/hallOfFrame.html">Hall of Frame</a></li>
+                    <li class="hidden word"><a href="song.html">Song</a></li>
+                    <li class="hidden word"><a href="history.html">History</a></li>
+                    <li class="hidden word"><a href="aboutUs.html">About</a></li>
+                </ul>
+            </div>
+            <img src="../Image/menu.png" class="hidden_menu_icon" onclick="show()">
+        </div>
+        <div class="hidden_menu" id="hidden_menu">
+            <div class="hidden_menu_body">
+                <div class="hidden_menu_body_top">
+                    <img class="hidden_menu_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png">
+                    <img class="hidden_menu_x_icon" src="../Image/close.png" onclick="hide()">
+                </div>
+                <div class="hidden_menu_body_main">
+                    <div class="hidden_menu_tag">
+                        <a href="../index.html">Home</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="fixture.html">Fixtures</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="result.html">Results</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="table.html">Tables</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="./player/player.html">Players</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="gallery.html">Gallery</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="stadium.html">Stadium</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="./hallOfFrame/hallOfFrame.html">Hall of Frame</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="song.html">Song</a>
+                    </div>
+                    <div class="hidden_menu_tag">
+                        <a href="history.html">History</a>
+                    </div>
+                    <div class="hidden_menu_tag hidden_menu_tag_last">
+                        <a href="aboutUs.html">About</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------menu--------------------->
+
+        <!---------------------sub menu--------------------->
+        <div id="sub_menu">
+            <div class="sub_menu_div"><a class="sub_menu_tag" id="sub_menu_tag_fixtures" href="fixture.html">Fixtures</a></div>
+            <div class="sub_menu_div"><a class="sub_menu_tag" id="sub_menu_tag_results" href="result.html">Results</a></div>
+            <div id="sub_menu_selected_div"><a class="sub_menu_tag" id="sub_menu_tag_tables" href="table.html">Tables</a></div>
+        </div>
+        
+        <!---------------------sub menu--------------------->
+        <br>
+        <!---------------------table--------------------->
+        <div class="table">
+            <img style="height: 40px;" src="../Image/Logo/Competition/premierLeagueLogo_2.png">
+            <table class="premier_league_table">
+                <tr class="row_top_bottom">
+                    <th class="positionColumn">Position</th>
+                    <th class="logoColumn">Club</th>
+                    <th class="clubColumn"></th>
+                    <th class="pColumn">P</th>
+                    <th class="wColumn">W</th>
+                    <th class="dColumn">D</th>
+                    <th class="llubColumn">L</th>
+                    <th class="gfColumn">GF</th>
+                    <th class="gaColumn">GA</th>
+                    <th class="gdColumn">GD</th>
+                    <th class="ptsColumn">PTS</th>
+                </tr>
+                <tr class="man_city_row">
+                    <td class="table_position_number">1</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png"></div></td>
+                    <td class="td_name">Manchester City</td>
+                    <td class="td_stat">32</td>
+                    <td class="td_stat">22</td>
+                    <td class="td_stat">7</td>
+                    <td class="td_stat">3</td>
+                    <td class="td_stat">76</td>
+                    <td class="td_stat">32</td>
+                    <td class="td_stat">44</td>
+                    <td class="td_stat pts">73</td>
+                </tr>
+                <tr>
+                    <td class="table_position_number">2</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/arsenalLogo.png"></div></td>
+                    <td class="td_name">Arsenal</td>
+                    <td class="td_stat">32</td>
+                    <td class="td_stat">22</td>
+                    <td class="td_stat">5</td>
+                    <td class="td_stat">5</td>
+                    <td class="td_stat">75</td>
+                    <td class="td_stat">26</td>
+                    <td class="td_stat">49</td>
+                    <td class="td_stat pts">71</td>
+                </tr>
+                <tr>
+                    <td class="table_position_number">3</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/liverpoolLogo.png"></div></td>
+                    <td class="td_name">Liverpool</td>
+                    <td class="td_stat">32</td>
+                    <td class="td_stat">21</td>
+                    <td class="td_stat">8</td>
+                    <td class="td_stat">3</td>
+                    <td class="td_stat">72</td>
+                    <td class="td_stat">31</td>
+                    <td class="td_stat">41</td>
+                    <td class="td_stat pts">71</td>
+                </tr>
+                <tr class="row_black_bottom">
+                    <td class="table_position_number">4</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/astonVillaLogo.png"></div></td>
+                    <td class="td_name">Aston Villa</td>
+                    <td class="td_stat">33</td>
+                    <td class="td_stat">19</td>
+                    <td class="td_stat">6</td>
+                    <td class="td_stat">8</td>
+                    <td class="td_stat">68</td>
+                    <td class="td_stat">49</td>
+                    <td class="td_stat">19</td>
+                    <td class="td_stat pts">63</td>
+                </tr>
+                <tr class="row_black_bottom">
+                    <td class="table_position_number">5</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/spursLogo.png"></div></td>
+                    <td class="td_name">Tottenham Hotspur</td>
+                    <td class="td_stat">32</td>
+                    <td class="td_stat">18</td>
+                    <td class="td_stat">6</td>
+                    <td class="td_stat">8</td>
+                    <td class="td_stat">65</td>
+                    <td class="td_stat">49</td>
+                    <td class="td_stat">16</td>
+                    <td class="td_stat pts">60</td>
+                </tr>
+                <tr>
+                    <td class="table_position_number">6</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/newcastleLogo.png"></div></td>
+                    <td class="td_name">Newcastle United</td>
+                    <td class="td_stat">32</td>
+                    <td class="td_stat">15</td>
+                    <td class="td_stat">5</td>
+                    <td class="td_stat">12</td>
+                    <td class="td_stat">69</td>
+                    <td class="td_stat">52</td>
+                    <td class="td_stat">17</td>
+                    <td class="td_stat pts">50</td>
+                </tr>
+                <tr>
+                    <td class="table_position_number">7</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/manUnitedLogo.png"></div></td>
+                    <td class="td_name">Manchester United</td>
+                    <td class="td_stat">32</td>
+                    <td class="td_stat">15</td>
+                    <td class="td_stat">5</td>
+                    <td class="td_stat">12</td>
+                    <td class="td_stat">47</td>
+                    <td class="td_stat">48</td>
+                    <td class="td_stat">-1</td>
+                    <td class="td_stat pts">50</td>
+                </tr>
+                <tr>
+                    <td class="table_position_number">8</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/westHamLogo.png"></div></td>
+                    <td class="td_name">West Ham</td>
+                    <td class="td_stat">33</td>
+                    <td class="td_stat">13</td>
+                    <td class="td_stat">9</td>
+                    <td class="td_stat">11</td>
+                    <td class="td_stat">52</td>
+                    <td class="td_stat">58</td>
+                    <td class="td_stat">-6</td>
+                    <td class="td_stat pts">48</td>
+                </tr>
+                <tr>
+                    <td class="table_position_number">9</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/chelseaLogo.png"></div></td>
+                    <td class="td_name">Chelsea</td>
+                    <td class="td_stat">31</td>
+                    <td class="td_stat">13</td>
+                    <td class="td_stat">8</td>
+                    <td class="td_stat">10</td>
+                    <td class="td_stat">61</td>
+                    <td class="td_stat">52</td>
+                    <td class="td_stat">9</td>
+                    <td class="td_stat pts">47</td>
+                </tr>
+                <tr>
+                    <td class="table_position_number">10</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/brightonLogo.png"></div></td>
+                    <td class="td_name">Brighton</td>
+                    <td class="td_stat">32</td>
+                    <td class="td_stat">11</td>
+                    <td class="td_stat">11</td>
+                    <td class="td_stat">10</td>
+                    <td class="td_stat">52</td>
+                    <td class="td_stat">20</td>
+                    <td class="td_stat">2</td>
+                    <td class="td_stat pts">44</td>
+                </tr>
+                <tr>
+                    <td class="table_position_number">11</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/wolvesLogo.png"></div></td>
+                    <td class="td_name">Wolves</td>
+                    <td class="td_stat">32</td>
+                    <td class="td_stat">12</td>
+                    <td class="td_stat">7</td>
+                    <td class="td_stat">13</td>
+                    <td class="td_stat">46</td>
+                    <td class="td_stat">51</td>
+                    <td class="td_stat">-5</td>
+                    <td class="td_stat pts">43</td>
+                </tr>
+                <tr>
+                    <td class="table_position_number">12</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/fulhamLogo.png"></div></td>
+                    <td class="td_name">Fulham</td>
+                    <td class="td_stat">33</td>
+                    <td class="td_stat">12</td>
+                    <td class="td_stat">6</td>
+                    <td class="td_stat">15</td>
+                    <td class="td_stat">49</td>
+                    <td class="td_stat">51</td>
+                    <td class="td_stat">-2</td>
+                    <td class="td_stat pts">42</td>
+                </tr>
+                <tr>
+                    <td class="table_position_number">13</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/bournemouthLogo.png"></div></td>
+                    <td class="td_name">Bournemouth</td>
+                    <td class="td_stat">32</td>
+                    <td class="td_stat">11</td>
+                    <td class="td_stat">9</td>
+                    <td class="td_stat">12</td>
+                    <td class="td_stat">47</td>
+                    <td class="td_stat">57</td>
+                    <td class="td_stat">-10</td>
+                    <td class="td_stat pts">42</td>
+                </tr>
+                <tr>
+                    <td class="table_position_number">14</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/crystalPlalceLogo.png"></div></td>
+                    <td class="td_name">Crystal Palace</td>
+                    <td class="td_stat">32</td>
+                    <td class="td_stat">8</td>
+                    <td class="td_stat">9</td>
+                    <td class="td_stat">15</td>
+                    <td class="td_stat">37</td>
+                    <td class="td_stat">54</td>
+                    <td class="td_stat">-17</td>
+                    <td class="td_stat pts">33</td>
+                </tr>
+                <tr>
+                    <td class="table_position_number">15</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/brentfordLogo.png"></div></td>
+                    <td class="td_name">Brentford</td>
+                    <td class="td_stat">33</td>
+                    <td class="td_stat">8</td>
+                    <td class="td_stat">8</td>
+                    <td class="td_stat">17</td>
+                    <td class="td_stat">47</td>
+                    <td class="td_stat">58</td>
+                    <td class="td_stat">-11</td>
+                    <td class="td_stat pts">32</td>
+                </tr>
+                <tr>
+                    <td class="table_position_number">16</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/evertonLogo.png"></div></td>
+                    <td class="td_name">Everton</td>
+                    <td class="td_stat">32</td>
+                    <td class="td_stat">9</td>
+                    <td class="td_stat">8</td>
+                    <td class="td_stat">15</td>
+                    <td class="td_stat">32</td>
+                    <td class="td_stat">48</td>
+                    <td class="td_stat">-16</td>
+                    <td class="td_stat pts">27</td>
+                </tr>
+                <tr class="row_black_bottom">
+                    <td class="table_position_number">17</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/NottinghamForestLogo.png"></div></td>
+                    <td class="td_name">Nottingham Forest</td>
+                    <td class="td_stat">33</td>
+                    <td class="td_stat">7</td>
+                    <td class="td_stat">9</td>
+                    <td class="td_stat">17</td>
+                    <td class="td_stat">42</td>
+                    <td class="td_stat">58</td>
+                    <td class="td_stat">-16</td>
+                    <td class="td_stat pts">26</td>
+                </tr>
+                <tr>
+                    <td class="table_position_number">18</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/lutonLogo.png"></div></td>
+                    <td class="td_name">Luton Town</td>
+                    <td class="td_stat">33</td>
+                    <td class="td_stat">6</td>
+                    <td class="td_stat">7</td>
+                    <td class="td_stat">20</td>
+                    <td class="td_stat">46</td>
+                    <td class="td_stat">70</td>
+                    <td class="td_stat">-24</td>
+                    <td class="td_stat pts">25</td>
+                </tr>
+                <tr>
+                    <td class="table_position_number">19</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/burnleyLogo.png"></div></td>
+                    <td class="td_name">Burnley</td>
+                    <td class="td_stat">32</td>
+                    <td class="td_stat">4</td>
+                    <td class="td_stat">8</td>
+                    <td class="td_stat">21</td>
+                    <td class="td_stat">33</td>
+                    <td class="td_stat">68</td>
+                    <td class="td_stat">-35</td>
+                    <td class="td_stat pts">20</td>
+                </tr>
+                <tr class="row_black_bottom">
+                    <td class="table_position_number">20</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/sheffieldUnitedLogo.png"></div></td>
+                    <td class="td_name">Sheffield United</td>
+                    <td class="td_stat">32</td>
+                    <td class="td_stat">3</td>
+                    <td class="td_stat">7</td>
+                    <td class="td_stat">22</td>
+                    <td class="td_stat">30</td>
+                    <td class="td_stat">84</td>
+                    <td class="td_stat">-54</td>
+                    <td class="td_stat pts">16</td>
+                </tr>
+            </table>
+            <p class="notes">*Last updated: 17 Apr 2024</p>
+            <br>
+            <br>
+            <br>
+            <img style="height: 80px;" src="../Image/Logo/Competition/championLeagueLogo_Full.png">
+            <table class="premier_league_table">
+                <tr class="row_top_bottom">
+                    <th class="positionColumn">Position</th>
+                    <th class="logoColumn">Club</th>
+                    <th class="clubColumn"></th>
+                    <th class="pColumn">P</th>
+                    <th class="wColumn">W</th>
+                    <th class="dColumn">D</th>
+                    <th class="llubColumn">L</th>
+                    <th class="gfColumn">GF</th>
+                    <th class="gaColumn">GA</th>
+                    <th class="gdColumn">GD</th>
+                    <th class="ptsColumn">PTS</th>
+                </tr>
+                <tr class="man_city_row">
+                    <td class="table_position_number">1</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/PremierLeague/manCityLogo.png"></div></td>
+                    <td class="td_name">Manchester City</td>
+                    <td class="td_stat">6</td>
+                    <td class="td_stat">6</td>
+                    <td class="td_stat">0</td>
+                    <td class="td_stat">0</td>
+                    <td class="td_stat">18</td>
+                    <td class="td_stat">17</td>
+                    <td class="td_stat">11</td>
+                    <td class="td_stat pts">18</td>
+                </tr>
+                <tr>
+                    <td class="table_position_number">2</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/ChampionLeague/rbLeizigLogo.png"></div></td>
+                    <td class="td_name">RB Leizig</td>
+                    <td class="td_stat">6</td>
+                    <td class="td_stat">4</td>
+                    <td class="td_stat">0</td>
+                    <td class="td_stat">2</td>
+                    <td class="td_stat">13</td>
+                    <td class="td_stat">10</td>
+                    <td class="td_stat">3</td>
+                    <td class="td_stat pts">12</td>
+                </tr>
+                <tr>
+                    <td class="table_position_number">3</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/ChampionLeague/youngBoysLogo.png"></div></td>
+                    <td class="td_name">Young Boys</td>
+                    <td class="td_stat">6</td>
+                    <td class="td_stat">1</td>
+                    <td class="td_stat">1</td>
+                    <td class="td_stat">4</td>
+                    <td class="td_stat">7</td>
+                    <td class="td_stat">13</td>
+                    <td class="td_stat">-6</td>
+                    <td class="td_stat pts">4</td>
+                </tr>
+                <tr class="row_black_bottom">
+                    <td class="table_position_number">4</td>
+                    <td class="td_logo"><div class="column_logo"><img class="table_club_logo" src="../Image/Logo/Club/ChampionLeague/fkCrvenaZvezdaLogo.png"></div></td>
+                    <td class="td_name">FK Crvena Zvezda</td>
+                    <td class="td_stat">6</td>
+                    <td class="td_stat">0</td>
+                    <td class="td_stat">1</td>
+                    <td class="td_stat">5</td>
+                    <td class="td_stat">7</td>
+                    <td class="td_stat">15</td>
+                    <td class="td_stat">-8</td>
+                    <td class="td_stat pts">1</td>
+                </tr>
+            </table>
+            <p class="notes">*Last updated: 14 Dec 2023</p>
+        </div>
+        <!---------------------table--------------------->
+
+        <!---------------------footer--------------------->
+        <div class="footer">
+            <div class="footer_logo_first_half">
+                <img src="../Image/Logo/Club/PremierLeague/manCityLogo.png" class="footer_club_logo">
+            </div>
+            <div class="footer_logo_second_half">
+                <div class="footer_tag_left"><p class="footer_tag">#MCFC</p></div>
+                <div class="dummy_space"></div>
+                <div class="footer_tag_right"><p class="footer_tag">#Citizens</p></div>
+            </div>
+            <div class="footer_social_media">
+                <p>Man City on Social Media</p>
+                <div class="footer_social_media_logo">
+                    <a href="https://www.facebook.com/mancity/" target="_blank"><img src="../Image/Logo/SocialMedia/facebook_square_white.png" class="footer_social_media_img"></a>
+                    <a href="https://www.instagram.com/mancity/" target="_blank"><img src="../Image/Logo/SocialMedia/igLogo_white.png" class="footer_social_media_img"></a>
+                    <a href="https://twitter.com/ManCity" target="_blank"><img src="../Image/Logo/SocialMedia/xLogo_white.png" class="footer_social_media_img"></a>
+                    <a href="https://www.youtube.com/channel/UCkzCjdRMrW2vXLx8mvPVLdQ" target="_blank"><img src="../Image/Logo/SocialMedia/youtubeLogo_White.png" class="footer_social_media_img"></a>
+                </div>
+            </div>
+            <p class="author">©2024 IVE(ST) SE1D Fung Wai Lim</p>
+        </div>
+        
+        <!---------------------footer--------------------->
+    
+    </body>
+</html>
